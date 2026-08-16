@@ -56,13 +56,6 @@
             color: #3498db;
         }
         
-        .logo-link {
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
         .main-content {
             flex: 1;
             max-width: 1200px;
@@ -70,7 +63,25 @@
             width: 100%;
         }
 
-        /* SEO TEKST BLOK */
+        /* NAVIGATIE & SEO TEKST BLOK */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #2ecc71;
+            text-decoration: none;
+            background: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+
         .seo-text-container {
             background: white;
             padding: 40px;
@@ -79,7 +90,7 @@
             margin-bottom: 40px;
             text-align: left;
             line-height: 1.7;
-            border-top: 5px solid #2ecc71; /* Groene kleur voor gaming */
+            border-top: 5px solid #2ecc71; 
         }
 
         .seo-text-container h1 {
@@ -118,6 +129,18 @@
             overflow: hidden;
             height: 100%;
             transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card.card-past {
+            opacity: 0.5;
+            filter: grayscale(80%);
+            box-shadow: none;
+            background-color: #f8fafc;
+        }
+
+        .card.card-past:hover {
+            opacity: 0.75;
+            filter: grayscale(50%);
         }
 
         .card-image-container {
@@ -161,6 +184,8 @@
             min-height: 28px;
         }
 
+        .card h3:hover { color: #3498db; }
+
         .category-tag {
             display: inline-block;
             font-size: 0.7em;
@@ -172,6 +197,17 @@
         }
 
         .event-icon { font-size: 1.5em; opacity: 0.9; }
+
+        .location-line {
+            font-size: 0.85em;
+            color: #64748b;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-align: left;
+        }
         
         .countdown {
             font-size: 1.1em;
@@ -179,6 +215,70 @@
             padding: 10px;
             border-radius: 8px;
             margin-bottom: 10px;
+        }
+
+        .presale-box {
+            background-color: #fff3cd;
+            border: 1px solid #ffeeba;
+            border-radius: 8px;
+            padding: 8px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .presale-label {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .presale-countdown {
+            font-size: 0.95em;
+            font-weight: bold;
+            color: #856404;
+        }
+
+        .presale-live {
+            color: #dc3545;
+            animation: blink 1.5s infinite;
+        }
+
+        .urgency-box {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .urgency-label {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #721c24;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .urgency-text {
+            font-size: 0.95em;
+            font-weight: bold;
+            color: #721c24;
+        }
+
+        .urgency-live {
+            color: #dc3545;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
         }
 
         .affiliate-btn {
@@ -190,7 +290,6 @@
             font-weight: bold;
             text-align: center;
             transition: opacity 0.2s ease;
-            margin-bottom: 8px;
         }
         
         .affiliate-btn:hover { opacity: 0.9; }
@@ -219,6 +318,54 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
 
+        /* MODAL STYLES */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex; justify-content: center; align-items: center;
+            z-index: 1000; opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        
+        .modal-box {
+            background: #fff; padding: 25px; border-radius: 16px;
+            width: 90%; max-width: 380px; text-align: center;
+            position: relative; transform: translateY(20px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        
+        .sluit-modal {
+            position: absolute; top: 12px; right: 15px; font-size: 1.5em;
+            color: #94a3b8; cursor: pointer; transition: color 0.2s;
+        }
+        
+        .sluit-modal:hover { color: #1e293b; }
+        
+        .modal-box h3 { 
+            margin-top: 0; color: #1e293b; font-size: 1.3em; margin-bottom: 20px; 
+            padding-right: 20px; padding-left: 20px;
+        }
+        
+        .modal-acties { display: flex; flex-direction: column; gap: 10px; }
+        
+        .actie-btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            padding: 14px; border: none; border-radius: 8px; cursor: pointer;
+            font-weight: bold; color: white; font-size: 1em; text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        .btn-wa { background-color: #25D366; }
+        .btn-sys { background-color: #3498db; }
+        .btn-google { background-color: #ea4335; }
+        .btn-apple { background-color: #1e293b; }
+        .actie-btn:hover { opacity: 0.9; }
+
         /* FOOTER */
         .site-footer {
             background-color: #2c3e50;
@@ -242,13 +389,15 @@
 </head>
 <body>
     <div class="logo-container">
-        <a href="index.html" class="logo-link">
-            <div class="logo-icon"><i class="fa-solid fa-hourglass-half"></i></div>
-            <h1 class="logo-text">Hoe lang nog <span>tot...</span></h1>
-        </a>
+        <div class="logo-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+        <h1 class="logo-text">Hoe lang nog <span>tot...</span></h1>
     </div>
 
     <div class="main-content">
+        <div style="text-align: left;">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Terug naar de kalender</a>
+        </div>
+
         <!-- SEO TEKST SECTIE -->
         <div class="seo-text-container">
             <h1>De langverwachte Game Releases van 2026</h1>
@@ -277,14 +426,28 @@
         <div>&copy; 2026 hoelangnogtot.nl. Uitgegeven door Ted Innovation/Support B.V. Alle rechten voorbehouden.</div>
     </footer>
 
+    <!-- MODAL MENU VOOR DELEN EN AGENDA -->
+    <div id="actieModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-xmark sluit-modal" onclick="sluitModal()"></i>
+            <h3 id="modalTitel">Evenement</h3>
+            <div class="modal-acties">
+                <button class="actie-btn btn-sys" onclick="deelActieSysteem()"><i class="fa-solid fa-share-nodes"></i> Delen via apps...</button>
+                <button class="actie-btn btn-wa" onclick="deelActieWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Doorsturen via WhatsApp</button>
+                <a href="#" id="modalGoogle" target="_blank" class="actie-btn btn-google"><i class="fa-brands fa-google"></i> Zet in Google Agenda</a>
+                <a href="#" id="modalApple" class="actie-btn btn-apple"><i class="fa-regular fa-calendar-plus"></i> Download Agenda Bestand (.ics)</a>
+            </div>
+        </div>
+    </div>
+
     <script>
-        // Deze variabele zorgt ervoor dat alleen gaming kaarten worden getoond
         const HUIDIGE_CATEGORIE = 'gaming';
         let evenementen = [];
+        let huidigeDeelData = {};
 
         async function laadEvenementen() {
             try {
-                const response = await fetch('./evenementen.json?v=' + new Date().getTime());
+                const response = await fetch('evenementen.json');
                 const data = await response.json();
                 evenementen = data; 
                 maakKaarten();
@@ -305,30 +468,96 @@
         function maakKaarten() {
             const container = document.getElementById('eventsContainer');
             container.innerHTML = '';
+            
             const nu = new Date().getTime();
+            const dertigDagenInMs = 30 * 24 * 60 * 60 * 1000;
 
-            evenementen.sort((a, b) => new Date(a.datum).getTime() - new Date(b.datum).getTime());
+            evenementen.sort((a, b) => {
+                const tijdA = new Date(a.datum).getTime();
+                const tijdB = new Date(b.datum).getTime();
+                const isVerledenA = tijdA < nu;
+                const isVerledenB = tijdB < nu;
+
+                if (isVerledenA && !isVerledenB) return 1;
+                if (!isVerledenA && isVerledenB) return -1;
+                if (!isVerledenA && !isVerledenB) return tijdA - tijdB;
+                return tijdB - tijdA;
+            });
 
             evenementen.forEach((ev, index) => {
                 if (ev.categorie === HUIDIGE_CATEGORIE) {
                     const evDatum = new Date(ev.datum).getTime();
-                    if (evDatum < nu) return; // We tonen geen afgelopen games op deze overzichtspagina
+                    const isAfgelopen = evDatum < nu;
+                    const verstrekenTijd = nu - evDatum;
+
+                    if (isAfgelopen && verstrekenTijd > dertigDagenInMs) {
+                        return; 
+                    }
                     
                     const card = document.createElement('div');
-                    card.className = `card ${ev.categorie}`;
+                    card.className = `card ${ev.categorie} ${isAfgelopen ? 'card-past' : ''}`;
                     
                     let afbeeldingUrl = ev.afbeelding || 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&q=80';
+                    
+                    let regioHTML = '';
+                    if (ev.regio) {
+                        regioHTML = `<div style="font-size: 0.85em; color: #e74c3c; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-align: left;"><i class="fa-solid fa-map-pin"></i> ${ev.regio === 'Heel Nederland' ? 'Heel Nederland' : 'Regio ' + ev.regio}</div>`;
+                    }
+                    
+                    let locationHTML = '';
+                    if (ev.locatie) {
+                        let displayLocatie = ev.locatie.toLowerCase() === 'landelijk' ? 'Nederland' : ev.locatie;
+                        let vlagIcoon = '<i class="fa-solid fa-location-dot" style="color: #cbd5e1;"></i>';
+                        if (ev.vlag === 'globe') vlagIcoon = '🌎';
+                        else if (ev.vlag && ev.vlag.length === 2) vlagIcoon = `<img src="https://flagcdn.com/24x18/${ev.vlag.toLowerCase()}.png" alt="${ev.vlag}" style="border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); width: 24px; display: inline-block;">`;
+                        locationHTML = `<div class="location-line" style="display: flex; align-items: center; gap: 8px;">${vlagIcoon} <span>${displayLocatie}</span></div>`;
+                    }
+
+                    let presaleHTML = '';
+                    let dagenTotPresale = 0;
+                    if (ev.presaleDatum) {
+                        const psDatumObj = new Date(ev.presaleDatum);
+                        const leesbarePS = psDatumObj.toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+                        presaleHTML = `
+                            <div class="presale-box hidden" id="presale-box-${index}">
+                                <div class="presale-label">Voorverkoop <i class="fa-solid fa-ticket"></i></div>
+                                <div style="font-size: 0.8em; color: #856404; margin-bottom: 5px; text-transform: capitalize;"><i class="fa-regular fa-calendar"></i> ${leesbarePS}</div>
+                                <div class="presale-countdown" id="ps-${index}">Laden...</div>
+                            </div>`;
+                        dagenTotPresale = Math.ceil((psDatumObj.getTime() - nu) / (1000 * 60 * 60 * 24));
+                    }
+
+                    let urgencyHTML = '';
+                    if (ev.urgencyStartDatum) {
+                        urgencyHTML = `
+                            <div class="urgency-box hidden" id="urgency-box-${index}">
+                                <div class="urgency-label">${ev.urgencyLabel || "Let op!"} <i class="fa-solid ${ev.urgencyIcon || 'fa-gift'}"></i></div>
+                                <div class="urgency-text" id="urg-text-${index}">Laden...</div>
+                            </div>`;
+                    }
+
+                    let linkVoorDelen = ev.affiliateUrl ? ev.affiliateUrl : (ev.url ? ev.url : window.location.href);
+                    let dagenTotEvent = Math.ceil((evDatum - nu) / (1000 * 60 * 60 * 24));
+                    const veiligeNaam = encodeURIComponent(ev.naam);
+                    const veiligeDatum = ev.datum;
+                    const veiligeUrl = encodeURIComponent(linkVoorDelen);
+
+                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
+                    if (ev.affiliateUrl) {
+                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-cart-shopping"></i> ${ev.affiliateTekst || 'Bestel / Pre-order'}</a>`;
+                    } else if (ev.url) {
+                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Evenement</a>`;
+                    }
+                    knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
+
                     const datumObject = new Date(ev.datum);
                     const leesbareDatum = datumObject.toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-                    
-                    let knoppenHTML = '';
-                    if (ev.affiliateUrl) {
-                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}"><i class="fa-solid fa-cart-shopping"></i> ${ev.affiliateTekst || 'Bestel / Pre-order'}</a>`;
-                    }
 
                     card.innerHTML = `
                         <div class="card-image-container">
-                            <img src="${afbeeldingUrl}" alt="${ev.naam}">
+                            <a href="${ev.url || '#'}" target="_blank" style="display: block; width: 100%; height: 100%;">
+                                <img src="${afbeeldingUrl}" alt="${ev.naam}">
+                            </a>
                         </div>
                         <div class="card-content">
                             <div class="card-info">
@@ -336,8 +565,11 @@
                                     <span class="category-tag tag-${ev.categorie}">Gaming</span>
                                     <i class="fa-solid fa-gamepad event-icon icon-${ev.categorie}"></i>
                                 </div>
-                                <h3>${ev.naam}</h3>
+                                <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <h3>${ev.naam}</h3>
+                                </a>
                                 <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
+                                ${regioHTML} ${locationHTML} ${presaleHTML} ${urgencyHTML}
                             </div>
                             <div class="card-actions">
                                 <div class="countdown cd-${ev.categorie}" id="cd-${index}">Laden...</div>
@@ -352,18 +584,103 @@
 
         function updateTimers() {
             const nu = new Date().getTime();
+            const eenDagInMs = 24 * 60 * 60 * 1000;
+
             evenementen.forEach((ev, index) => {
                 if (ev.categorie !== HUIDIGE_CATEGORIE) return;
                 const elKlokShow = document.getElementById(`cd-${index}`);
+                const elBtn = document.getElementById(`btn-${index}`);
                 if (!elKlokShow) return;
 
                 const showDatum = new Date(ev.datum).getTime();
-                if (showDatum > nu) {
-                    elKlokShow.innerHTML = formaterenTijd(showDatum - nu);
-                } else {
-                    elKlokShow.innerHTML = "Gelanceerd!";
+                if (showDatum > nu) elKlokShow.innerHTML = formaterenTijd(showDatum - nu);
+                else elKlokShow.innerHTML = "Gelanceerd!";
+
+                if (ev.presaleDatum) {
+                    const elKlokPresale = document.getElementById(`ps-${index}`);
+                    const elBoxPresale = document.getElementById(`presale-box-${index}`);
+                    const presaleDatum = new Date(ev.presaleDatum).getTime();
+                    
+                    if (nu < presaleDatum) {
+                        elBoxPresale.classList.remove("hidden");
+                        elKlokPresale.innerHTML = formaterenTijd(presaleDatum - nu);
+                        if(elBtn) elBtn.classList.add("hidden"); 
+                    } else if ((nu - presaleDatum) < eenDagInMs) {
+                        elBoxPresale.classList.remove("hidden");
+                        elKlokPresale.innerHTML = "Nu in de verkoop!";
+                        elKlokPresale.classList.add("presale-live");
+                        if(elBtn) elBtn.classList.remove("hidden");
+                    } else {
+                        elBoxPresale.classList.add("hidden");
+                        if(elBtn) elBtn.classList.remove("hidden"); 
+                    }
+                }
+
+                if (ev.urgencyStartDatum) {
+                    const elBoxUrgency = document.getElementById(`urgency-box-${index}`);
+                    const elTextUrgency = document.getElementById(`urg-text-${index}`);
+                    const urgencyStart = new Date(ev.urgencyStartDatum).getTime();
+                    
+                    if (nu >= urgencyStart && nu < showDatum) {
+                        elBoxUrgency.classList.remove("hidden");
+                        const dagenTotEvent = Math.floor((showDatum - nu) / (1000 * 60 * 60 * 24));
+                        if (dagenTotEvent > 1) {
+                            elTextUrgency.innerHTML = `Nog ${dagenTotEvent} dagen om te scoren!`;
+                            elTextUrgency.classList.remove("urgency-live");
+                        } else if (dagenTotEvent === 1) {
+                            elTextUrgency.innerHTML = "Morgen is het zover, wees er snel bij!";
+                            elTextUrgency.classList.add("urgency-live");
+                        } else {
+                            elTextUrgency.innerHTML = "Vandaag is je laatste kans!";
+                            elTextUrgency.classList.add("urgency-live");
+                        }
+                    } else {
+                        elBoxUrgency.classList.add("hidden");
+                    }
                 }
             });
+        }
+
+        // FUNCTIES VOOR HET MODAL MENU
+        function openModal(naamEnc, datumString, urlEnc, dagenEvent, dagenPresale) {
+            const naam = decodeURIComponent(naamEnc);
+            const url = decodeURIComponent(urlEnc);
+            huidigeDeelData = { naam, datum: datumString, url, dagenEvent, dagenPresale };
+            
+            document.getElementById('modalTitel').innerText = naam;
+            const startDatum = new Date(datumString);
+            const eindDatum = new Date(startDatum.getTime() + (2 * 60 * 60 * 1000));
+            const formaatDatum = (d) => d.toISOString().replace(/-|:|\.\d{3}/g, '');
+            
+            document.getElementById('modalGoogle').href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(naam)}&dates=${formaatDatum(startDatum)}/${formaatDatum(eindDatum)}&details=${encodeURIComponent("Bekijk dit evenement of koop tickets via: " + url)}`;
+            
+            const icsInhoud = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nURL:${url}\nDTSTART:${formaatDatum(startDatum)}\nDTEND:${formaatDatum(eindDatum)}\nSUMMARY:${naam}\nDESCRIPTION:Bekijk dit evenement of koop tickets via ${url}\nEND:VEVENT\nEND:VCALENDAR`;
+            document.getElementById('modalApple').href = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsInhoud)}`;
+            document.getElementById('modalApple').download = `${naam.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.ics`;
+            
+            document.getElementById('actieModal').classList.add('active');
+        }
+
+        function sluitModal() { document.getElementById('actieModal').classList.remove('active'); }
+        document.getElementById('actieModal').addEventListener('click', function(e) { if (e.target === this) sluitModal(); });
+
+        function genereerDeelTekst() {
+            let bericht = "";
+            const { naam, url, dagenEvent, dagenPresale } = huidigeDeelData;
+            if (dagenPresale > 0) bericht = `Kijk even! Nog maar ${dagenPresale} dagen tot de voorverkoop van ${naam} begint. Info vind je direct via: ${url}`;
+            else if (dagenEvent > 0) bericht = `Zin in! Nog precies ${dagenEvent} dagen tot ${naam}. Bekijk de details via: ${url}`;
+            else bericht = `${naam} is inmiddels gelanceerd! Bekijk de game hier: ${url}`;
+            return bericht;
+        }
+
+        function deelActieWhatsApp() { window.open(`https://wa.me/?text=${encodeURIComponent(genereerDeelTekst())}`, '_blank'); }
+
+        function deelActieSysteem() {
+            if (navigator.share) {
+                navigator.share({ title: huidigeDeelData.naam, text: genereerDeelTekst() }).catch(err => console.log('Fout bij delen:', err));
+            } else {
+                alert('Jouw huidige browser ondersteunt de universele deelfunctie niet. Gebruik de WhatsApp knop om het bericht te versturen!');
+            }
         }
 
         laadEvenementen();
