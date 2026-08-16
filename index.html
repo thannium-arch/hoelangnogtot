@@ -696,16 +696,16 @@
             }
         }
 
-async function laadEvenementen() {
-    try {
-        const response = await fetch('./evenementen.json?v=' + new Date().getTime());
-        const data = await response.json();
-        evenementen = data; 
-        maakKaarten();
-    } catch (error) {
-        console.error("Fout bij het ophalen van evenementen:", error);
-    }
-}
+        async function laadEvenementen() {
+            try {
+                const response = await fetch('./evenementen.json?v=' + new Date().getTime());
+                const data = await response.json();
+                evenementen = data; 
+                maakKaarten();
+            } catch (error) {
+                console.error("Fout bij het ophalen van evenementen:", error);
+            }
+        }
 
         function formaterenTijd(verschil) {
             if (verschil < 0) return "0d 0u 0m 0s";
@@ -822,12 +822,33 @@ async function laadEvenementen() {
                     const veiligeDatum = ev.datum;
                     const veiligeUrl = encodeURIComponent(linkVoorDelen);
 
-                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
-                    if (ev.affiliateUrl) {
-                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-cart-shopping"></i> ${ev.affiliateTekst || 'Bestel / Pre-order'}</a>`;
-                    } else if (ev.url) {
-                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Evenement</a>`;
+                    // De slimme affiliate logica met dynamische fallback per categorie
+                    let bestelLink = ev.affiliateUrl;
+                    let bestelTekst = ev.affiliateTekst || 'Bestel / Pre-order';
+                    let bestelIcon = 'fa-cart-shopping';
+                    
+                    if (!bestelLink) {
+                        if (ev.categorie === 'festival' || ev.categorie === 'concert' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
+                            bestelLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
+                            bestelTekst = 'Zoek Tickets';
+                            bestelIcon = 'fa-ticket';
+                        } else if (ev.categorie === 'gaming' || ev.categorie === 'film' || ev.categorie === 'inhaak') {
+                            bestelLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
+                            bestelTekst = 'Zoek op Bol.com';
+                            bestelIcon = 'fa-magnifying-glass';
+                        } else if (ev.url) {
+                            bestelLink = ev.url;
+                            bestelTekst = 'Bekijk Info';
+                            bestelIcon = 'fa-link';
+                        } else {
+                            bestelLink = `https://www.google.com/search?q=${veiligeNaam}`;
+                            bestelTekst = 'Zoek via Google';
+                            bestelIcon = 'fa-magnifying-glass';
+                        }
                     }
+
+                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
+                    knoppenHTML += `<a href="${bestelLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${bestelIcon}"></i> ${bestelTekst}</a>`;
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -835,7 +856,7 @@ async function laadEvenementen() {
 
                     card.innerHTML = `
                         <div class="card-image-container">
-                            <a href="${ev.url || '#'}" target="_blank" style="display: block; width: 100%; height: 100%;">
+                            <a href="${bestelLink}" target="_blank" style="display: block; width: 100%; height: 100%;">
                                 <img src="${afbeeldingUrl}" alt="${ev.naam}">
                             </a>
                         </div>
