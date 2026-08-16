@@ -696,16 +696,16 @@
             }
         }
 
-        async function laadEvenementen() {
-            try {
-                const response = await fetch('evenementen.json');
-                const data = await response.json();
-                evenementen = data; 
-                maakKaarten();
-            } catch (error) {
-                console.error("Fout bij het ophalen van evenementen:", error);
-            }
-        }
+async function laadEvenementen() {
+    try {
+        const response = await fetch('./evenementen.json?v=' + new Date().getTime());
+        const data = await response.json();
+        evenementen = data; 
+        maakKaarten();
+    } catch (error) {
+        console.error("Fout bij het ophalen van evenementen:", error);
+    }
+}
 
         function formaterenTijd(verschil) {
             if (verschil < 0) return "0d 0u 0m 0s";
