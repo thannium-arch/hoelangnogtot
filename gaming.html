@@ -348,7 +348,7 @@
             return `${dagen}d ${uren}u ${minuten}m ${seconden}s`;
         }
 
-        function maakKaarten() {
+function maakKaarten() {
             const container = document.getElementById('eventsContainer');
             container.innerHTML = '';
             
@@ -389,12 +389,24 @@
                     const veiligeDatum = ev.datum;
                     const veiligeUrl = encodeURIComponent(linkVoorDelen);
 
-                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
-                    if (ev.affiliateUrl) {
-                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-cart-shopping"></i> ${ev.affiliateTekst || 'Bestel / Pre-order'}</a>`;
-                    } else if (ev.url) {
-                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Evenement</a>`;
+                    // De slimme affiliate logica met Bol.com fallback
+                    let bestelLink = ev.affiliateUrl;
+                    let bestelTekst = ev.affiliateTekst || 'Bestel / Pre-order';
+                    let bestelIcon = 'fa-cart-shopping';
+                    
+                    if (!bestelLink) {
+                        // Als er geen link in de JSON staat, genereer een Bol.com zoekopdracht
+                        bestelLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
+                        bestelTekst = 'Zoek op Bol.com';
+                        bestelIcon = 'fa-magnifying-glass';
                     }
+
+                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
+                    
+                    // De bestel/zoek knop
+                    knoppenHTML += `<a href="${bestelLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${bestelIcon}"></i> ${bestelTekst}</a>`;
+                    
+                    // De deel/agenda knop
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -402,7 +414,7 @@
 
                     card.innerHTML = `
                         <div class="card-image-container">
-                            <a href="${ev.url || '#'}" target="_blank" style="display: block; width: 100%; height: 100%;">
+                            <a href="${bestelLink}" target="_blank" style="display: block; width: 100%; height: 100%;">
                                 <img src="${afbeeldingUrl}" alt="${ev.naam}">
                             </a>
                         </div>
@@ -412,7 +424,7 @@
                                     <span class="category-tag tag-${ev.categorie}">Gaming</span>
                                     <i class="fa-solid fa-gamepad event-icon icon-${ev.categorie}"></i>
                                 </div>
-                                <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
+                                <a href="${bestelLink}" target="_blank" style="text-decoration: none; color: inherit;">
                                     <h3>${ev.naam}</h3>
                                 </a>
                                 <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
