@@ -1,0 +1,46 @@
+name: Dagelijkse Database Update
+
+on:
+  schedule:
+    # Draait elke nacht om 03:00 uur
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-database:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Run IGDB API script
+      run: python api_igdb.py
+
+    - name: Run TMDB API script
+      run: python api_tmdb.py
+
+    - name: Run Ticketmaster API script
+      run: python api_ticketmaster.py
+
+    - name: Run Feestdagen script
+      run: python update_feestdagen.py
+
+    - name: Exporteer naar JSON
+      run: python export_json.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'Automated Bot'
+        git config --global user.email 'bot@hoelangnogtot.nl'
+        git add evenementen.db evenementen.json
+        git commit -m "Automatische database update en JSON export" || exit 0
+        git push
