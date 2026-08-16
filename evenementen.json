@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "eerste-kerstdag",
+    "category": "feestdagen",
+    "title": "Eerste Kerstdag",
+    "target_date": "2026-12-25T00:00:00",
+    "recurrence": "yearly_fixed",
+    "is_child_friendly": true,
+    "source_verification": "Gregoriaanse kalender",
+    "intro_variants": [
+      "Eerste Kerstdag is het moment voor familie, het kerstdiner en gezelligheid. Bekijk hieronder exact hoeveel dagen en nachtjes het nog duurt.",
+      "Zodra de dagen korter worden, begint het aftellen naar Eerste Kerstdag. Met onze live countdown weet je precies wanneer het zover is.",
+      "Geen zin om te rekenen? Onze kerstklok telt haarscherp af naar Eerste Kerstdag, inclusief het aantal nachtjes slapen voor de kinderen."
+    ],
+    "faq": [
+      {
+        "question": "Is Eerste Kerstdag een officiële vrije dag?",
+        "answer": "Ja, Eerste Kerstdag is in Nederland en België een officiële feestdag waarop de meeste mensen vrij zijn."
+      }
+    ]
+  },
+  {
+    "slug": "feyenoord-ajax",
+    "category": "voetbal",
+    "title": "De Klassieker: Feyenoord - Ajax",
+    "target_date": "2026-11-28T14:30:00",
+    "recurrence": "manual",
+    "is_child_friendly": false,
+    "source_verification": "Concept speelschema KNVB (definitieve tijd TBD)",
+    "intro_variants": [
+      "De spanning stijgt in Rotterdam en Amsterdam. Telt af naar de aftrap van De Klassieker in De Kuip.",
+      "Feyenoord vs Ajax is de meest beladen wedstrijd van het Nederlandse voetbal. Bekijk de exacte timer tot het eerste fluitsignaal."
+    ],
+    "faq": [
+      {
+        "question": "Waar wordt Feyenoord - Ajax uitgezonden?",
+        "answer": "De Klassieker is live te volgen via ESPN."
+      }
+    ]
+  }
+]
