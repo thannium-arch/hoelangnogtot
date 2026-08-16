@@ -6,16 +6,22 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
 
+# Dit lost direct de Exit Code 128 op:
+permissions:
+  contents: write
+
 jobs:
   update-database:
     runs-on: ubuntu-latest
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      # Verhoogd naar v4 om de Node.js waarschuwing op te lossen
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      # Verhoogd naar v5 om de Node.js waarschuwing op te lossen
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
 
@@ -41,6 +47,6 @@ jobs:
       run: |
         git config --global user.name 'Automated Bot'
         git config --global user.email 'bot@hoelangnogtot.nl'
-        git add evenementen.db evenementen.json
+        git add -A
         git commit -m "Automatische database update en JSON export" || exit 0
         git push
