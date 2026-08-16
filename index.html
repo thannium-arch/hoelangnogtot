@@ -660,7 +660,6 @@
             console.log("Tracking scripts geladen na toestemming.");
         }
 
-        // Rest van de bestaande JavaScript (ongewijzigd gebleven voor leesbaarheid, neem exact over zoals eerder)
         async function laadZonData() {
             try {
                 const res = await fetch('https://api.sunrise-sunset.org/json?lat=51.97&lng=4.25&formatted=0');
@@ -822,33 +821,40 @@
                     const veiligeDatum = ev.datum;
                     const veiligeUrl = encodeURIComponent(linkVoorDelen);
 
-                    // De slimme affiliate logica met dynamische fallback per categorie
-                    let bestelLink = ev.affiliateUrl;
-                    let bestelTekst = ev.affiliateTekst || 'Bestel / Pre-order';
-                    let bestelIcon = 'fa-cart-shopping';
+                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
                     
-                    if (!bestelLink) {
-                        if (ev.categorie === 'festival' || ev.categorie === 'concert' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
-                            bestelLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
-                            bestelTekst = 'Zoek Tickets';
-                            bestelIcon = 'fa-ticket';
-                        } else if (ev.categorie === 'gaming' || ev.categorie === 'film' || ev.categorie === 'inhaak') {
-                            bestelLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
-                            bestelTekst = 'Zoek op Bol.com';
-                            bestelIcon = 'fa-magnifying-glass';
-                        } else if (ev.url) {
-                            bestelLink = ev.url;
-                            bestelTekst = 'Bekijk Info';
-                            bestelIcon = 'fa-link';
-                        } else {
-                            bestelLink = `https://www.google.com/search?q=${veiligeNaam}`;
-                            bestelTekst = 'Zoek via Google';
-                            bestelIcon = 'fa-magnifying-glass';
-                        }
+                    // 1. De originele databaselink (bijv. de Trailer of Officiële website)
+                    if (ev.affiliateUrl) {
+                        let btnIcon = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer') ? 'fa-play' : 'fa-link';
+                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${btnIcon}"></i> ${ev.affiliateTekst || 'Bekijk Info'}</a>`;
+                    } else if (ev.url) {
+                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Evenement</a>`;
                     }
 
-                    let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
-                    knoppenHTML += `<a href="${bestelLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${bestelIcon}"></i> ${bestelTekst}</a>`;
+                    // 2. ALTIJD een vaste koop/zoek knop toevoegen
+                    let koopLink = '';
+                    let koopTekst = '';
+                    let koopIcon = '';
+
+                    if (ev.categorie === 'festival' || ev.categorie === 'concert' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
+                        koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
+                        koopTekst = 'Zoek Tickets';
+                        koopIcon = 'fa-ticket';
+                    } else if (ev.categorie === 'gaming' || ev.categorie === 'film' || ev.categorie === 'inhaak') {
+                        koopLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
+                        koopTekst = 'Zoek op Bol.com';
+                        koopIcon = 'fa-cart-shopping';
+                    } else if (ev.categorie === 'feestdag') {
+                        koopLink = `https://www.ah.nl/`;
+                        koopTekst = 'Boodschappen bestellen';
+                        koopIcon = 'fa-basket-shopping';
+                    }
+
+                    if (koopLink) {
+                        knoppenHTML += `<a href="${koopLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}"><i class="fa-solid ${koopIcon}"></i> ${koopTekst}</a>`;
+                    }
+                    
+                    // 3. Deel & Agenda knop
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -856,7 +862,7 @@
 
                     card.innerHTML = `
                         <div class="card-image-container">
-                            <a href="${bestelLink}" target="_blank" style="display: block; width: 100%; height: 100%;">
+                            <a href="${ev.url || '#'}" target="_blank" style="display: block; width: 100%; height: 100%;">
                                 <img src="${afbeeldingUrl}" alt="${ev.naam}">
                             </a>
                         </div>
@@ -866,7 +872,9 @@
                                     <span class="category-tag tag-${ev.categorie}">${categorieNaam}</span>
                                     <i class="fa-solid ${ev.icon} event-icon icon-${ev.categorie}"></i>
                                 </div>
-                                <h3>${ev.naam}</h3>
+                                <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <h3>${ev.naam}</h3>
+                                </a>
                                 <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
                                 ${regioHTML} ${locationHTML} ${presaleHTML} ${urgencyHTML}
                             </div>
@@ -1016,4 +1024,4 @@
         function scrollNaarBoven() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
     </script>
 </body>
-</html> 
+</html>
