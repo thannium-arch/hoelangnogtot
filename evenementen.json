@@ -17260,5 +17260,23 @@
         "urgencyStartDatum": "",
         "urgencyLabel": "",
         "urgencyIcon": ""
+    },
+    {
+        "id": 985,
+        "naam": "Andy & Melisa (Seizoen 6)",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/c8TDteYQihJVv3XcdBfykqzbd5u.jpg",
+        "categorie": "film",
+        "icon": "fa-tv",
+        "vlag": "globe",
+        "locatie": "Streamingdiensten",
+        "datum": "2026-09-16T00:00:00",
+        "url": "https://www.youtube.com/results?search_query=Andy+&+Melisa+(Seizoen+6)+trailer+nl",
+        "affiliateUrl": "https://www.youtube.com/results?search_query=Andy+&+Melisa+(Seizoen+6)+trailer+nl",
+        "affiliateTekst": "Bekijk Trailer",
+        "regio": "Wereldwijd",
+        "presaleDatum": "",
+        "urgencyStartDatum": "",
+        "urgencyLabel": "",
+        "urgencyIcon": ""
     }
 ]
