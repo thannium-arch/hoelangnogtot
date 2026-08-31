@@ -619,7 +619,7 @@
         </div>
     </div>
 
-    <!-- NIEUW: MODAL MENU VOOR TICKETKEUZE (CONCERTEN) -->
+    <!-- NIEUW: MODAL MENU VOOR TICKETKEUZE (CONCERTEN EN FESTIVALS) -->
     <div id="ticketModal" class="modal-overlay">
         <div class="modal-box">
             <i class="fa-solid fa-xmark sluit-modal" onclick="sluitTicketModal()"></i>
@@ -836,8 +836,8 @@
 
                     let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
 
-                    if (ev.categorie === 'concert') {
-                        // Voor concerten: Eén unieke knop die het Ticket Modal opent
+                    if (ev.categorie === 'concert' || ev.categorie === 'festival') {
+                        // Voor concerten en festivals: Eén unieke knop die het Ticket Modal opent
                         knoppenHTML += `<button onclick="openTicketModal('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
                     } else {
                         // Bepaal of de bestaande link puur een trailer is
@@ -857,7 +857,7 @@
                             let koopTekst = '';
                             let koopIcon = '';
 
-                            if (ev.categorie === 'festival' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
+                            if (ev.categorie === 'cultuur' || ev.categorie === 'sport') {
                                 koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
                                 koopTekst = 'Zoek Tickets';
                                 koopIcon = 'fa-ticket';
@@ -881,6 +881,7 @@
                         }
                     }
 
+                    // 3. Deel & Agenda knop (wordt altijd getoond)
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
