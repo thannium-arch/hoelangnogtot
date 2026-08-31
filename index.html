@@ -792,7 +792,7 @@
                     let afbeeldingUrl = ev.afbeelding || 'https://images.unsplash.com/photo-1494548162494-384bba4ab999?w=400&q=80';
                     
                     let regioHTML = '';
-                    if (ev.regio) {
+                    if (ev.regio && ev.categorie === 'feestdag' && ev.naam.toLowerCase().includes('vakantie')) {
                         regioHTML = `<div style="font-size: 0.85em; color: #e74c3c; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-align: left;"><i class="fa-solid fa-map-pin"></i> ${ev.regio === 'Heel Nederland' ? 'Heel Nederland' : 'Regio ' + ev.regio}</div>`;
                     }
                     
