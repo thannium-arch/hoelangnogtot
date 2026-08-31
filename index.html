@@ -823,38 +823,53 @@
 
                     let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
                     
-                    // 1. De originele databaselink (bijv. de Trailer of Officiële website)
-                    if (ev.affiliateUrl) {
-                        let btnIcon = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer') ? 'fa-play' : 'fa-link';
-                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${btnIcon}"></i> ${ev.affiliateTekst || 'Bekijk Info'}</a>`;
-                    } else if (ev.url) {
-                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Evenement</a>`;
-                    }
+                    if (ev.categorie === 'concert') {
+                        // Voor concerten: Eén unieke knop die Ticketmaster én Ticketswap opent
+                        knoppenHTML += `<button onclick="openConcertLinks('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
+                    } else {
+                        // Bepaal of de bestaande link puur een trailer is
+                        let heeftTrailer = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer');
+                        
+                        // 1. De originele databaselink (bijv. de Trailer, Pathé link of Officiële website)
+                        if (ev.affiliateUrl) {
+                            let btnIcon = heeftTrailer ? 'fa-play' : 'fa-link';
+                            knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${btnIcon}"></i> ${ev.affiliateTekst || 'Bekijk Info'}</a>`;
+                        } else if (ev.url) {
+                            knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Info</a>`;
+                        }
 
-                    // 2. ALTIJD een vaste koop/zoek knop toevoegen
-                    let koopLink = '';
-                    let koopTekst = '';
-                    let koopIcon = '';
+                        // 2. Fallback knop (alleen als er géén specifieke service link was, OF als de link een trailer was)
+                        if ((!ev.affiliateUrl && !ev.url) || heeftTrailer) {
+                            let koopLink = '';
+                            let koopTekst = '';
+                            let koopIcon = '';
 
-                    if (ev.categorie === 'festival' || ev.categorie === 'concert' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
-                        koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
-                        koopTekst = 'Zoek Tickets';
-                        koopIcon = 'fa-ticket';
-                    } else if (ev.categorie === 'gaming' || ev.categorie === 'film' || ev.categorie === 'inhaak') {
-                        koopLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
-                        koopTekst = 'Zoek op Bol.com';
-                        koopIcon = 'fa-cart-shopping';
-                    } else if (ev.categorie === 'feestdag') {
-                        koopLink = `https://www.ah.nl/`;
-                        koopTekst = 'Boodschappen bestellen';
-                        koopIcon = 'fa-basket-shopping';
-                    }
+                            if (ev.categorie === 'festival' || ev.categorie === 'cultuur' || ev.categorie === 'sport') {
+                                koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
+                                koopTekst = 'Zoek Tickets';
+                                koopIcon = 'fa-ticket';
+                            } else if (ev.categorie === 'gaming' || ev.categorie === 'inhaak') {
+                                koopLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
+                                koopTekst = 'Zoek op Bol.com';
+                                koopIcon = 'fa-cart-shopping';
+                            } else if (ev.categorie === 'film') {
+                                // De universele VOD en Bioscoop zoeker
+                                koopLink = `https://www.justwatch.com/nl/zoeken?q=${veiligeNaam}`;
+                                koopTekst = 'Waar te zien?';
+                                koopIcon = 'fa-film';
+                            } else if (ev.categorie === 'feestdag') {
+                                koopLink = `https://www.ah.nl/`;
+                                koopTekst = 'Boodschappen bestellen';
+                                koopIcon = 'fa-basket-shopping';
+                            }
 
-                    if (koopLink) {
-                        knoppenHTML += `<a href="${koopLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}"><i class="fa-solid ${koopIcon}"></i> ${koopTekst}</a>`;
+                            if (koopLink) {
+                                knoppenHTML += `<a href="${koopLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}"><i class="fa-solid ${koopIcon}"></i> ${koopTekst}</a>`;
+                            }
+                        }
                     }
                     
-                    // 3. Deel & Agenda knop
+                    // 3. Deel & Agenda knop (wordt altijd getoond)
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -872,9 +887,7 @@
                                     <span class="category-tag tag-${ev.categorie}">${categorieNaam}</span>
                                     <i class="fa-solid ${ev.icon} event-icon icon-${ev.categorie}"></i>
                                 </div>
-                                <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
-                                    <h3>${ev.naam}</h3>
-                                </a>
+                                <h3>${ev.naam}</h3>
                                 <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
                                 ${regioHTML} ${locationHTML} ${presaleHTML} ${urgencyHTML}
                             </div>
@@ -1022,6 +1035,17 @@
         };
 
         function scrollNaarBoven() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+        function openConcertLinks(naamEnc) {
+            const tmUrl = `https://www.ticketmaster.nl/search?keyword=${naamEnc}`;
+            const tsUrl = `https://www.ticketswap.nl/search?q=${naamEnc}`;
+            
+            window.open(tmUrl, '_blank');
+            
+            setTimeout(() => {
+                window.open(tsUrl, '_blank');
+            }, 100);
+        }
     </script>
 </body>
 </html>
