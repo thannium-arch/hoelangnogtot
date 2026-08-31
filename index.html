@@ -489,6 +489,8 @@
         .btn-sys { background-color: #3498db; }
         .btn-google { background-color: #ea4335; }
         .btn-apple { background-color: #1e293b; }
+        .btn-tm { background-color: #026cdf; }
+        .btn-ts { background-color: #00b8b1; }
         
         .actie-btn:hover { opacity: 0.9; }
 
@@ -603,6 +605,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
+    <!-- MODAL MENU VOOR DELEN EN AGENDA -->
     <div id="actieModal" class="modal-overlay">
         <div class="modal-box">
             <i class="fa-solid fa-xmark sluit-modal" onclick="sluitModal()"></i>
@@ -612,6 +615,18 @@
                 <button class="actie-btn btn-wa" onclick="deelActieWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Doorsturen via WhatsApp</button>
                 <a href="#" id="modalGoogle" target="_blank" class="actie-btn btn-google"><i class="fa-brands fa-google"></i> Zet in Google Agenda</a>
                 <a href="#" id="modalApple" class="actie-btn btn-apple"><i class="fa-regular fa-calendar-plus"></i> Download Agenda Bestand (.ics)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIEUW: MODAL MENU VOOR TICKETKEUZE (CONCERTEN) -->
+    <div id="ticketModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-xmark sluit-modal" onclick="sluitTicketModal()"></i>
+            <h3 id="ticketModalTitel">Tickets Bestellen</h3>
+            <div class="modal-acties">
+                <a href="#" id="btnTicketmaster" target="_blank" class="actie-btn btn-tm"><i class="fa-solid fa-ticket"></i> Zoek op Ticketmaster</a>
+                <a href="#" id="btnTicketswap" target="_blank" class="actie-btn btn-ts"><i class="fa-solid fa-arrows-rotate"></i> Zoek op TicketSwap</a>
             </div>
         </div>
     </div>
@@ -627,7 +642,6 @@
     </div>
 
     <script>
-        // Bestaande variabelen
         let huidigeCategorie = 'alles';
         let zoekTekst = '';
         let evenementen = [];
@@ -656,7 +670,6 @@
         }
 
         function laadTrackingScripts() {
-            // Hier kun je later dynamisch je Google AdSense of Analytics code inladen
             console.log("Tracking scripts geladen na toestemming.");
         }
 
@@ -822,10 +835,10 @@
                     const veiligeUrl = encodeURIComponent(linkVoorDelen);
 
                     let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
-                    
+
                     if (ev.categorie === 'concert') {
-                        // Voor concerten: Eén unieke knop die Ticketmaster én Ticketswap opent
-                        knoppenHTML += `<button onclick="openConcertLinks('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
+                        // Voor concerten: Eén unieke knop die het Ticket Modal opent
+                        knoppenHTML += `<button onclick="openTicketModal('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
                     } else {
                         // Bepaal of de bestaande link puur een trailer is
                         let heeftTrailer = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer');
@@ -853,7 +866,6 @@
                                 koopTekst = 'Zoek op Bol.com';
                                 koopIcon = 'fa-cart-shopping';
                             } else if (ev.categorie === 'film') {
-                                // De universele VOD en Bioscoop zoeker
                                 koopLink = `https://www.justwatch.com/nl/zoeken?q=${veiligeNaam}`;
                                 koopTekst = 'Waar te zien?';
                                 koopIcon = 'fa-film';
@@ -868,8 +880,7 @@
                             }
                         }
                     }
-                    
-                    // 3. Deel & Agenda knop (wordt altijd getoond)
+
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -887,7 +898,9 @@
                                     <span class="category-tag tag-${ev.categorie}">${categorieNaam}</span>
                                     <i class="fa-solid ${ev.icon} event-icon icon-${ev.categorie}"></i>
                                 </div>
-                                <h3>${ev.naam}</h3>
+                                <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
+                                    <h3>${ev.naam}</h3>
+                                </a>
                                 <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
                                 ${regioHTML} ${locationHTML} ${presaleHTML} ${urgencyHTML}
                             </div>
@@ -969,6 +982,7 @@
             });
         }
 
+        // DEEL MODAL LOGICA
         function openModal(naamEnc, datumString, urlEnc, dagenEvent, dagenPresale) {
             const naam = decodeURIComponent(naamEnc);
             const url = decodeURIComponent(urlEnc);
@@ -991,6 +1005,29 @@
         function sluitModal() { document.getElementById('actieModal').classList.remove('active'); }
         document.getElementById('actieModal').addEventListener('click', function(e) { if (e.target === this) sluitModal(); });
 
+        // TICKET KEUZE MODAL LOGICA (NIEUW)
+        function openTicketModal(naamEnc) {
+            const naam = decodeURIComponent(naamEnc);
+            document.getElementById('ticketModalTitel').innerText = `Tickets: ${naam}`;
+            
+            const tmUrl = `https://www.ticketmaster.nl/search?keyword=${naamEnc}`;
+            const tsUrl = `https://www.ticketswap.nl/search?q=${naamEnc}`;
+            
+            document.getElementById('btnTicketmaster').href = tmUrl;
+            document.getElementById('btnTicketswap').href = tsUrl;
+            
+            document.getElementById('ticketModal').classList.add('active');
+        }
+
+        function sluitTicketModal() { 
+            document.getElementById('ticketModal').classList.remove('active'); 
+        }
+
+        document.getElementById('ticketModal').addEventListener('click', function(e) { 
+            if (e.target === this) sluitTicketModal(); 
+        });
+
+        // DEEL FUNCTIES
         function genereerDeelTekst() {
             let bericht = "";
             const { naam, url, dagenEvent, dagenPresale } = huidigeDeelData;
@@ -1035,17 +1072,6 @@
         };
 
         function scrollNaarBoven() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
-
-        function openConcertLinks(naamEnc) {
-            const tmUrl = `https://www.ticketmaster.nl/search?keyword=${naamEnc}`;
-            const tsUrl = `https://www.ticketswap.nl/search?q=${naamEnc}`;
-            
-            window.open(tmUrl, '_blank');
-            
-            setTimeout(() => {
-                window.open(tsUrl, '_blank');
-            }, 100);
-        }
     </script>
 </body>
 </html>
