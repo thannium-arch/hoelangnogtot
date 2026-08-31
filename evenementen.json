@@ -18,24 +18,6 @@
         "urgencyIcon": "fa-ticket"
     },
     {
-        "id": 2,
-        "naam": "Halloween",
-        "afbeelding": null,
-        "categorie": "feestdag",
-        "icon": "fa-ghost",
-        "vlag": "globe",
-        "locatie": "Wereldwijd",
-        "datum": "2026-10-31T00:00:00",
-        "url": "halloween.html",
-        "affiliateUrl": "",
-        "affiliateTekst": "",
-        "regio": null,
-        "presaleDatum": null,
-        "urgencyStartDatum": null,
-        "urgencyLabel": null,
-        "urgencyIcon": null
-    },
-    {
         "id": 7,
         "naam": "Koningsdag",
         "afbeelding": "https://wattedoenvandaag.nl/wp-content/uploads/2015/04/koningsdag-menigte.jpg",
