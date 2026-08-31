@@ -619,7 +619,7 @@
         </div>
     </div>
 
-    <!-- NIEUW: MODAL MENU VOOR TICKETKEUZE (CONCERTEN EN FESTIVALS) -->
+    <!-- MODAL MENU VOOR TICKETKEUZE (CONCERTEN EN FESTIVALS) -->
     <div id="ticketModal" class="modal-overlay">
         <div class="modal-box">
             <i class="fa-solid fa-xmark sluit-modal" onclick="sluitTicketModal()"></i>
@@ -627,6 +627,20 @@
             <div class="modal-acties">
                 <a href="#" id="btnTicketmaster" target="_blank" class="actie-btn btn-tm"><i class="fa-solid fa-ticket"></i> Zoek op Ticketmaster</a>
                 <a href="#" id="btnTicketswap" target="_blank" class="actie-btn btn-ts"><i class="fa-solid fa-arrows-rotate"></i> Zoek op TicketSwap</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NIEUW: MODAL MENU VOOR GAMING KEUZE -->
+    <div id="gamingModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-xmark sluit-modal" onclick="sluitGamingModal()"></i>
+            <h3 id="gamingModalTitel">Games Bestellen</h3>
+            <div class="modal-acties">
+                <a href="#" id="btnBol" target="_blank" class="actie-btn" style="background-color: #0000a4; color: white;"><i class="fa-solid fa-cart-shopping"></i> Bol.com</a>
+                <a href="#" id="btnCoolblue" target="_blank" class="actie-btn" style="background-color: #00bfff; color: white;"><i class="fa-solid fa-cart-shopping"></i> Coolblue</a>
+                <a href="#" id="btnAmazon" target="_blank" class="actie-btn" style="background-color: #ff9900; color: #111;"><i class="fa-brands fa-amazon"></i> Amazon.nl</a>
+                <a href="#" id="btnNedgame" target="_blank" class="actie-btn" style="background-color: #e3000f; color: white;"><i class="fa-solid fa-gamepad"></i> Nedgame</a>
             </div>
         </div>
     </div>
@@ -837,13 +851,10 @@
                     let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
 
                     if (ev.categorie === 'concert' || ev.categorie === 'festival') {
-                        // Voor concerten en festivals: Eén unieke knop die het Ticket Modal opent
                         knoppenHTML += `<button onclick="openTicketModal('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
                     } else {
-                        // Bepaal of de bestaande link puur een trailer is
                         let heeftTrailer = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer');
                         
-                        // 1. De originele databaselink (bijv. de Trailer, Pathé link of Officiële website)
                         if (ev.affiliateUrl) {
                             let btnIcon = heeftTrailer ? 'fa-play' : 'fa-link';
                             knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${btnIcon}"></i> ${ev.affiliateTekst || 'Bekijk Info'}</a>`;
@@ -851,8 +862,9 @@
                             knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Info</a>`;
                         }
 
-                        // 2. Fallback knop (alleen als er géén specifieke service link was, OF als de link een trailer was)
-                        if ((!ev.affiliateUrl && !ev.url) || heeftTrailer) {
+                        if (ev.categorie === 'gaming') {
+                            knoppenHTML += `<button onclick="openGamingModal('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-cart-shopping"></i> Kies Webshop</button>`;
+                        } else if ((!ev.affiliateUrl && !ev.url) || heeftTrailer) {
                             let koopLink = '';
                             let koopTekst = '';
                             let koopIcon = '';
@@ -861,7 +873,7 @@
                                 koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
                                 koopTekst = 'Zoek Tickets';
                                 koopIcon = 'fa-ticket';
-                            } else if (ev.categorie === 'gaming' || ev.categorie === 'inhaak') {
+                            } else if (ev.categorie === 'inhaak') {
                                 koopLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
                                 koopTekst = 'Zoek op Bol.com';
                                 koopIcon = 'fa-cart-shopping';
@@ -881,7 +893,6 @@
                         }
                     }
 
-                    // 3. Deel & Agenda knop (wordt altijd getoond)
                     knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
 
                     const datumObject = new Date(ev.datum);
@@ -1006,7 +1017,7 @@
         function sluitModal() { document.getElementById('actieModal').classList.remove('active'); }
         document.getElementById('actieModal').addEventListener('click', function(e) { if (e.target === this) sluitModal(); });
 
-        // TICKET KEUZE MODAL LOGICA (NIEUW)
+        // TICKET KEUZE MODAL LOGICA
         function openTicketModal(naamEnc) {
             const naam = decodeURIComponent(naamEnc);
             document.getElementById('ticketModalTitel').innerText = `Tickets: ${naam}`;
@@ -1026,6 +1037,32 @@
 
         document.getElementById('ticketModal').addEventListener('click', function(e) { 
             if (e.target === this) sluitTicketModal(); 
+        });
+
+        // NIEUW: GAMING KEUZE MODAL LOGICA
+        function openGamingModal(naamEnc) {
+            const naam = decodeURIComponent(naamEnc);
+            document.getElementById('gamingModalTitel').innerText = `Bestel: ${naam}`;
+            
+            const bolUrl = `https://www.bol.com/nl/nl/s/?searchtext=${naamEnc}`;
+            const coolblueUrl = `https://www.coolblue.nl/zoeken?query=${naamEnc}`;
+            const amazonUrl = `https://www.amazon.nl/s?k=${naamEnc}`;
+            const nedgameUrl = `https://www.nedgame.nl/zoek/Kopen/?q=${naamEnc}`;
+            
+            document.getElementById('btnBol').href = bolUrl;
+            document.getElementById('btnCoolblue').href = coolblueUrl;
+            document.getElementById('btnAmazon').href = amazonUrl;
+            document.getElementById('btnNedgame').href = nedgameUrl;
+            
+            document.getElementById('gamingModal').classList.add('active');
+        }
+
+        function sluitGamingModal() { 
+            document.getElementById('gamingModal').classList.remove('active'); 
+        }
+
+        document.getElementById('gamingModal').addEventListener('click', function(e) { 
+            if (e.target === this) sluitGamingModal(); 
         });
 
         // DEEL FUNCTIES
