@@ -18,24 +18,6 @@
         "urgencyIcon": "fa-ticket"
     },
     {
-        "id": 2,
-        "naam": "Halloween",
-        "afbeelding": null,
-        "categorie": "feestdag",
-        "icon": "fa-ghost",
-        "vlag": "globe",
-        "locatie": "Wereldwijd",
-        "datum": "2026-10-31T00:00:00",
-        "url": "halloween.html",
-        "affiliateUrl": "",
-        "affiliateTekst": "",
-        "regio": null,
-        "presaleDatum": null,
-        "urgencyStartDatum": null,
-        "urgencyLabel": null,
-        "urgencyIcon": null
-    },
-    {
         "id": 7,
         "naam": "Koningsdag",
         "afbeelding": "https://wattedoenvandaag.nl/wp-content/uploads/2015/04/koningsdag-menigte.jpg",
@@ -992,7 +974,7 @@
     {
         "id": 74,
         "naam": "Start Herfst 2027",
-        "afbeelding": null,
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1698001750831-dc8331d76fd8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXV0dW1ufGVufDB8fDB8fHww",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1064,7 +1046,7 @@
     {
         "id": 78,
         "naam": "Start Lente 2028",
-        "afbeelding": null,
+        "afbeelding": "https://www.8newsnow.com/wp-content/uploads/sites/59/2022/03/GettyImages-1130636356.jpg?w=2560&h=1440&crop=1",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1100,7 +1082,7 @@
     {
         "id": 80,
         "naam": "Start Herfst 2028",
-        "afbeelding": null,
+        "afbeelding": "https://theoutdoorguide.co.uk/wp-content/uploads/2019/10/autumn-get-outside-kids-pic-1.jpg",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1172,7 +1154,7 @@
     {
         "id": 84,
         "naam": "Start Lente 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1208,7 +1190,7 @@
     {
         "id": 86,
         "naam": "Start Herfst 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.stockcake.com/public/8/3/b/83be82a0-5512-4e30-90bc-3d8df165c8e3_large/autumn-leaves-glow-stockcake.jpg",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1280,7 +1262,7 @@
     {
         "id": 90,
         "naam": "Start Lente 2030",
-        "afbeelding": null,
+        "afbeelding": "https://www.8newsnow.com/wp-content/uploads/sites/59/2022/03/GettyImages-1130636356.jpg?w=2560&h=1440&crop=1",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1316,7 +1298,7 @@
     {
         "id": 92,
         "naam": "Start Herfst 2030",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1388,7 +1370,7 @@
     {
         "id": 96,
         "naam": "Start Lente 2031",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1424,7 +1406,7 @@
     {
         "id": 98,
         "naam": "Start Herfst 2031",
-        "afbeelding": null,
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1698001750831-dc8331d76fd8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXV0dW1ufGVufDB8fDB8fHww",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1496,7 +1478,7 @@
     {
         "id": 102,
         "naam": "Start Lente 2032",
-        "afbeelding": null,
+        "afbeelding": "https://www.8newsnow.com/wp-content/uploads/sites/59/2022/03/GettyImages-1130636356.jpg?w=2560&h=1440&crop=1",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1532,7 +1514,7 @@
     {
         "id": 104,
         "naam": "Start Herfst 2032",
-        "afbeelding": null,
+        "afbeelding": "https://theoutdoorguide.co.uk/wp-content/uploads/2019/10/autumn-get-outside-kids-pic-1.jpg",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1604,7 +1586,7 @@
     {
         "id": 108,
         "naam": "Start Lente 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1640,7 +1622,7 @@
     {
         "id": 110,
         "naam": "Start Herfst 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.stockcake.com/public/8/3/b/83be82a0-5512-4e30-90bc-3d8df165c8e3_large/autumn-leaves-glow-stockcake.jpg",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1712,7 +1694,7 @@
     {
         "id": 114,
         "naam": "Start Lente 2034",
-        "afbeelding": null,
+        "afbeelding": "https://www.8newsnow.com/wp-content/uploads/sites/59/2022/03/GettyImages-1130636356.jpg?w=2560&h=1440&crop=1",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1748,7 +1730,7 @@
     {
         "id": 116,
         "naam": "Start Herfst 2034",
-        "afbeelding": null,
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1698001750831-dc8331d76fd8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXV0dW1ufGVufDB8fDB8fHww",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -1820,7 +1802,7 @@
     {
         "id": 120,
         "naam": "Start Lente 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -1856,7 +1838,7 @@
     {
         "id": 122,
         "naam": "Start Herfst 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.stockcake.com/public/8/3/b/83be82a0-5512-4e30-90bc-3d8df165c8e3_large/autumn-leaves-glow-stockcake.jpg",
         "categorie": "seizoen",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -5678,7 +5660,7 @@
         "vlag": "nl",
         "locatie": "Grave",
         "datum": "2026-11-14T12:00:00",
-        "url": "#",
+        "url": "https://www.hoelangnogtot.nl/intocht2026.html",
         "affiliateUrl": "https://www.bol.com/nl/nl/m/sinterklaas/",
         "affiliateTekst": "Bestel Schoencadeautjes",
         "regio": "Heel Nederland",
@@ -5696,7 +5678,7 @@
         "vlag": "nl",
         "locatie": "Nederland",
         "datum": "2026-12-05T18:00:00",
-        "url": "#",
+        "url": "https://www.hoelangnogtot.nl/pakjesavond2026.html",
         "affiliateUrl": "https://www.bol.com/nl/nl/m/sinterklaas/",
         "affiliateTekst": "Scoor Sinterklaas Cadeaus",
         "regio": "Heel Nederland",
@@ -7328,7 +7310,7 @@
     {
         "id": 433,
         "naam": "Halloween 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.kaartje2go.nl/k2go-images-fra/549xautox85/cms/halloween-ideeen.6cf5cd9daa3928ce.jpg",
         "categorie": "cultuur",
         "icon": "fa-ghost",
         "vlag": "globe",
@@ -7346,7 +7328,7 @@
     {
         "id": 434,
         "naam": "Halloween 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.kaartje2go.nl/k2go-images-fra/549xautox85/cms/halloween-ideeen.6cf5cd9daa3928ce.jpg",
         "categorie": "cultuur",
         "icon": "fa-ghost",
         "vlag": "globe",
@@ -7364,7 +7346,7 @@
     {
         "id": 435,
         "naam": "Halloween 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.kaartje2go.nl/k2go-images-fra/549xautox85/cms/halloween-ideeen.6cf5cd9daa3928ce.jpg",
         "categorie": "cultuur",
         "icon": "fa-ghost",
         "vlag": "globe",
@@ -7382,7 +7364,7 @@
     {
         "id": 436,
         "naam": "Eerste Kerstdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://bloomevents.uk/wp-content/uploads/2025/12/640x431.353.YTU02613a2514bb7b8.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -7418,7 +7400,7 @@
     {
         "id": 438,
         "naam": "Eerste Kerstdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://bloomevents.uk/wp-content/uploads/2025/12/640x431.353.YTU02613a2514bb7b8.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -7454,7 +7436,7 @@
     {
         "id": 440,
         "naam": "Eerste Kerstdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://bloomevents.uk/wp-content/uploads/2025/12/640x431.353.YTU02613a2514bb7b8.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -7976,7 +7958,7 @@
     {
         "id": 469,
         "naam": "Holi 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.travelandleisure.com/thmb/OGqKU3DtKB-TmF7OWZKtP58jy88=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bhaktapur-nepal-holi-HOLI0219-b713df59f115452baa1374efb3e59ff2.jpg",
         "categorie": "cultuur",
         "icon": "fa-palette",
         "vlag": "globe",
@@ -7992,27 +7974,9 @@
         "urgencyIcon": "fa-ticket"
     },
     {
-        "id": 470,
-        "naam": "Songkran 2026",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-water",
-        "vlag": "globe",
-        "locatie": "Thailand",
-        "datum": "2026-04-13T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Songkran+2026",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2026-01-13T10:00:00",
-        "urgencyStartDatum": "2026-03-30T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
         "id": 471,
         "naam": "Día de los Muertos 2026",
-        "afbeelding": "",
+        "afbeelding": "https://afar.brightspotcdn.com/dims4/default/8935f17/2147483647/strip/true/crop/3000x2001+0+0/resize/800x534!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Ff0%2F59%2Fda3043fa4d04bcc71b7c92de07a1%2Fdia-de-los-muertos-san-antonio.jpg",
         "categorie": "cultuur",
         "icon": "fa-skull-crossbones",
         "vlag": "globe",
@@ -8030,7 +7994,7 @@
     {
         "id": 472,
         "naam": "Carnevale di Venezia 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Venice_Carnival_-_Masked_Lovers_%282010%29.jpg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "globe",
@@ -8048,7 +8012,7 @@
     {
         "id": 473,
         "naam": "San Fermín 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzVTW4taVOl-hLHNYvNZsK8P36C1ephMYVhaQb0qgkrVi4FxD6PKjX_yt&s=10",
         "categorie": "cultuur",
         "icon": "fa-bullhorn",
         "vlag": "globe",
@@ -8060,42 +8024,6 @@
         "regio": "Wereldwijd",
         "presaleDatum": "2026-04-07T10:00:00",
         "urgencyStartDatum": "2026-06-22T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 474,
-        "naam": "Yi Peng & Loy Krathong 2026",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-lightbulb",
-        "vlag": "globe",
-        "locatie": "Chiang Mai, Thailand",
-        "datum": "2026-11-15T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Yi+Peng+&+Loy+Krathong+2026",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2026-08-17T10:00:00",
-        "urgencyStartDatum": "2026-11-01T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 475,
-        "naam": "Harbin Ice Festival 2026",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-snowflake",
-        "vlag": "globe",
-        "locatie": "China",
-        "datum": "2026-01-05T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Harbin+Ice+Festival+2026",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2025-10-07T10:00:00",
-        "urgencyStartDatum": "2025-12-22T00:00:00",
         "urgencyLabel": "Scoor je tickets nu!",
         "urgencyIcon": "fa-ticket"
     },
@@ -8138,7 +8066,7 @@
     {
         "id": 478,
         "naam": "Albuquerque Balloon Fiesta 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.fiftygrande.com/wp-content/uploads/2023/09/Balloons-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-hot-tub",
         "vlag": "globe",
@@ -8624,7 +8552,7 @@
     {
         "id": 505,
         "naam": "Holi 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.travelandleisure.com/thmb/OGqKU3DtKB-TmF7OWZKtP58jy88=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bhaktapur-nepal-holi-HOLI0219-b713df59f115452baa1374efb3e59ff2.jpg",
         "categorie": "cultuur",
         "icon": "fa-palette",
         "vlag": "globe",
@@ -8640,27 +8568,9 @@
         "urgencyIcon": "fa-ticket"
     },
     {
-        "id": 506,
-        "naam": "Songkran 2027",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-water",
-        "vlag": "globe",
-        "locatie": "Thailand",
-        "datum": "2027-04-13T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Songkran+2027",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2027-01-13T10:00:00",
-        "urgencyStartDatum": "2027-03-30T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
         "id": 507,
         "naam": "Día de los Muertos 2027",
-        "afbeelding": "",
+        "afbeelding": "https://afar.brightspotcdn.com/dims4/default/8935f17/2147483647/strip/true/crop/3000x2001+0+0/resize/800x534!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Ff0%2F59%2Fda3043fa4d04bcc71b7c92de07a1%2Fdia-de-los-muertos-san-antonio.jpg",
         "categorie": "cultuur",
         "icon": "fa-skull-crossbones",
         "vlag": "globe",
@@ -8678,7 +8588,7 @@
     {
         "id": 508,
         "naam": "Carnevale di Venezia 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Venice_Carnival_-_Masked_Lovers_%282010%29.jpg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "globe",
@@ -8696,7 +8606,7 @@
     {
         "id": 509,
         "naam": "San Fermín 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzVTW4taVOl-hLHNYvNZsK8P36C1ephMYVhaQb0qgkrVi4FxD6PKjX_yt&s=10",
         "categorie": "cultuur",
         "icon": "fa-bullhorn",
         "vlag": "globe",
@@ -8708,42 +8618,6 @@
         "regio": "Wereldwijd",
         "presaleDatum": "2027-04-07T10:00:00",
         "urgencyStartDatum": "2027-06-22T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 510,
-        "naam": "Yi Peng & Loy Krathong 2027",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-lightbulb",
-        "vlag": "globe",
-        "locatie": "Chiang Mai, Thailand",
-        "datum": "2027-11-15T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Yi+Peng+&+Loy+Krathong+2027",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2027-08-17T10:00:00",
-        "urgencyStartDatum": "2027-11-01T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 511,
-        "naam": "Harbin Ice Festival 2027",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-snowflake",
-        "vlag": "globe",
-        "locatie": "China",
-        "datum": "2027-01-05T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Harbin+Ice+Festival+2027",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2026-10-07T10:00:00",
-        "urgencyStartDatum": "2026-12-22T00:00:00",
         "urgencyLabel": "Scoor je tickets nu!",
         "urgencyIcon": "fa-ticket"
     },
@@ -8786,7 +8660,7 @@
     {
         "id": 514,
         "naam": "Albuquerque Balloon Fiesta 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.fiftygrande.com/wp-content/uploads/2023/09/Balloons-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-hot-tub",
         "vlag": "globe",
@@ -9290,7 +9164,7 @@
     {
         "id": 542,
         "naam": "Holi 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.travelandleisure.com/thmb/OGqKU3DtKB-TmF7OWZKtP58jy88=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bhaktapur-nepal-holi-HOLI0219-b713df59f115452baa1374efb3e59ff2.jpg",
         "categorie": "cultuur",
         "icon": "fa-palette",
         "vlag": "globe",
@@ -9306,27 +9180,9 @@
         "urgencyIcon": "fa-ticket"
     },
     {
-        "id": 543,
-        "naam": "Songkran 2028",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-water",
-        "vlag": "globe",
-        "locatie": "Thailand",
-        "datum": "2028-04-13T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Songkran+2028",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2028-01-14T10:00:00",
-        "urgencyStartDatum": "2028-03-30T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
         "id": 544,
         "naam": "Día de los Muertos 2028",
-        "afbeelding": "",
+        "afbeelding": "https://afar.brightspotcdn.com/dims4/default/8935f17/2147483647/strip/true/crop/3000x2001+0+0/resize/800x534!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Ff0%2F59%2Fda3043fa4d04bcc71b7c92de07a1%2Fdia-de-los-muertos-san-antonio.jpg",
         "categorie": "cultuur",
         "icon": "fa-skull-crossbones",
         "vlag": "globe",
@@ -9344,7 +9200,7 @@
     {
         "id": 545,
         "naam": "Carnevale di Venezia 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Venice_Carnival_-_Masked_Lovers_%282010%29.jpg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "globe",
@@ -9362,7 +9218,7 @@
     {
         "id": 546,
         "naam": "San Fermín 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzVTW4taVOl-hLHNYvNZsK8P36C1ephMYVhaQb0qgkrVi4FxD6PKjX_yt&s=10",
         "categorie": "cultuur",
         "icon": "fa-bullhorn",
         "vlag": "globe",
@@ -9374,42 +9230,6 @@
         "regio": "Wereldwijd",
         "presaleDatum": "2028-04-07T10:00:00",
         "urgencyStartDatum": "2028-06-22T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 547,
-        "naam": "Yi Peng & Loy Krathong 2028",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-lightbulb",
-        "vlag": "globe",
-        "locatie": "Chiang Mai, Thailand",
-        "datum": "2028-11-15T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Yi+Peng+&+Loy+Krathong+2028",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2028-08-17T10:00:00",
-        "urgencyStartDatum": "2028-11-01T00:00:00",
-        "urgencyLabel": "Scoor je tickets nu!",
-        "urgencyIcon": "fa-ticket"
-    },
-    {
-        "id": 548,
-        "naam": "Harbin Ice Festival 2028",
-        "afbeelding": "",
-        "categorie": "cultuur",
-        "icon": "fa-snowflake",
-        "vlag": "globe",
-        "locatie": "China",
-        "datum": "2028-01-05T10:00:00",
-        "url": "#",
-        "affiliateUrl": "https://www.ticketswap.nl/search?query=Harbin+Ice+Festival+2028",
-        "affiliateTekst": "Zoek Tickets",
-        "regio": "Wereldwijd",
-        "presaleDatum": "2027-10-07T10:00:00",
-        "urgencyStartDatum": "2027-12-22T00:00:00",
         "urgencyLabel": "Scoor je tickets nu!",
         "urgencyIcon": "fa-ticket"
     },
@@ -9452,7 +9272,7 @@
     {
         "id": 551,
         "naam": "Albuquerque Balloon Fiesta 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.fiftygrande.com/wp-content/uploads/2023/09/Balloons-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-hot-tub",
         "vlag": "globe",
@@ -9488,7 +9308,7 @@
     {
         "id": 553,
         "naam": "St. Patrick's Day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://i.natgeofe.com/k/21fa63c9-4b61-4ae2-8ea6-b889aa529708/st-patricks-day-textimage_6_3x2.jpg",
         "categorie": "cultuur",
         "icon": "fa-clover",
         "vlag": "ie",
@@ -9524,7 +9344,7 @@
     {
         "id": 555,
         "naam": "St. Patrick's Day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://i.natgeofe.com/k/21fa63c9-4b61-4ae2-8ea6-b889aa529708/st-patricks-day-textimage_6_3x2.jpg",
         "categorie": "cultuur",
         "icon": "fa-clover",
         "vlag": "ie",
@@ -9560,7 +9380,7 @@
     {
         "id": 557,
         "naam": "St. Patrick's Day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://i.natgeofe.com/k/21fa63c9-4b61-4ae2-8ea6-b889aa529708/st-patricks-day-textimage_6_3x2.jpg",
         "categorie": "cultuur",
         "icon": "fa-clover",
         "vlag": "ie",
@@ -9614,7 +9434,7 @@
     {
         "id": 560,
         "naam": "Driekoningen 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aKZtd6Afi1luX5wOjx53qgQNUTnTMhpSxR4nvg3Zvo9S8V71D8zgFUZT&s=10",
         "categorie": "cultuur",
         "icon": "fa-crown",
         "vlag": "nl",
@@ -9632,7 +9452,7 @@
     {
         "id": 561,
         "naam": "Dag van de Arbeid 2026",
-        "afbeelding": "",
+        "afbeelding": "https://isgeschiedenis.nl/sites/isgeschiedenis.nl/files/styles/detailpag/public/785px-05-01-1949_06119_1_mei_bijeenkomst_cpn_5398298133.jpg",
         "categorie": "feestdag",
         "icon": "fa-hammer",
         "vlag": "nl",
@@ -9650,7 +9470,7 @@
     {
         "id": 562,
         "naam": "Dodenherkenking 2026",
-        "afbeelding": "",
+        "afbeelding": "https://image.parool.nl/243377748/width/2480/op-de-herdenking-kwamen-vorig-jaar-slechts-zo-n-4000-mensen",
         "categorie": "cultuur",
         "icon": "fa-dove",
         "vlag": "nl",
@@ -9668,7 +9488,7 @@
     {
         "id": 563,
         "naam": "Bevrijdingsdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
         "categorie": "feestdag",
         "icon": "fa-flag",
         "vlag": "nl",
@@ -9722,7 +9542,7 @@
     {
         "id": 566,
         "naam": "Independence Day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://ebc.nl/wp-content/uploads/Wat-viert-Amerika-op-Independence-Day.png",
         "categorie": "cultuur",
         "icon": "fa-flag-usa",
         "vlag": "nl",
@@ -9740,7 +9560,7 @@
     {
         "id": 567,
         "naam": "Sint Maarten 2026",
-        "afbeelding": "",
+        "afbeelding": "https://cdn.maxvandaag.nl/2025/11/sint-maarten-Shutterstock_2513171609-1200x667-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-lightbulb",
         "vlag": "nl",
@@ -9758,7 +9578,7 @@
     {
         "id": 568,
         "naam": "Elfde van de Elfde 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9aGkL5S4xTxYi73GPg4AqfKLN19pDxkxdQEZh76CT44rsn_fGPl59aDy&s=10",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -9776,7 +9596,7 @@
     {
         "id": 569,
         "naam": "Start Carnaval 2026",
-        "afbeelding": "",
+        "afbeelding": "https://redactie.rtl.nl/sites/default/files/content/images/2014/02/26/carnavalhits_0.jpg?itok=WKOQUmNO&width=1920&height=1440&impolicy=semi_dynamic",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -9812,7 +9632,7 @@
     {
         "id": 571,
         "naam": "Aswoensdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg/330px-US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg?utm_source=nl.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -9848,7 +9668,7 @@
     {
         "id": 573,
         "naam": "Goede Vrijdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://image.kidsweek.nl/228933391/width/2048/sterfdag-jezus-wat-is-er-goed-aan-goede-vrijdag",
         "categorie": "feestdag",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -9866,7 +9686,7 @@
     {
         "id": 574,
         "naam": "Spaghetti Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.allrecipes.com/thmb/DZLFEwAZT2vRyo9-XjzUoALJFyI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19356-spaghetti-italian-VAT-Beauty-4x3-af05b7565e014c16b1c5f86d45a18738.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -9884,7 +9704,7 @@
     {
         "id": 575,
         "naam": "Aardbeiendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.verseoogst.nl/wp-content/uploads/2025/02/detail_aardbeien.png",
         "categorie": "inhaak",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -9902,7 +9722,7 @@
     {
         "id": 576,
         "naam": "Popcorndag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-film",
         "vlag": "nl",
@@ -9920,7 +9740,7 @@
     {
         "id": 577,
         "naam": "Pindakaasdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.promovendum.nl/sites/default/files/styles/large/public/2020-07/pindakaas-gezond2.jpg?itok=i2pTzZhn",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -9938,7 +9758,7 @@
     {
         "id": 578,
         "naam": "Croissant Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/330px-Croissant-Petr_Kratochvil.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -9956,7 +9776,7 @@
     {
         "id": 579,
         "naam": "Carrot Cake Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWUwEsWqOZ7UsvZD_5zzClt3vvMsu18EUeSCnAR-WAOEGAcjXzlHJb0e4&s=10",
         "categorie": "inhaak",
         "icon": "fa-cake-candles",
         "vlag": "nl",
@@ -9974,7 +9794,7 @@
     {
         "id": 580,
         "naam": "Dag van de frikandel 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Patat_speciaal_and_frikandel_speciaal.jpg/250px-Patat_speciaal_and_frikandel_speciaal.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -10010,7 +9830,7 @@
     {
         "id": 582,
         "naam": "Frozen Yoghurt Day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.giallozafferano.com/images/303-30390/frozen-yogurt_1200x800.jpg",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -10046,7 +9866,7 @@
     {
         "id": 584,
         "naam": "Pizzadag (Nationaal) 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -10064,7 +9884,7 @@
     {
         "id": 585,
         "naam": "Bananenbrood Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.stetted.com/wp-content/uploads/2023/01/Banana-Bread-Photo.jpg",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -10100,7 +9920,7 @@
     {
         "id": 587,
         "naam": "Dag van de Cornflakes 2026",
-        "afbeelding": "",
+        "afbeelding": "https://i.guim.co.uk/img/media/a09212dd0b02ca1748a3c98af8dbc500c6ad3215/0_217_6569_3944/master/6569.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2ce677c68d6e61bb6b4ccc9431a567ac",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -10154,7 +9974,7 @@
     {
         "id": 590,
         "naam": "Eet wat je wilt Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://thumbor.pijper.io/y_B6Fsek8OuhsSmdVTl9hOsfWTU=/1200x675/top/https%3A%2F%2Fcdn.pijper.io%2F2021%2F05%2FpUT7YixacQtzfa1620721372.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -10172,7 +9992,7 @@
     {
         "id": 591,
         "naam": "Pizza Party Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -10208,7 +10028,7 @@
     {
         "id": 593,
         "naam": "Rocky Road Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.thekiwicountrygirl.com/wp-content/uploads/2025/11/Rocky-Road-7-1.jpg",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -10226,7 +10046,7 @@
     {
         "id": 594,
         "naam": "Dag van de Donut 2026",
-        "afbeelding": "",
+        "afbeelding": "https://funcakes.com/content/uploads/2020/08/Donut-960x960-c-default.jpg",
         "categorie": "inhaak",
         "icon": "fa-circle-notch",
         "vlag": "nl",
@@ -10244,7 +10064,7 @@
     {
         "id": 595,
         "naam": "Apfelstrudel Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/4/40/Strudel.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-apple-whole",
         "vlag": "nl",
@@ -10280,7 +10100,7 @@
     {
         "id": 597,
         "naam": "Fried Chicken Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://leitesculinaria.com/wp-content/uploads/2024/04/batter-fried-chicken-1200.jpg",
         "categorie": "inhaak",
         "icon": "fa-drumstick-bite",
         "vlag": "nl",
@@ -10298,7 +10118,7 @@
     {
         "id": 598,
         "naam": "Dag van de Franse Frietjes 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.recipetineats.com/tachyon/2022/09/Crispy-Fries_8.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -10334,7 +10154,7 @@
     {
         "id": 600,
         "naam": "Dag van de Lasagne 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.safefood.net/getmedia/acad61f4-bd51-4880-8005-cd46a718e8b5/lasagne.jpg?width=1200&height=800&ext=.jpg",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -10532,7 +10352,7 @@
     {
         "id": 611,
         "naam": "Badeenddag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Rubber_duckies_So_many_ducks.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -10550,7 +10370,7 @@
     {
         "id": 612,
         "naam": "International LEGO Day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://letsgowiththechildren.co.uk/wp-content/uploads/2025/01/LGWTC-Image-915x515-2025-01-06T122921.396.jpg",
         "categorie": "inhaak",
         "icon": "fa-cubes",
         "vlag": "nl",
@@ -10568,7 +10388,7 @@
     {
         "id": 613,
         "naam": "Change your password day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdm7HR1ThlXOaPAtOQYmvwUYedGtBqcv-WN2p0_0FK2wgywvicGTVeSg&s=10",
         "categorie": "inhaak",
         "icon": "fa-lock",
         "vlag": "nl",
@@ -10622,7 +10442,7 @@
     {
         "id": 616,
         "naam": "Pokémondag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://royalcards.nl/wp-content/uploads/2016/09/landscape-1456483171-pokemon2.jpg",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -10676,7 +10496,7 @@
     {
         "id": 619,
         "naam": "Barbie dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Barbie_Logo.svg/1280px-Barbie_Logo.svg.png?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-person",
         "vlag": "nl",
@@ -10712,7 +10532,7 @@
     {
         "id": 621,
         "naam": "Pi-dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pi-symbol.svg/1280px-Pi-symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-calculator",
         "vlag": "nl",
@@ -10730,7 +10550,7 @@
     {
         "id": 622,
         "naam": "Dag van de Thuiswerker 2026",
-        "afbeelding": "",
+        "afbeelding": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fit/watermark:-%20image/width:3840/height:2560/plain/https://s3-newsifier.ams3.digitaloceanspaces.com/dutchcowboys-nl/images/2025-11/thuiswerken-voordelen-nadelen.jpg@webp",
         "categorie": "inhaak",
         "icon": "fa-laptop",
         "vlag": "nl",
@@ -10748,7 +10568,7 @@
     {
         "id": 623,
         "naam": "Dag van de Muziek 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.fijnedagvan.nl/assets/img/dagen/256.jpg",
         "categorie": "inhaak",
         "icon": "fa-music",
         "vlag": "nl",
@@ -10766,7 +10586,7 @@
     {
         "id": 624,
         "naam": "Dag van de Grap 2026",
-        "afbeelding": "",
+        "afbeelding": "https://yorbodyfysiotherapie.nl/wp-content/uploads/2018/08/19062807_l-e1533884282396-1200x480.jpg",
         "categorie": "inhaak",
         "icon": "fa-face-laugh",
         "vlag": "nl",
@@ -10802,7 +10622,7 @@
     {
         "id": 626,
         "naam": "Dierendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://storage.pubble.nl/f55ba9dd/content/2024/10/82480e05-9869-4de7-a9b1-f22023f651fc_thumb1920.jpg",
         "categorie": "inhaak",
         "icon": "fa-paw",
         "vlag": "nl",
@@ -10838,7 +10658,7 @@
     {
         "id": 628,
         "naam": "Blue Monday 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400&q=80",
         "categorie": "inhaak",
         "icon": "fa-face-sad-cry",
         "vlag": "nl",
@@ -10892,7 +10712,7 @@
     {
         "id": 631,
         "naam": "Cyber Monday 2026",
-        "afbeelding": "",
+        "afbeelding": "https://static.fnac-static.com/multimedia/Images/FD/Comete/125419/CCP_IMG_600x400/1636267.jpg",
         "categorie": "inhaak",
         "icon": "fa-laptop-code",
         "vlag": "nl",
@@ -10910,13 +10730,13 @@
     {
         "id": 632,
         "naam": "Prinsjesdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQ_1cy1R0YHE37O3GHZfwBb1uGaHfzIs5h_FneGhUpA&s=10",
         "categorie": "cultuur",
         "icon": "fa-horse",
         "vlag": "nl",
         "locatie": "Heel Nederland",
         "datum": "2026-09-15T10:00:00",
-        "url": "#",
+        "url": "https://www.hoelangnogtot.nl/prinsjesdag2026.html",
         "affiliateUrl": "",
         "affiliateTekst": "",
         "regio": "Heel Nederland",
@@ -10928,7 +10748,7 @@
     {
         "id": 633,
         "naam": "Start Eurosonic Noorderslag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://esns.nl/media/images/ESNS23_logo_blue_.original.png",
         "categorie": "festival",
         "icon": "fa-guitar",
         "vlag": "nl",
@@ -10964,7 +10784,7 @@
     {
         "id": 635,
         "naam": "Pride Amsterdam 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1fI_P4LtoApkRs42HWIhTdTrXEtVcTzV35OUl6hpPAC2jUa1Xz21-K4&s=10",
         "categorie": "festival",
         "icon": "fa-rainbow",
         "vlag": "nl",
@@ -10982,7 +10802,7 @@
     {
         "id": 636,
         "naam": "Start Sneekweek 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sneekweeklogo.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "festival",
         "icon": "fa-sailboat",
         "vlag": "nl",
@@ -11000,7 +10820,7 @@
     {
         "id": 637,
         "naam": "Start Ramadan 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ramadan_montage_%28cropped%29.jpg/960px-Ramadan_montage_%28cropped%29.jpg?utm_source=gpe.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-moon",
         "vlag": "nl",
@@ -11018,7 +10838,7 @@
     {
         "id": 638,
         "naam": "Chinees Nieuwjaar 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.dunc.nl/wp-content/uploads/2025/01/Nieuws_CNY-2025.jpg",
         "categorie": "cultuur",
         "icon": "fa-dragon",
         "vlag": "nl",
@@ -11108,7 +10928,7 @@
     {
         "id": 643,
         "naam": "Driekoningen 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aKZtd6Afi1luX5wOjx53qgQNUTnTMhpSxR4nvg3Zvo9S8V71D8zgFUZT&s=10",
         "categorie": "cultuur",
         "icon": "fa-crown",
         "vlag": "nl",
@@ -11126,7 +10946,7 @@
     {
         "id": 644,
         "naam": "Dag van de Arbeid 2027",
-        "afbeelding": "",
+        "afbeelding": "https://isgeschiedenis.nl/sites/isgeschiedenis.nl/files/styles/detailpag/public/785px-05-01-1949_06119_1_mei_bijeenkomst_cpn_5398298133.jpg",
         "categorie": "feestdag",
         "icon": "fa-hammer",
         "vlag": "nl",
@@ -11144,7 +10964,7 @@
     {
         "id": 645,
         "naam": "Dodenherkenking 2027",
-        "afbeelding": "",
+        "afbeelding": "https://image.parool.nl/243377748/width/2480/op-de-herdenking-kwamen-vorig-jaar-slechts-zo-n-4000-mensen",
         "categorie": "cultuur",
         "icon": "fa-dove",
         "vlag": "nl",
@@ -11162,7 +10982,7 @@
     {
         "id": 646,
         "naam": "Bevrijdingsdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
         "categorie": "feestdag",
         "icon": "fa-flag",
         "vlag": "nl",
@@ -11216,7 +11036,7 @@
     {
         "id": 649,
         "naam": "Independence Day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://ebc.nl/wp-content/uploads/Wat-viert-Amerika-op-Independence-Day.png",
         "categorie": "cultuur",
         "icon": "fa-flag-usa",
         "vlag": "nl",
@@ -11234,7 +11054,7 @@
     {
         "id": 650,
         "naam": "Sint Maarten 2027",
-        "afbeelding": "",
+        "afbeelding": "https://cdn.maxvandaag.nl/2025/11/sint-maarten-Shutterstock_2513171609-1200x667-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-lightbulb",
         "vlag": "nl",
@@ -11252,7 +11072,7 @@
     {
         "id": 651,
         "naam": "Elfde van de Elfde 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9aGkL5S4xTxYi73GPg4AqfKLN19pDxkxdQEZh76CT44rsn_fGPl59aDy&s=10",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -11270,7 +11090,7 @@
     {
         "id": 652,
         "naam": "Start Carnaval 2027",
-        "afbeelding": "",
+        "afbeelding": "https://redactie.rtl.nl/sites/default/files/content/images/2014/02/26/carnavalhits_0.jpg?itok=WKOQUmNO&width=1920&height=1440&impolicy=semi_dynamic",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -11306,7 +11126,7 @@
     {
         "id": 654,
         "naam": "Aswoensdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg/330px-US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg?utm_source=nl.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -11342,7 +11162,7 @@
     {
         "id": 656,
         "naam": "Goede Vrijdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://image.kidsweek.nl/228933391/width/2048/sterfdag-jezus-wat-is-er-goed-aan-goede-vrijdag",
         "categorie": "feestdag",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -11360,7 +11180,7 @@
     {
         "id": 657,
         "naam": "Spaghetti Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.allrecipes.com/thmb/DZLFEwAZT2vRyo9-XjzUoALJFyI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19356-spaghetti-italian-VAT-Beauty-4x3-af05b7565e014c16b1c5f86d45a18738.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -11378,7 +11198,7 @@
     {
         "id": 658,
         "naam": "Aardbeiendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.verseoogst.nl/wp-content/uploads/2025/02/detail_aardbeien.png",
         "categorie": "inhaak",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -11396,7 +11216,7 @@
     {
         "id": 659,
         "naam": "Popcorndag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-film",
         "vlag": "nl",
@@ -11414,7 +11234,7 @@
     {
         "id": 660,
         "naam": "Pindakaasdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.promovendum.nl/sites/default/files/styles/large/public/2020-07/pindakaas-gezond2.jpg?itok=i2pTzZhn",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -11432,7 +11252,7 @@
     {
         "id": 661,
         "naam": "Croissant Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/330px-Croissant-Petr_Kratochvil.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -11450,7 +11270,7 @@
     {
         "id": 662,
         "naam": "Carrot Cake Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWUwEsWqOZ7UsvZD_5zzClt3vvMsu18EUeSCnAR-WAOEGAcjXzlHJb0e4&s=10",
         "categorie": "inhaak",
         "icon": "fa-cake-candles",
         "vlag": "nl",
@@ -11468,7 +11288,7 @@
     {
         "id": 663,
         "naam": "Dag van de frikandel 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Patat_speciaal_and_frikandel_speciaal.jpg/250px-Patat_speciaal_and_frikandel_speciaal.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -11504,7 +11324,7 @@
     {
         "id": 665,
         "naam": "Frozen Yoghurt Day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.giallozafferano.com/images/303-30390/frozen-yogurt_1200x800.jpg",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -11540,7 +11360,7 @@
     {
         "id": 667,
         "naam": "Pizzadag (Nationaal) 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -11558,7 +11378,7 @@
     {
         "id": 668,
         "naam": "Bananenbrood Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.stetted.com/wp-content/uploads/2023/01/Banana-Bread-Photo.jpg",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -11594,7 +11414,7 @@
     {
         "id": 670,
         "naam": "Dag van de Cornflakes 2027",
-        "afbeelding": "",
+        "afbeelding": "https://i.guim.co.uk/img/media/a09212dd0b02ca1748a3c98af8dbc500c6ad3215/0_217_6569_3944/master/6569.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2ce677c68d6e61bb6b4ccc9431a567ac",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -11648,7 +11468,7 @@
     {
         "id": 673,
         "naam": "Eet wat je wilt Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://thumbor.pijper.io/y_B6Fsek8OuhsSmdVTl9hOsfWTU=/1200x675/top/https%3A%2F%2Fcdn.pijper.io%2F2021%2F05%2FpUT7YixacQtzfa1620721372.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -11666,7 +11486,7 @@
     {
         "id": 674,
         "naam": "Pizza Party Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -11702,7 +11522,7 @@
     {
         "id": 676,
         "naam": "Rocky Road Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.thekiwicountrygirl.com/wp-content/uploads/2025/11/Rocky-Road-7-1.jpg",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -11720,7 +11540,7 @@
     {
         "id": 677,
         "naam": "Dag van de Donut 2027",
-        "afbeelding": "",
+        "afbeelding": "https://funcakes.com/content/uploads/2020/08/Donut-960x960-c-default.jpg",
         "categorie": "inhaak",
         "icon": "fa-circle-notch",
         "vlag": "nl",
@@ -11738,7 +11558,7 @@
     {
         "id": 678,
         "naam": "Apfelstrudel Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/4/40/Strudel.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-apple-whole",
         "vlag": "nl",
@@ -11774,7 +11594,7 @@
     {
         "id": 680,
         "naam": "Fried Chicken Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://leitesculinaria.com/wp-content/uploads/2024/04/batter-fried-chicken-1200.jpg",
         "categorie": "inhaak",
         "icon": "fa-drumstick-bite",
         "vlag": "nl",
@@ -11792,7 +11612,7 @@
     {
         "id": 681,
         "naam": "Dag van de Franse Frietjes 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.recipetineats.com/tachyon/2022/09/Crispy-Fries_8.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -11828,7 +11648,7 @@
     {
         "id": 683,
         "naam": "Dag van de Lasagne 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.safefood.net/getmedia/acad61f4-bd51-4880-8005-cd46a718e8b5/lasagne.jpg?width=1200&height=800&ext=.jpg",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -12026,7 +11846,7 @@
     {
         "id": 694,
         "naam": "Badeenddag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Rubber_duckies_So_many_ducks.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -12044,7 +11864,7 @@
     {
         "id": 695,
         "naam": "International LEGO Day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://letsgowiththechildren.co.uk/wp-content/uploads/2025/01/LGWTC-Image-915x515-2025-01-06T122921.396.jpg",
         "categorie": "inhaak",
         "icon": "fa-cubes",
         "vlag": "nl",
@@ -12062,7 +11882,7 @@
     {
         "id": 696,
         "naam": "Change your password day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdm7HR1ThlXOaPAtOQYmvwUYedGtBqcv-WN2p0_0FK2wgywvicGTVeSg&s=10",
         "categorie": "inhaak",
         "icon": "fa-lock",
         "vlag": "nl",
@@ -12116,7 +11936,7 @@
     {
         "id": 699,
         "naam": "Pokémondag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://royalcards.nl/wp-content/uploads/2016/09/landscape-1456483171-pokemon2.jpg",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -12170,7 +11990,7 @@
     {
         "id": 702,
         "naam": "Barbie dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Barbie_Logo.svg/1280px-Barbie_Logo.svg.png?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-person",
         "vlag": "nl",
@@ -12206,7 +12026,7 @@
     {
         "id": 704,
         "naam": "Pi-dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pi-symbol.svg/1280px-Pi-symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-calculator",
         "vlag": "nl",
@@ -12224,7 +12044,7 @@
     {
         "id": 705,
         "naam": "Dag van de Thuiswerker 2027",
-        "afbeelding": "",
+        "afbeelding": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fit/watermark:-%20image/width:3840/height:2560/plain/https://s3-newsifier.ams3.digitaloceanspaces.com/dutchcowboys-nl/images/2025-11/thuiswerken-voordelen-nadelen.jpg@webp",
         "categorie": "inhaak",
         "icon": "fa-laptop",
         "vlag": "nl",
@@ -12242,7 +12062,7 @@
     {
         "id": 706,
         "naam": "Dag van de Muziek 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.fijnedagvan.nl/assets/img/dagen/256.jpg",
         "categorie": "inhaak",
         "icon": "fa-music",
         "vlag": "nl",
@@ -12260,7 +12080,7 @@
     {
         "id": 707,
         "naam": "Dag van de Grap 2027",
-        "afbeelding": "",
+        "afbeelding": "https://yorbodyfysiotherapie.nl/wp-content/uploads/2018/08/19062807_l-e1533884282396-1200x480.jpg",
         "categorie": "inhaak",
         "icon": "fa-face-laugh",
         "vlag": "nl",
@@ -12296,7 +12116,7 @@
     {
         "id": 709,
         "naam": "Dierendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://storage.pubble.nl/f55ba9dd/content/2024/10/82480e05-9869-4de7-a9b1-f22023f651fc_thumb1920.jpg",
         "categorie": "inhaak",
         "icon": "fa-paw",
         "vlag": "nl",
@@ -12368,7 +12188,7 @@
     {
         "id": 713,
         "naam": "Black Friday 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.emerce.nl/content/uploads/2020/11/black-friday-2894130_960_720.png",
         "categorie": "inhaak",
         "icon": "fa-tag",
         "vlag": "nl",
@@ -12386,7 +12206,7 @@
     {
         "id": 714,
         "naam": "Cyber Monday 2027",
-        "afbeelding": "",
+        "afbeelding": "https://static.fnac-static.com/multimedia/Images/FD/Comete/125419/CCP_IMG_600x400/1636267.jpg",
         "categorie": "inhaak",
         "icon": "fa-laptop-code",
         "vlag": "nl",
@@ -12404,7 +12224,7 @@
     {
         "id": 715,
         "naam": "Prinsjesdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQ_1cy1R0YHE37O3GHZfwBb1uGaHfzIs5h_FneGhUpA&s=10",
         "categorie": "cultuur",
         "icon": "fa-horse",
         "vlag": "nl",
@@ -12422,7 +12242,7 @@
     {
         "id": 716,
         "naam": "Start Eurosonic Noorderslag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://esns.nl/media/images/ESNS23_logo_blue_.original.png",
         "categorie": "festival",
         "icon": "fa-guitar",
         "vlag": "nl",
@@ -12458,7 +12278,7 @@
     {
         "id": 718,
         "naam": "Pride Amsterdam 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1fI_P4LtoApkRs42HWIhTdTrXEtVcTzV35OUl6hpPAC2jUa1Xz21-K4&s=10",
         "categorie": "festival",
         "icon": "fa-rainbow",
         "vlag": "nl",
@@ -12476,7 +12296,7 @@
     {
         "id": 719,
         "naam": "Start Sneekweek 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sneekweeklogo.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "festival",
         "icon": "fa-sailboat",
         "vlag": "nl",
@@ -12494,7 +12314,7 @@
     {
         "id": 720,
         "naam": "Start Ramadan 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ramadan_montage_%28cropped%29.jpg/960px-Ramadan_montage_%28cropped%29.jpg?utm_source=gpe.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-moon",
         "vlag": "nl",
@@ -12512,7 +12332,7 @@
     {
         "id": 721,
         "naam": "Chinees Nieuwjaar 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.dunc.nl/wp-content/uploads/2025/01/Nieuws_CNY-2025.jpg",
         "categorie": "cultuur",
         "icon": "fa-dragon",
         "vlag": "nl",
@@ -12602,7 +12422,7 @@
     {
         "id": 726,
         "naam": "Driekoningen 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aKZtd6Afi1luX5wOjx53qgQNUTnTMhpSxR4nvg3Zvo9S8V71D8zgFUZT&s=10",
         "categorie": "cultuur",
         "icon": "fa-crown",
         "vlag": "nl",
@@ -12620,7 +12440,7 @@
     {
         "id": 727,
         "naam": "Dag van de Arbeid 2028",
-        "afbeelding": "",
+        "afbeelding": "https://isgeschiedenis.nl/sites/isgeschiedenis.nl/files/styles/detailpag/public/785px-05-01-1949_06119_1_mei_bijeenkomst_cpn_5398298133.jpg",
         "categorie": "feestdag",
         "icon": "fa-hammer",
         "vlag": "nl",
@@ -12638,7 +12458,7 @@
     {
         "id": 728,
         "naam": "Dodenherkenking 2028",
-        "afbeelding": "",
+        "afbeelding": "https://image.parool.nl/243377748/width/2480/op-de-herdenking-kwamen-vorig-jaar-slechts-zo-n-4000-mensen",
         "categorie": "cultuur",
         "icon": "fa-dove",
         "vlag": "nl",
@@ -12656,7 +12476,7 @@
     {
         "id": 729,
         "naam": "Bevrijdingsdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
         "categorie": "feestdag",
         "icon": "fa-flag",
         "vlag": "nl",
@@ -12710,7 +12530,7 @@
     {
         "id": 732,
         "naam": "Independence Day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://ebc.nl/wp-content/uploads/Wat-viert-Amerika-op-Independence-Day.png",
         "categorie": "cultuur",
         "icon": "fa-flag-usa",
         "vlag": "nl",
@@ -12728,7 +12548,7 @@
     {
         "id": 733,
         "naam": "Sint Maarten 2028",
-        "afbeelding": "",
+        "afbeelding": "https://cdn.maxvandaag.nl/2025/11/sint-maarten-Shutterstock_2513171609-1200x667-1.jpg",
         "categorie": "cultuur",
         "icon": "fa-lightbulb",
         "vlag": "nl",
@@ -12746,7 +12566,7 @@
     {
         "id": 734,
         "naam": "Elfde van de Elfde 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9aGkL5S4xTxYi73GPg4AqfKLN19pDxkxdQEZh76CT44rsn_fGPl59aDy&s=10",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -12764,7 +12584,7 @@
     {
         "id": 735,
         "naam": "Start Carnaval 2028",
-        "afbeelding": "",
+        "afbeelding": "https://redactie.rtl.nl/sites/default/files/content/images/2014/02/26/carnavalhits_0.jpg?itok=WKOQUmNO&width=1920&height=1440&impolicy=semi_dynamic",
         "categorie": "cultuur",
         "icon": "fa-masks-theater",
         "vlag": "nl",
@@ -12800,7 +12620,7 @@
     {
         "id": 737,
         "naam": "Aswoensdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg/330px-US_Navy_080206-N-7869M-057_Electronics_Technician_3rd_Class_Leila_Tardieu_receives_the_sacramental_ashes_during_an_Ash_Wednesday_celebration.jpg?utm_source=nl.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -12836,7 +12656,7 @@
     {
         "id": 739,
         "naam": "Goede Vrijdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://image.kidsweek.nl/228933391/width/2048/sterfdag-jezus-wat-is-er-goed-aan-goede-vrijdag",
         "categorie": "feestdag",
         "icon": "fa-cross",
         "vlag": "nl",
@@ -12854,7 +12674,7 @@
     {
         "id": 740,
         "naam": "Spaghetti Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.allrecipes.com/thmb/DZLFEwAZT2vRyo9-XjzUoALJFyI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19356-spaghetti-italian-VAT-Beauty-4x3-af05b7565e014c16b1c5f86d45a18738.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -12872,7 +12692,7 @@
     {
         "id": 741,
         "naam": "Aardbeiendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.verseoogst.nl/wp-content/uploads/2025/02/detail_aardbeien.png",
         "categorie": "inhaak",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -12890,7 +12710,7 @@
     {
         "id": 742,
         "naam": "Popcorndag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/0/09/Popcorn02.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-film",
         "vlag": "nl",
@@ -12908,7 +12728,7 @@
     {
         "id": 743,
         "naam": "Pindakaasdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.promovendum.nl/sites/default/files/styles/large/public/2020-07/pindakaas-gezond2.jpg?itok=i2pTzZhn",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -12926,7 +12746,7 @@
     {
         "id": 744,
         "naam": "Croissant Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/330px-Croissant-Petr_Kratochvil.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -12944,7 +12764,7 @@
     {
         "id": 745,
         "naam": "Carrot Cake Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWUwEsWqOZ7UsvZD_5zzClt3vvMsu18EUeSCnAR-WAOEGAcjXzlHJb0e4&s=10",
         "categorie": "inhaak",
         "icon": "fa-cake-candles",
         "vlag": "nl",
@@ -12962,7 +12782,7 @@
     {
         "id": 746,
         "naam": "Dag van de frikandel 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Patat_speciaal_and_frikandel_speciaal.jpg/250px-Patat_speciaal_and_frikandel_speciaal.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -12998,7 +12818,7 @@
     {
         "id": 748,
         "naam": "Frozen Yoghurt Day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.giallozafferano.com/images/303-30390/frozen-yogurt_1200x800.jpg",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -13034,7 +12854,7 @@
     {
         "id": 750,
         "naam": "Pizzadag (Nationaal) 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -13052,7 +12872,7 @@
     {
         "id": 751,
         "naam": "Bananenbrood Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.stetted.com/wp-content/uploads/2023/01/Banana-Bread-Photo.jpg",
         "categorie": "inhaak",
         "icon": "fa-bread-slice",
         "vlag": "nl",
@@ -13088,7 +12908,7 @@
     {
         "id": 753,
         "naam": "Dag van de Cornflakes 2028",
-        "afbeelding": "",
+        "afbeelding": "https://i.guim.co.uk/img/media/a09212dd0b02ca1748a3c98af8dbc500c6ad3215/0_217_6569_3944/master/6569.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=2ce677c68d6e61bb6b4ccc9431a567ac",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -13142,7 +12962,7 @@
     {
         "id": 756,
         "naam": "Eet wat je wilt Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://thumbor.pijper.io/y_B6Fsek8OuhsSmdVTl9hOsfWTU=/1200x675/top/https%3A%2F%2Fcdn.pijper.io%2F2021%2F05%2FpUT7YixacQtzfa1620721372.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -13160,7 +12980,7 @@
     {
         "id": 757,
         "naam": "Pizza Party Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-pizza-slice",
         "vlag": "nl",
@@ -13196,7 +13016,7 @@
     {
         "id": 759,
         "naam": "Rocky Road Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.thekiwicountrygirl.com/wp-content/uploads/2025/11/Rocky-Road-7-1.jpg",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -13214,7 +13034,7 @@
     {
         "id": 760,
         "naam": "Dag van de Donut 2028",
-        "afbeelding": "",
+        "afbeelding": "https://funcakes.com/content/uploads/2020/08/Donut-960x960-c-default.jpg",
         "categorie": "inhaak",
         "icon": "fa-circle-notch",
         "vlag": "nl",
@@ -13232,7 +13052,7 @@
     {
         "id": 761,
         "naam": "Apfelstrudel Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/4/40/Strudel.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-apple-whole",
         "vlag": "nl",
@@ -13268,7 +13088,7 @@
     {
         "id": 763,
         "naam": "Fried Chicken Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://leitesculinaria.com/wp-content/uploads/2024/04/batter-fried-chicken-1200.jpg",
         "categorie": "inhaak",
         "icon": "fa-drumstick-bite",
         "vlag": "nl",
@@ -13286,7 +13106,7 @@
     {
         "id": 764,
         "naam": "Dag van de Franse Frietjes 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.recipetineats.com/tachyon/2022/09/Crispy-Fries_8.jpg",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -13322,7 +13142,7 @@
     {
         "id": 766,
         "naam": "Dag van de Lasagne 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.safefood.net/getmedia/acad61f4-bd51-4880-8005-cd46a718e8b5/lasagne.jpg?width=1200&height=800&ext=.jpg",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -13520,7 +13340,7 @@
     {
         "id": 777,
         "naam": "Badeenddag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Rubber_duckies_So_many_ducks.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -13538,7 +13358,7 @@
     {
         "id": 778,
         "naam": "International LEGO Day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://letsgowiththechildren.co.uk/wp-content/uploads/2025/01/LGWTC-Image-915x515-2025-01-06T122921.396.jpg",
         "categorie": "inhaak",
         "icon": "fa-cubes",
         "vlag": "nl",
@@ -13556,7 +13376,7 @@
     {
         "id": 779,
         "naam": "Change your password day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdm7HR1ThlXOaPAtOQYmvwUYedGtBqcv-WN2p0_0FK2wgywvicGTVeSg&s=10",
         "categorie": "inhaak",
         "icon": "fa-lock",
         "vlag": "nl",
@@ -13610,7 +13430,7 @@
     {
         "id": 782,
         "naam": "Pokémondag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://royalcards.nl/wp-content/uploads/2016/09/landscape-1456483171-pokemon2.jpg",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -13664,7 +13484,7 @@
     {
         "id": 785,
         "naam": "Barbie dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Barbie_Logo.svg/1280px-Barbie_Logo.svg.png?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-person",
         "vlag": "nl",
@@ -13700,7 +13520,7 @@
     {
         "id": 787,
         "naam": "Pi-dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Pi-symbol.svg/1280px-Pi-symbol.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "inhaak",
         "icon": "fa-calculator",
         "vlag": "nl",
@@ -13718,7 +13538,7 @@
     {
         "id": 788,
         "naam": "Dag van de Thuiswerker 2028",
-        "afbeelding": "",
+        "afbeelding": "https://r.testifier.nl/Acbs8526SDKI/resizing_type:fit/watermark:-%20image/width:3840/height:2560/plain/https://s3-newsifier.ams3.digitaloceanspaces.com/dutchcowboys-nl/images/2025-11/thuiswerken-voordelen-nadelen.jpg@webp",
         "categorie": "inhaak",
         "icon": "fa-laptop",
         "vlag": "nl",
@@ -13736,7 +13556,7 @@
     {
         "id": 789,
         "naam": "Dag van de Muziek 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.fijnedagvan.nl/assets/img/dagen/256.jpg",
         "categorie": "inhaak",
         "icon": "fa-music",
         "vlag": "nl",
@@ -13754,7 +13574,7 @@
     {
         "id": 790,
         "naam": "Dag van de Grap 2028",
-        "afbeelding": "",
+        "afbeelding": "https://yorbodyfysiotherapie.nl/wp-content/uploads/2018/08/19062807_l-e1533884282396-1200x480.jpg",
         "categorie": "inhaak",
         "icon": "fa-face-laugh",
         "vlag": "nl",
@@ -13790,7 +13610,7 @@
     {
         "id": 792,
         "naam": "Dierendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://storage.pubble.nl/f55ba9dd/content/2024/10/82480e05-9869-4de7-a9b1-f22023f651fc_thumb1920.jpg",
         "categorie": "inhaak",
         "icon": "fa-paw",
         "vlag": "nl",
@@ -13826,7 +13646,7 @@
     {
         "id": 794,
         "naam": "Blue Monday 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=400&q=80",
         "categorie": "inhaak",
         "icon": "fa-face-sad-cry",
         "vlag": "nl",
@@ -13862,7 +13682,7 @@
     {
         "id": 796,
         "naam": "Black Friday 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.emerce.nl/content/uploads/2020/11/black-friday-2894130_960_720.png",
         "categorie": "inhaak",
         "icon": "fa-tag",
         "vlag": "nl",
@@ -13880,7 +13700,7 @@
     {
         "id": 797,
         "naam": "Cyber Monday 2028",
-        "afbeelding": "",
+        "afbeelding": "https://static.fnac-static.com/multimedia/Images/FD/Comete/125419/CCP_IMG_600x400/1636267.jpg",
         "categorie": "inhaak",
         "icon": "fa-laptop-code",
         "vlag": "nl",
@@ -13898,7 +13718,7 @@
     {
         "id": 798,
         "naam": "Prinsjesdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXQ_1cy1R0YHE37O3GHZfwBb1uGaHfzIs5h_FneGhUpA&s=10",
         "categorie": "cultuur",
         "icon": "fa-horse",
         "vlag": "nl",
@@ -13916,7 +13736,7 @@
     {
         "id": 799,
         "naam": "Start Eurosonic Noorderslag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://esns.nl/media/images/ESNS23_logo_blue_.original.png",
         "categorie": "festival",
         "icon": "fa-guitar",
         "vlag": "nl",
@@ -13952,7 +13772,7 @@
     {
         "id": 801,
         "naam": "Pride Amsterdam 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq1fI_P4LtoApkRs42HWIhTdTrXEtVcTzV35OUl6hpPAC2jUa1Xz21-K4&s=10",
         "categorie": "festival",
         "icon": "fa-rainbow",
         "vlag": "nl",
@@ -13970,7 +13790,7 @@
     {
         "id": 802,
         "naam": "Start Sneekweek 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/2/29/Sneekweeklogo.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "festival",
         "icon": "fa-sailboat",
         "vlag": "nl",
@@ -13988,7 +13808,7 @@
     {
         "id": 803,
         "naam": "Start Ramadan 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Ramadan_montage_%28cropped%29.jpg/960px-Ramadan_montage_%28cropped%29.jpg?utm_source=gpe.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
         "categorie": "cultuur",
         "icon": "fa-moon",
         "vlag": "nl",
@@ -14006,7 +13826,7 @@
     {
         "id": 804,
         "naam": "Chinees Nieuwjaar 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.dunc.nl/wp-content/uploads/2025/01/Nieuws_CNY-2025.jpg",
         "categorie": "cultuur",
         "icon": "fa-dragon",
         "vlag": "nl",
@@ -14060,7 +13880,7 @@
     {
         "id": 807,
         "naam": "ABN AMRO Open 2026",
-        "afbeelding": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAKeoZrG3lKwhnQ-9TmuVk25wH0YfW-7TREAp-SrnCz_qMk2-x1kb6RT0&s=10",
         "categorie": "sport",
         "icon": "fa-trophy",
         "vlag": "globe",
@@ -14150,7 +13970,7 @@
     {
         "id": 812,
         "naam": "24 uur van Le Mans 2026",
-        "afbeelding": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCaDbTna4ROCvkAvE5YLfOp0cR-WdGIOtDJ8dxK7kaA&s=10",
         "categorie": "sport",
         "icon": "fa-car",
         "vlag": "globe",
@@ -14204,7 +14024,7 @@
     {
         "id": 815,
         "naam": "ABN AMRO Open 2027",
-        "afbeelding": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAKeoZrG3lKwhnQ-9TmuVk25wH0YfW-7TREAp-SrnCz_qMk2-x1kb6RT0&s=10",
         "categorie": "sport",
         "icon": "fa-trophy",
         "vlag": "globe",
@@ -14294,7 +14114,7 @@
     {
         "id": 820,
         "naam": "24 uur van Le Mans 2027",
-        "afbeelding": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCaDbTna4ROCvkAvE5YLfOp0cR-WdGIOtDJ8dxK7kaA&s=10",
         "categorie": "sport",
         "icon": "fa-car",
         "vlag": "globe",
@@ -14348,7 +14168,7 @@
     {
         "id": 823,
         "naam": "ABN AMRO Open 2028",
-        "afbeelding": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAKeoZrG3lKwhnQ-9TmuVk25wH0YfW-7TREAp-SrnCz_qMk2-x1kb6RT0&s=10",
         "categorie": "sport",
         "icon": "fa-trophy",
         "vlag": "globe",
@@ -14438,7 +14258,7 @@
     {
         "id": 828,
         "naam": "24 uur van Le Mans 2028",
-        "afbeelding": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&q=80",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKCaDbTna4ROCvkAvE5YLfOp0cR-WdGIOtDJ8dxK7kaA&s=10",
         "categorie": "sport",
         "icon": "fa-car",
         "vlag": "globe",
@@ -17773,7 +17593,7 @@
         "icon": "fa-tv",
         "vlag": "globe",
         "locatie": "Streamingdiensten",
-        "datum": "2027-07-09T00:00:00",
+        "datum": "2027-07-08T00:00:00",
         "url": "https://www.youtube.com/results?search_query=Silo+(Seizoen+4)+trailer+nl",
         "affiliateUrl": "https://www.youtube.com/results?search_query=Silo+(Seizoen+4)+trailer+nl",
         "affiliateTekst": "Bekijk Trailer",
