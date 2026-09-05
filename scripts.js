@@ -15,4 +15,15 @@
     
     // Voeg het script toe aan de head van de pagina
     document.head.appendChild(adScript);
+
+    // Google Analytics inladen
+    const gaScript = document.createElement('script');
+    gaScript.async = true;
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    document.head.appendChild(gaScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
 })();
