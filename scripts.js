@@ -19,7 +19,7 @@
     // Google Analytics inladen
     const gaScript = document.createElement('script');
     gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-EKPCP3GNLY';
     document.head.appendChild(gaScript);
 
     window.dataLayer = window.dataLayer || [];
