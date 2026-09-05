@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftellen tot Halloween 2026 | hoelangnogtot.nl</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* EVENT METER BALK (Interactief Element) */
+        .event-bar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: #2c3e50;
+            z-index: 9999;
+        }
+        .event-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #3498db, #2ecc71, #f1c40f);
+            transition: width 0.1s;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+        }
+
+        .event-toast {
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 900;
+            font-size: 1.2em;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: bottom 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .event-toast.show {
+            bottom: 40px;
+        }
+       
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
+            transform: rotate(-10deg);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-text {
+            font-size: 2.8em;
+            font-weight: 800;
+            color: #2c3e50;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+        .logo-text span { color: #3498db; }
+        .logo-link { text-decoration: none; display: flex; align-items: center; gap: 15px; }
+
+        .main-content {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* NAVIGATIE */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+            background: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+
+        /* SEO TEKST BLOK */
+        .seo-text-container {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            text-align: left;
+            line-height: 1.8;
+            border-top: 5px solid #3498db;
+        }
+
+        .seo-text-container h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 2.4em;
+            line-height: 1.2;
+        }
+
+        .seo-text-container h2 {
+            color: #3498db;
+            font-size: 1.6em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        .seo-text-container h3 {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .seo-text-container p {
+            font-size: 1.05em;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        .seo-text-container ul, .seo-text-container ol {
+            font-size: 1.05em;
+            color: #475569;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        .seo-text-container li {
+            margin-bottom: 10px;
+        }
+
+        .seo-text-container strong {
+            color: #1e293b;
+        }
+
+        .seo-text-container a {
+            color: #3498db;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .seo-text-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* KAARTEN GRID */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0 auto 40px auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card.card-past { opacity: 0.5; filter: grayscale(80%); box-shadow: none; background-color: #f8fafc; }
+        .card.card-past:hover { opacity: 0.75; filter: grayscale(50%); }
+
+        .card-image-container { width: 100%; height: 200px; background-color: #f8fafc; position: relative; border-bottom: 1px solid #f1f5f9; }
+        .card-image-container img { width: 100%; height: 100%; object-fit: contain; display: block; padding: 10px; }
+        .card-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-info { flex-grow: 1; }
+        .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; min-height: 25px; }
+        .card h3 { margin: 0 0 5px 0; font-size: 1.4em; color: #1e293b; text-align: left; min-height: 28px; }
+        .card h3:hover { color: #3498db; }
+
+        .category-tag { display: inline-block; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; border-radius: 12px; font-weight: bold; }
+        .event-icon { font-size: 1.5em; opacity: 0.9; }
+
+        .countdown { font-size: 1.3em; font-weight: bold; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+
+        .affiliate-btn { display: block; width: 100%; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; text-align: center; transition: opacity 0.2s ease; margin-bottom: 8px; border: none; cursor: pointer; font-size: 1em;}
+        .affiliate-btn:hover { opacity: 0.9; }
+        .hidden { display: none !important; }
+
+        .event-date { font-size: 0.95em; color: #64748b; margin-bottom: 15px; display: flex; align-items: center; gap: 6px; font-weight: 500; text-transform: capitalize; }
+        .location-line { font-size: 0.95em; color: #64748b; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; font-weight: 500; text-align: left; }
+
+        .presale-box { background-color: #fff3cd; border: 1px solid #ffeeba; border-radius: 8px; padding: 8px; margin-bottom: 15px; text-align: left; }
+        .presale-label { font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #856404; margin-bottom: 3px; display: flex; justify-content: space-between; }
+        .presale-countdown { font-size: 0.95em; font-weight: bold; color: #856404; }
+        .presale-live { color: #dc3545; animation: blink 1.5s infinite; }
+        
+        .urgency-box { background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 8px; padding: 10px; margin-bottom: 15px; text-align: left; }
+        .urgency-label { font-size: 0.75em; text-transform: uppercase; font-weight: bold; color: #721c24; margin-bottom: 5px; display: flex; justify-content: space-between; }
+        .urgency-text { font-size: 0.95em; font-weight: bold; color: #721c24; }
+        .urgency-live { color: #dc3545; animation: blink 1.5s infinite; }
+
+        @keyframes blink { 50% { opacity: 0.5; } }
+
+        /* THEMA KLEUREN PER CATEGORIE */
+        .card.feestdag { border-top: 5px solid #e74c3c; }
+        .tag-feestdag { background-color: #e74c3c; color: white; }
+        .icon-feestdag { color: #e74c3c; }
+        .cd-feestdag { color: #e74c3c; background: #fef2f2; }
+        .btn-feestdag { background-color: #e74c3c; color: white; }
+
+        .card.cultuur { border-top: 5px solid #9b59b6; }
+        .tag-cultuur { background-color: #9b59b6; color: white; }
+        .icon-cultuur { color: #9b59b6; }
+        .cd-cultuur { color: #9b59b6; background: #f9f2fd; }
+        .btn-cultuur { background-color: #9b59b6; color: white; }
+
+        .card.festival { border-top: 5px solid #fd79a8; }
+        .tag-festival { background-color: #fd79a8; color: white; }
+        .icon-festival { color: #fd79a8; }
+        .cd-festival { color: #fd79a8; background: #fff0f5; }
+        .btn-festival { background-color: #fd79a8; color: white; }
+
+        .card.sport { border-top: 5px solid #3498db; }
+        .tag-sport { background-color: #3498db; color: white; }
+        .icon-sport { color: #3498db; }
+        .cd-sport { color: #3498db; background: #f0f8ff; }
+        .btn-sport { background-color: #3498db; color: white; }
+
+        .card.film { border-top: 5px solid #f1c40f; }
+        .tag-film { background-color: #f1c40f; color: #333; }
+        .icon-film { color: #f1c40f; }
+        .cd-film { color: #f39c12; background: #fcf3cf; }
+        .btn-film { background-color: #f1c40f; color: #333; }
+        
+        .card.gaming { border-top: 5px solid #2ecc71; }
+        .tag-gaming { background-color: #2ecc71; color: white; }
+        .icon-gaming { color: #2ecc71; }
+        .cd-gaming { color: #27ae60; background: #eafaf1; }
+        .btn-gaming { background-color: #2ecc71; color: white; }
+
+        .card.concert { border-top: 5px solid #e67e22; }
+        .tag-concert { background-color: #e67e22; color: white; }
+        .icon-concert { color: #e67e22; }
+        .cd-concert { color: #d35400; background: #fdf2e9; }
+        .btn-concert { background-color: #e67e22; color: white; }
+
+        .card.inhaak { border-top: 5px solid #1abc9c; }
+        .tag-inhaak { background-color: #1abc9c; color: white; }
+        .icon-inhaak { color: #1abc9c; }
+        .cd-inhaak { color: #16a085; background: #e8f8f5; }
+        .btn-inhaak { background-color: #1abc9c; color: white; }
+
+        #eventsContainer .card:hover { transform: scale(1.02); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); }
+
+        /* MODAL STYLES */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-box { background: #fff; padding: 25px; border-radius: 16px; width: 90%; max-width: 380px; text-align: center; position: relative; transform: translateY(20px); transition: transform 0.3s ease; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        .sluit-modal { position: absolute; top: 12px; right: 15px; font-size: 1.5em; color: #94a3b8; cursor: pointer; transition: color 0.2s; }
+        .sluit-modal:hover { color: #1e293b; }
+        .modal-box h3 { margin-top: 0; color: #1e293b; font-size: 1.3em; margin-bottom: 20px; padding-right: 20px; padding-left: 20px; }
+        .modal-acties { display: flex; flex-direction: column; gap: 10px; }
+        .actie-btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; color: white; font-size: 1em; text-decoration: none; transition: opacity 0.2s ease; }
+        
+        .btn-wa { background-color: #25D366; }
+        .btn-sys { background-color: #3498db; }
+        .btn-google { background-color: #ea4335; }
+        .btn-apple { background-color: #1e293b; }
+        .btn-tm { background-color: #026cdf; }
+        .btn-ts { background-color: #00b8b1; }
+        
+        .actie-btn:hover { opacity: 0.9; }
+
+        /* FOOTER */
+        .site-footer { background-color: #2c3e50; color: #cbd5e1; padding: 30px 20px; text-align: center; margin-top: auto; }
+        .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-bottom: 15px; }
+        .footer-links a { color: #3498db; text-decoration: none; font-weight: 600; }
+        .footer-links a:hover { text-decoration: underline; }
+    </style>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+    <!-- Interactieve Balk -->
+    <div class="event-bar-container">
+        <div class="event-bar-fill" id="eventBarFill"></div>
+    </div>
+    
+    <div class="event-toast" id="eventToast">
+        <i class="fa-solid fa-calendar-check"></i> Klaar voor de start!
+    </div>
+
+    <div class="logo-container">
+        <a href="index.html" class="logo-link">
+            <div class="logo-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+            <h1 class="logo-text">Hoe lang nog <span>tot...</span></h1>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div style="text-align: left;">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Terug naar de kalender</a>
+        </div>
+
+        <!-- SEO TEKST SECTIE -->
+        <div class="seo-text-container">
+            <h1>Aftellen naar Halloween 2026: Hoe lang nog tot griezelen?</h1>
+            <p>Zodra de herfstbladeren vallen en de dagen korter worden, halen veel mensen de spinnenwebben en pompoenen weer van zolder. De vraag is dan: hoe lang duurt het nog tot Halloween? In 2026 valt de engste dag van het jaar op een <strong>zaterdag</strong> (31 oktober). Dit is de ideale dag voor uitgebreide themafeesten of trick-or-treat tochten door de buurt, zonder dat je de volgende ochtend vroeg op hoeft voor werk of school.</p>
+
+            <h2>Waar komt Halloween eigenlijk vandaan?</h2>
+            <p>De naam Halloween is een verbastering van 'All Hallows' Eve', de avond voor de christelijke feestdag Allerheiligen op 1 november. De oorsprong van het feest ligt bij het Keltische festival Samhain, waarmee het einde van de oogst en de start van het nieuwe jaar werd gevierd. De Kelten geloofden dat op deze avond de grens tussen de wereld van de levenden en de doden tijdelijk vervaagde. Ierse en Schotse immigranten brachten deze traditie in de negentiende eeuw mee naar de Verenigde Staten, waar het uitgroeide tot het verkleed- en snoepfeest dat we vandaag de dag kennen.</p>
+
+            <h2>3 Tips voor de perfecte Halloween voorbereiding</h2>
+            <p>Halloween draait om voorbereiding. Of je nu een feestje geeft of met de kinderen de straat op gaat, een paar praktische tips helpen je op weg:</p>
+            
+            <h3>1. Regel je kostuum op tijd</h3>
+            <p>Populaire outfits, maskers en accessoires zijn in de laatste week van oktober steevast uitverkocht of kampen met lange levertijden. Bedenk begin oktober al wat je wilt aantrekken en bestel je spullen vroegtijdig.</p>
+
+            <h3>2. Pompoenen snijden</h3>
+            <p>Een uitgesneden pompoen blijft buiten ongeveer een week goed voordat hij begint te schimmelen of in te zakken. Snijd je pompoen dus maximaal een paar dagen voor 31 oktober uit voor het beste resultaat. Smeer de snijranden in met een beetje vaseline om uitdroging te vertragen.</p>
+
+            <h3>3. Snoep inkopen voor trick-or-treat</h3>
+            <p>Verwacht je kinderen aan de deur? Haal dan uitdeelzakjes met verpakte snoepjes in huis. In veel wijken is de ongeschreven regel dat je een lampion of pompoen bij de voordeur of voor het raam plaatst, zodat kinderen weten dat ze bij jou mogen aanbellen.</p>
+
+            <h2>Decoratie en outfit-inspiratie</h2>
+            <p>Ben je op zoek naar nepbloed, schmink, een compleet kostuum of decoratie om je huis of voortuin om te toveren tot een spookhuis? Bekijk het actuele overzicht van de populairste griezelartikelen van dit jaar.</p>
+            <p><a href="https://www.bol.com/nl/nl/s/?searchtext=halloween" target="_blank" rel="nofollow sponsored">Bekijk het complete Halloween assortiment bij Bol.com</a> <em>(Tip: wees de drukte voor en haal je outfit ruim in het voren in huis).</em></p>
+            <p>Houd de aftelklok hieronder in de gaten om precies te zien hoeveel dagen, uren en minuten het nog duurt tot 31 oktober 2026!</p>
+        </div>
+
+        <!-- TIMERS GRID -->
+        <div class="container" id="eventsContainer"></div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="index.html">Alle Evenementen</a>
+            <a href="over-ons.html">Over Ons / Contact</a>
+            <a href="voorwaarden.html">Disclaimer & Voorwaarden</a>
+            <a href="privacy.html">Privacybeleid</a>
+            <a href="cookies.html">Cookiebeleid</a>
+        </div>
+        <div>&copy; 2026 hoelangnogtot.nl. Uitgegeven door Ted Innovation/Support B.V. Alle rechten voorbehouden.</div>
+    </footer>
+
+    <!-- MODAL MENU VOOR DELEN EN AGENDA -->
+    <div id="actieModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-xmark sluit-modal" onclick="sluitModal()"></i>
+            <h3 id="modalTitel">Evenement</h3>
+            <div class="modal-acties">
+                <button class="actie-btn btn-sys" onclick="deelActieSysteem()"><i class="fa-solid fa-share-nodes"></i> Delen via apps...</button>
+                <button class="actie-btn btn-wa" onclick="deelActieWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Doorsturen via WhatsApp</button>
+                <a href="#" id="modalGoogle" target="_blank" class="actie-btn btn-google"><i class="fa-brands fa-google"></i> Zet in Google Agenda</a>
+                <a href="#" id="modalApple" class="actie-btn btn-apple"><i class="fa-regular fa-calendar-plus"></i> Download Agenda Bestand (.ics)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL MENU VOOR TICKETKEUZE -->
+    <div id="ticketModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-xmark sluit-modal" onclick="sluitTicketModal()"></i>
+            <h3 id="ticketModalTitel">Tickets Bestellen</h3>
+            <div class="modal-acties">
+                <a href="#" id="btnTicketmaster" target="_blank" class="actie-btn btn-tm"><i class="fa-solid fa-ticket"></i> Zoek op Ticketmaster</a>
+                <a href="#" id="btnTicketswap" target="_blank" class="actie-btn btn-ts"><i class="fa-solid fa-arrows-rotate"></i> Zoek op TicketSwap</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Logica voor Interactieve Scroll Bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollPercent = 0;
+            if (scrollHeight > 0) {
+                scrollPercent = (scrollTop / scrollHeight) * 100;
+            } else {
+                scrollPercent = 100; 
+            }
+            
+            document.getElementById('eventBarFill').style.width = scrollPercent + '%';
+
+            if (scrollPercent > 98 && !window.eventShown) {
+                window.eventShown = true;
+                const toast = document.getElementById('eventToast');
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 4000);
+            }
+        });
+
+        // =========================================================
+        // BELANGRIJK: VUL HIER DE NAAM IN VAN HET SPECIFIEKE EVENEMENT
+        // =========================================================
+        const ZOEK_TERM = 'halloween'; 
+        // =========================================================
+
+        let evenementen = [];
+        let huidigeDeelData = {};
+
+        async function laadEvenementen() {
+            try {
+                const response = await fetch('./evenementen.json?v=' + new Date().getTime());
+                const data = await response.json();
+                evenementen = data; 
+                maakKaarten();
+            } catch (error) {
+                console.error("Fout bij het ophalen van evenementen:", error);
+            }
+        }
+
+        function formaterenTijd(verschil) {
+            if (verschil < 0) return "0d 0u 0m 0s";
+            const dagen = Math.floor(verschil / (1000 * 60 * 60 * 24));
+            const uren = Math.floor((verschil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minuten = Math.floor((verschil % (1000 * 60 * 60)) / (1000 * 60));
+            const seconden = Math.floor((verschil % (1000 * 60)) / 1000);
+            return `${dagen}d ${uren}u ${minuten}m ${seconden}s`;
+        }
+
+        function maakKaarten() {
+            const container = document.getElementById('eventsContainer');
+            container.innerHTML = '';
+            
+            const nu = new Date().getTime();
+
+            // We zoeken alleen naar het specifieke evenement via de constante ZOEK_TERM
+            const specifiekeEvenementen = evenementen.filter(ev => ev.naam.toLowerCase().includes(ZOEK_TERM.toLowerCase()));
+
+            specifiekeEvenementen.forEach((ev, index) => {
+                const evDatum = new Date(ev.datum).getTime();
+                const isAfgelopen = evDatum < nu;
+                
+                const card = document.createElement('div');
+                card.className = `card ${ev.categorie} ${isAfgelopen ? 'card-past' : ''}`;
+                
+                let afbeeldingUrl = ev.afbeelding || 'https://images.unsplash.com/photo-1499591934245-40b55745b905?w=400&q=80';
+                
+                let regioHTML = '';
+                if (ev.regio && ev.categorie === 'feestdag' && ev.naam.toLowerCase().includes('vakantie')) {
+                    regioHTML = `<div style="font-size: 0.85em; color: #e74c3c; font-weight: bold; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-align: left;"><i class="fa-solid fa-map-pin"></i> ${ev.regio === 'Heel Nederland' ? 'Heel Nederland' : 'Regio ' + ev.regio}</div>`;
+                }
+                
+                let locationHTML = '';
+                if (ev.locatie) {
+                    let displayLocatie = ev.locatie.toLowerCase() === 'landelijk' ? 'Nederland' : ev.locatie;
+                    let vlagIcoon = '<i class="fa-solid fa-location-dot" style="color: #cbd5e1;"></i>';
+                    if (ev.vlag === 'globe') vlagIcoon = '🌎';
+                    else if (ev.vlag && ev.vlag.length === 2) vlagIcoon = `<img src="https://flagcdn.com/24x18/${ev.vlag.toLowerCase()}.png" alt="${ev.vlag}" style="border-radius: 3px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); width: 24px; display: inline-block;">`;
+                    locationHTML = `<div class="location-line" style="display: flex; align-items: center; gap: 8px;">${vlagIcoon} <span>${displayLocatie}</span></div>`;
+                }
+
+                let presaleHTML = '';
+                let dagenTotPresale = 0;
+                if (ev.presaleDatum) {
+                    const psDatumObj = new Date(ev.presaleDatum);
+                    const leesbarePS = psDatumObj.toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+                    presaleHTML = `
+                        <div class="presale-box hidden" id="presale-box-${index}">
+                            <div class="presale-label">Voorverkoop <i class="fa-solid fa-ticket"></i></div>
+                            <div style="font-size: 0.8em; color: #856404; margin-bottom: 5px; text-transform: capitalize;"><i class="fa-regular fa-calendar"></i> ${leesbarePS}</div>
+                            <div class="presale-countdown" id="ps-${index}">Laden...</div>
+                        </div>`;
+                    dagenTotPresale = Math.ceil((psDatumObj.getTime() - nu) / (1000 * 60 * 60 * 24));
+                }
+
+                let urgencyHTML = '';
+                if (ev.urgencyStartDatum) {
+                    urgencyHTML = `
+                        <div class="urgency-box hidden" id="urgency-box-${index}">
+                            <div class="urgency-label">${ev.urgencyLabel || "Let op!"} <i class="fa-solid ${ev.urgencyIcon || 'fa-gift'}"></i></div>
+                            <div class="urgency-text" id="urg-text-${index}">Laden...</div>
+                        </div>`;
+                }
+
+                let linkVoorDelen = ev.affiliateUrl ? ev.affiliateUrl : (ev.url ? ev.url : window.location.href);
+                let dagenTotEvent = Math.ceil((evDatum - nu) / (1000 * 60 * 60 * 24));
+                const veiligeNaam = encodeURIComponent(ev.naam);
+                const veiligeDatum = ev.datum;
+                const veiligeUrl = encodeURIComponent(linkVoorDelen);
+
+                let knoppenHTML = `<div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">`;
+                
+                if (ev.categorie === 'concert' || ev.categorie === 'festival') {
+                    knoppenHTML += `<button onclick="openTicketModal('${veiligeNaam}')" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-ticket"></i> Bestel Tickets</button>`;
+                } else {
+                    let heeftTrailer = ev.affiliateTekst && ev.affiliateTekst.toLowerCase().includes('trailer');
+                    
+                    if (ev.affiliateUrl) {
+                        let btnIcon = heeftTrailer ? 'fa-play' : 'fa-link';
+                        knoppenHTML += `<a href="${ev.affiliateUrl}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid ${btnIcon}"></i> ${ev.affiliateTekst || 'Bekijk Info'}</a>`;
+                    } else if (ev.url) {
+                        knoppenHTML += `<a href="${ev.url}" target="_blank" class="affiliate-btn btn-${ev.categorie}" id="btn-${index}"><i class="fa-solid fa-link"></i> Bekijk Info</a>`;
+                    }
+
+                    if ((!ev.affiliateUrl && !ev.url) || heeftTrailer) {
+                        let koopLink = '';
+                        let koopTekst = '';
+                        let koopIcon = '';
+
+                        if (ev.categorie === 'cultuur' || ev.categorie === 'sport') {
+                            koopLink = `https://www.ticketmaster.nl/search?keyword=${veiligeNaam}`;
+                            koopTekst = 'Zoek Tickets';
+                            koopIcon = 'fa-ticket';
+                        } else if (ev.categorie === 'gaming' || ev.categorie === 'inhaak') {
+                            koopLink = `https://www.bol.com/nl/nl/s/?searchtext=${veiligeNaam}`;
+                            koopTekst = 'Zoek op Bol.com';
+                            koopIcon = 'fa-cart-shopping';
+                        } else if (ev.categorie === 'film') {
+                            koopLink = `https://www.justwatch.com/nl/zoeken?q=${veiligeNaam}`;
+                            koopTekst = 'Waar te zien?';
+                            koopIcon = 'fa-film';
+                        } else if (ev.categorie === 'feestdag') {
+                            koopLink = `https://www.ah.nl/`;
+                            koopTekst = 'Boodschappen bestellen';
+                            koopIcon = 'fa-basket-shopping';
+                        }
+
+                        if (koopLink) {
+                            knoppenHTML += `<a href="${koopLink}" target="_blank" class="affiliate-btn btn-${ev.categorie}"><i class="fa-solid ${koopIcon}"></i> ${koopTekst}</a>`;
+                        }
+                    }
+                }
+                
+                knoppenHTML += `<button onclick="openModal('${veiligeNaam}', '${veiligeDatum}', '${veiligeUrl}', ${dagenTotEvent}, ${dagenTotPresale})" class="affiliate-btn btn-${ev.categorie}" style="border: none; cursor: pointer; font-size: 1em;"><i class="fa-solid fa-share-nodes"></i> Deel & Agenda</button></div>`;
+
+                const datumObject = new Date(ev.datum);
+                const leesbareDatum = datumObject.toLocaleDateString('nl-NL', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+                
+                let categorieIcoon = ev.icon || 'fa-calendar-day';
+                if (ev.categorie === 'gaming') categorieIcoon = 'fa-gamepad';
+                if (ev.categorie === 'film') categorieIcoon = 'fa-clapperboard';
+                if (ev.categorie === 'concert') categorieIcoon = 'fa-microphone';
+                if (ev.categorie === 'festival') categorieIcoon = 'fa-tent';
+                if (ev.categorie === 'sport') categorieIcoon = 'fa-trophy';
+                if (ev.categorie === 'cultuur') categorieIcoon = 'fa-masks-theater';
+
+                card.innerHTML = `
+                    <div class="card-image-container">
+                        <a href="${ev.url || '#'}" target="_blank" style="display: block; width: 100%; height: 100%;">
+                            <img src="${afbeeldingUrl}" alt="${ev.naam}">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-info">
+                            <div class="card-header">
+                                <span class="category-tag tag-${ev.categorie}">Speciaal Evenement</span>
+                                <i class="fa-solid ${categorieIcoon} event-icon icon-${ev.categorie}"></i>
+                            </div>
+                            <a href="${ev.url || '#'}" target="_blank" style="text-decoration: none; color: inherit;">
+                                <h3>${ev.naam}</h3>
+                            </a>
+                            <div class="event-date"><i class="fa-regular fa-calendar"></i> ${leesbareDatum}</div>
+                            ${regioHTML} ${locationHTML} ${presaleHTML} ${urgencyHTML}
+                        </div>
+                        <div class="card-actions">
+                            <div class="countdown cd-${ev.categorie}" id="cd-${index}">Laden...</div>
+                            ${knoppenHTML}
+                        </div>
+                    </div>`;
+                container.appendChild(card);
+            });
+            updateTimers();
+        }
+
+        function updateTimers() {
+            const nu = new Date().getTime();
+            const eenDagInMs = 24 * 60 * 60 * 1000;
+
+            const specifiekeEvenementen = evenementen.filter(ev => ev.naam.toLowerCase().includes(ZOEK_TERM.toLowerCase()));
+
+            specifiekeEvenementen.forEach((ev, index) => {
+                const elKlokShow = document.getElementById(`cd-${index}`);
+                const elBtn = document.getElementById(`btn-${index}`);
+                if (!elKlokShow) return;
+
+                const showDatum = new Date(ev.datum).getTime();
+                if (showDatum > nu) elKlokShow.innerHTML = formaterenTijd(showDatum - nu);
+                else elKlokShow.innerHTML = "Het is zover!";
+
+                if (ev.presaleDatum) {
+                    const elKlokPresale = document.getElementById(`ps-${index}`);
+                    const elBoxPresale = document.getElementById(`presale-box-${index}`);
+                    const presaleDatum = new Date(ev.presaleDatum).getTime();
+                    
+                    if (nu < presaleDatum) {
+                        elBoxPresale.classList.remove("hidden");
+                        elKlokPresale.innerHTML = formaterenTijd(presaleDatum - nu);
+                    } else if ((nu - presaleDatum) < eenDagInMs) {
+                        elBoxPresale.classList.remove("hidden");
+                        elKlokPresale.innerHTML = "Nu in de verkoop!";
+                        elKlokPresale.classList.add("presale-live");
+                    } else {
+                        elBoxPresale.classList.add("hidden");
+                    }
+                }
+
+                if (ev.urgencyStartDatum) {
+                    const elBoxUrgency = document.getElementById(`urgency-box-${index}`);
+                    const elTextUrgency = document.getElementById(`urg-text-${index}`);
+                    const urgencyStart = new Date(ev.urgencyStartDatum).getTime();
+                    
+                    if (nu >= urgencyStart && nu < showDatum) {
+                        elBoxUrgency.classList.remove("hidden");
+                        const dagenTotEvent = Math.floor((showDatum - nu) / (1000 * 60 * 60 * 24));
+                        if (dagenTotEvent > 1) {
+                            elTextUrgency.innerHTML = `Nog ${dagenTotEvent} dagen om te scoren!`;
+                            elTextUrgency.classList.remove("urgency-live");
+                        } else if (dagenTotEvent === 1) {
+                            elTextUrgency.innerHTML = "Morgen is het zover, wees er snel bij!";
+                            elTextUrgency.classList.add("urgency-live");
+                        } else {
+                            elTextUrgency.innerHTML = "Vandaag is je laatste kans!";
+                            elTextUrgency.classList.add("urgency-live");
+                        }
+                    } else {
+                        elBoxUrgency.classList.add("hidden");
+                    }
+                }
+            });
+        }
+
+        function openModal(naamEnc, datumString, urlEnc, dagenEvent, dagenPresale) {
+            const naam = decodeURIComponent(naamEnc);
+            const url = decodeURIComponent(urlEnc);
+            huidigeDeelData = { naam, datum: datumString, url, dagenEvent, dagenPresale };
+            
+            document.getElementById('modalTitel').innerText = naam;
+            const startDatum = new Date(datumString);
+            const eindDatum = new Date(startDatum.getTime() + (24 * 60 * 60 * 1000));
+            const formaatDatum = (d) => d.toISOString().replace(/-|:|\.\d{3}/g, '');
+            
+            document.getElementById('modalGoogle').href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(naam)}&dates=${formaatDatum(startDatum)}/${formaatDatum(eindDatum)}&details=${encodeURIComponent("Meer informatie via: " + url)}`;
+            
+            const icsInhoud = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nURL:${url}\nDTSTART;VALUE=DATE:${formaatDatum(startDatum).substring(0,8)}\nDTEND;VALUE=DATE:${formaatDatum(eindDatum).substring(0,8)}\nSUMMARY:${naam}\nDESCRIPTION:Meer informatie via ${url}\nEND:VEVENT\nEND:VCALENDAR`;
+            document.getElementById('modalApple').href = `data:text/calendar;charset=utf-8,${encodeURIComponent(icsInhoud)}`;
+            document.getElementById('modalApple').download = `${naam.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.ics`;
+            
+            document.getElementById('actieModal').classList.add('active');
+        }
+
+        function sluitModal() { document.getElementById('actieModal').classList.remove('active'); }
+        document.getElementById('actieModal').addEventListener('click', function(e) { if (e.target === this) sluitModal(); });
+
+        function openTicketModal(naamEnc) {
+            const naam = decodeURIComponent(naamEnc);
+            document.getElementById('ticketModalTitel').innerText = `Tickets: ${naam}`;
+            
+            const tmUrl = `https://www.ticketmaster.nl/search?keyword=${naamEnc}`;
+            const tsUrl = `https://www.ticketswap.nl/search?q=${naamEnc}`;
+            
+            document.getElementById('btnTicketmaster').href = tmUrl;
+            document.getElementById('btnTicketswap').href = tsUrl;
+            
+            document.getElementById('ticketModal').classList.add('active');
+        }
+
+        function sluitTicketModal() { document.getElementById('ticketModal').classList.remove('active'); }
+        document.getElementById('ticketModal').addEventListener('click', function(e) { if (e.target === this) sluitTicketModal(); });
+
+        function genereerDeelTekst() {
+            let bericht = "";
+            const { naam, url, dagenEvent } = huidigeDeelData;
+            if (dagenEvent > 0) bericht = `Kijk even! Nog precies ${dagenEvent} dagen tot ${naam}. Bekijk het hier: ${url}`;
+            else bericht = `Vandaag is het zover: ${naam}! Bekijk de website hier: ${url}`;
+            return bericht;
+        }
+
+        function deelActieWhatsApp() { window.open(`https://wa.me/?text=${encodeURIComponent(genereerDeelTekst())}`, '_blank'); }
+
+        function deelActieSysteem() {
+            if (navigator.share) {
+                navigator.share({ title: huidigeDeelData.naam, text: genereerDeelTekst() }).catch(err => console.log('Fout bij delen:', err));
+            } else {
+                alert('Jouw huidige browser ondersteunt de universele deelfunctie niet. Gebruik de WhatsApp knop om het bericht te versturen!');
+            }
+        }
+
+        laadEvenementen();
+        setInterval(updateTimers, 1000);
+    </script>
+</body>
+</html>
