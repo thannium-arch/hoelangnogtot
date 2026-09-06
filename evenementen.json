@@ -19,7 +19,7 @@
     },
     {
         "id": 7,
-        "naam": "Koningsdag",
+        "naam": "Koningsdag 2026",
         "afbeelding": "https://wattedoenvandaag.nl/wp-content/uploads/2015/04/koningsdag-menigte.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -36,26 +36,8 @@
         "urgencyIcon": ""
     },
     {
-        "id": 8,
-        "naam": "Bevrijdingsdag",
-        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
-        "categorie": "feestdag",
-        "icon": "fa-calendar-day",
-        "vlag": "nl",
-        "locatie": "Nederland",
-        "datum": "2026-05-05T00:00:00",
-        "url": "#",
-        "affiliateUrl": "",
-        "affiliateTekst": "",
-        "regio": "",
-        "presaleDatum": "",
-        "urgencyStartDatum": "",
-        "urgencyLabel": "",
-        "urgencyIcon": ""
-    },
-    {
         "id": 9,
-        "naam": "Hemelvaartsdag",
+        "naam": "Hemelvaartsdag 2026",
         "afbeelding": "https://www.gastinbethel.nl/wp-content/uploads/2017/05/betekenis-van-hemelvaart.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -73,7 +55,7 @@
     },
     {
         "id": 10,
-        "naam": "Eerste Pinksterdag",
+        "naam": "Eerste Pinksterdag 2026",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -91,7 +73,7 @@
     },
     {
         "id": 11,
-        "naam": "Tweede Pinksterdag",
+        "naam": "Tweede Pinksterdag 2026",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -109,7 +91,7 @@
     },
     {
         "id": 18,
-        "naam": "Koningsdag",
+        "naam": "Koningsdag 2027",
         "afbeelding": "https://wattedoenvandaag.nl/wp-content/uploads/2015/04/koningsdag-menigte.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -126,26 +108,8 @@
         "urgencyIcon": ""
     },
     {
-        "id": 19,
-        "naam": "Bevrijdingsdag",
-        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
-        "categorie": "feestdag",
-        "icon": "fa-calendar-day",
-        "vlag": "nl",
-        "locatie": "Landelijk",
-        "datum": "2027-05-05T00:00:00",
-        "url": "#",
-        "affiliateUrl": "",
-        "affiliateTekst": "",
-        "regio": "",
-        "presaleDatum": "",
-        "urgencyStartDatum": "",
-        "urgencyLabel": "",
-        "urgencyIcon": ""
-    },
-    {
         "id": 20,
-        "naam": "Hemelvaartsdag",
+        "naam": "Hemelvaartsdag 2027",
         "afbeelding": "https://www.gastinbethel.nl/wp-content/uploads/2017/05/betekenis-van-hemelvaart.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -163,7 +127,7 @@
     },
     {
         "id": 21,
-        "naam": "Eerste Pinksterdag",
+        "naam": "Eerste Pinksterdag 2027",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -181,7 +145,7 @@
     },
     {
         "id": 22,
-        "naam": "Tweede Pinksterdag",
+        "naam": "Tweede Pinksterdag 2027",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -199,7 +163,7 @@
     },
     {
         "id": 29,
-        "naam": "Koningsdag",
+        "naam": "Koningsdag 2028",
         "afbeelding": "https://wattedoenvandaag.nl/wp-content/uploads/2015/04/koningsdag-menigte.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -216,26 +180,8 @@
         "urgencyIcon": ""
     },
     {
-        "id": 30,
-        "naam": "Bevrijdingsdag",
-        "afbeelding": "https://www.4en5mei.nl/app/uploads/2021/04/wat-vieren-we-pag.jpg",
-        "categorie": "feestdag",
-        "icon": "fa-calendar-day",
-        "vlag": "nl",
-        "locatie": "Landelijk",
-        "datum": "2028-05-05T00:00:00",
-        "url": "#",
-        "affiliateUrl": "",
-        "affiliateTekst": "",
-        "regio": "",
-        "presaleDatum": "",
-        "urgencyStartDatum": "",
-        "urgencyLabel": "",
-        "urgencyIcon": ""
-    },
-    {
         "id": 31,
-        "naam": "Hemelvaartsdag",
+        "naam": "Hemelvaartsdag 2028",
         "afbeelding": "https://www.gastinbethel.nl/wp-content/uploads/2017/05/betekenis-van-hemelvaart.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -253,7 +199,7 @@
     },
     {
         "id": 32,
-        "naam": "Eerste Pinksterdag",
+        "naam": "Eerste Pinksterdag 2028",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -271,7 +217,7 @@
     },
     {
         "id": 33,
-        "naam": "Tweede Pinksterdag",
+        "naam": "Tweede Pinksterdag 2028",
         "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Pentecoste_Giotto_Padua.jpg",
         "categorie": "feestdag",
         "icon": "fa-calendar-day",
@@ -290,13 +236,13 @@
     {
         "id": 36,
         "naam": "Herfstvakantie (Zuid) 2026",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
         "locatie": "Nederland",
         "datum": "2026-10-17T00:00:00",
-        "url": "#",
+        "url": "https://www.hoelangnogtot.nl/herfstvakantie2026.html\r\n",
         "affiliateUrl": "",
         "affiliateTekst": "",
         "regio": "Zuid",
@@ -308,13 +254,13 @@
     {
         "id": 37,
         "naam": "Herfstvakantie (Noord & Midden) 2026",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
         "locatie": "Nederland",
         "datum": "2026-10-24T00:00:00",
-        "url": "#",
+        "url": "https://www.hoelangnogtot.nl/herfstvakantie2026.html",
         "affiliateUrl": "",
         "affiliateTekst": "",
         "regio": "Noord & Midden",
@@ -326,7 +272,7 @@
     {
         "id": 38,
         "naam": "Kerstvakantie 2026",
-        "afbeelding": null,
+        "afbeelding": "https://thumbor.pijper.io/1q6wQ3zz15QtQ-5ddZjP0ehLqUY=/728x410/center/middle/filters:format(webp):max_bytes(200000)/https%3A%2F%2Fcdn.pijper.io%2Fnouveau2024%2F1%2F4%2F221127541.png",
         "categorie": "feestdag",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -344,7 +290,7 @@
     {
         "id": 39,
         "naam": "Voorjaarsvakantie (Zuid) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -362,7 +308,7 @@
     {
         "id": 40,
         "naam": "Voorjaarsvakantie (Noord & Midden) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -380,7 +326,7 @@
     {
         "id": 41,
         "naam": "Meivakantie 2027",
-        "afbeelding": null,
+        "afbeelding": "https://image.kidsweek.nl/231805700/feature-crop/1200/630/vandaag-begint-de-lente-en-niet-op-21-maart",
         "categorie": "feestdag",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -398,7 +344,7 @@
     {
         "id": 42,
         "naam": "Zomervakantie (Noord) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -416,7 +362,7 @@
     {
         "id": 43,
         "naam": "Zomervakantie (Midden) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -434,7 +380,7 @@
     {
         "id": 44,
         "naam": "Zomervakantie (Zuid) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -452,7 +398,7 @@
     {
         "id": 45,
         "naam": "Herfstvakantie (Noord) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -470,7 +416,7 @@
     {
         "id": 46,
         "naam": "Herfstvakantie (Midden & Zuid) 2027",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -488,7 +434,7 @@
     {
         "id": 47,
         "naam": "Kerstvakantie 2027",
-        "afbeelding": null,
+        "afbeelding": "https://thumbor.pijper.io/1q6wQ3zz15QtQ-5ddZjP0ehLqUY=/728x410/center/middle/filters:format(webp):max_bytes(200000)/https%3A%2F%2Fcdn.pijper.io%2Fnouveau2024%2F1%2F4%2F221127541.png",
         "categorie": "feestdag",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -506,7 +452,7 @@
     {
         "id": 48,
         "naam": "Voorjaarsvakantie (Noord & Midden) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -524,7 +470,7 @@
     {
         "id": 49,
         "naam": "Voorjaarsvakantie (Zuid) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -542,7 +488,7 @@
     {
         "id": 50,
         "naam": "Meivakantie 2028",
-        "afbeelding": null,
+        "afbeelding": "https://image.kidsweek.nl/231805700/feature-crop/1200/630/vandaag-begint-de-lente-en-niet-op-21-maart",
         "categorie": "feestdag",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -560,7 +506,7 @@
     {
         "id": 51,
         "naam": "Zomervakantie (Zuid) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -578,7 +524,7 @@
     {
         "id": 52,
         "naam": "Zomervakantie (Midden) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -596,7 +542,7 @@
     {
         "id": 53,
         "naam": "Zomervakantie (Noord) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -614,7 +560,7 @@
     {
         "id": 54,
         "naam": "Herfstvakantie (Midden & Zuid) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -632,7 +578,7 @@
     {
         "id": 55,
         "naam": "Herfstvakantie (Noord) 2028",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -650,7 +596,7 @@
     {
         "id": 56,
         "naam": "Kerstvakantie 2028",
-        "afbeelding": null,
+        "afbeelding": "https://thumbor.pijper.io/1q6wQ3zz15QtQ-5ddZjP0ehLqUY=/728x410/center/middle/filters:format(webp):max_bytes(200000)/https%3A%2F%2Fcdn.pijper.io%2Fnouveau2024%2F1%2F4%2F221127541.png",
         "categorie": "feestdag",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -668,7 +614,7 @@
     {
         "id": 57,
         "naam": "Voorjaarsvakantie (Zuid) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -686,7 +632,7 @@
     {
         "id": 58,
         "naam": "Voorjaarsvakantie (Noord & Midden) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-mask",
         "vlag": "nl",
@@ -704,7 +650,7 @@
     {
         "id": 59,
         "naam": "Meivakantie 2029",
-        "afbeelding": null,
+        "afbeelding": "https://image.kidsweek.nl/231805700/feature-crop/1200/630/vandaag-begint-de-lente-en-niet-op-21-maart",
         "categorie": "feestdag",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -722,7 +668,7 @@
     {
         "id": 60,
         "naam": "Zomervakantie (Midden) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -740,7 +686,7 @@
     {
         "id": 61,
         "naam": "Zomervakantie (Noord) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -758,7 +704,7 @@
     {
         "id": 62,
         "naam": "Zomervakantie (Zuid) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1770732165507-ca1a4c19f31a?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-umbrella-beach",
         "vlag": "nl",
@@ -776,7 +722,7 @@
     {
         "id": 63,
         "naam": "Herfstvakantie (Noord) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -794,7 +740,7 @@
     {
         "id": 64,
         "naam": "Herfstvakantie (Midden & Zuid) 2029",
-        "afbeelding": null,
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVr17um9XtxOLwocry1Yhi6FLkfk_Zy8jNAEHVIGiJ224oNywl28iWKXc&s=10",
         "categorie": "feestdag",
         "icon": "fa-leaf",
         "vlag": "nl",
@@ -812,7 +758,7 @@
     {
         "id": 65,
         "naam": "Kerstvakantie 2029",
-        "afbeelding": null,
+        "afbeelding": "https://thumbor.pijper.io/1q6wQ3zz15QtQ-5ddZjP0ehLqUY=/728x410/center/middle/filters:format(webp):max_bytes(200000)/https%3A%2F%2Fcdn.pijper.io%2Fnouveau2024%2F1%2F4%2F221127541.png",
         "categorie": "feestdag",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -830,7 +776,7 @@
     {
         "id": 66,
         "naam": "Start Lente 2026",
-        "afbeelding": null,
+        "afbeelding": "https://www.8newsnow.com/wp-content/uploads/sites/59/2022/03/GettyImages-1130636356.jpg?w=2560&h=1440&crop=1",
         "categorie": "seizoen",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -848,7 +794,7 @@
     {
         "id": 67,
         "naam": "Start Zomer 2026",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -902,7 +848,7 @@
     {
         "id": 70,
         "naam": "Start Zomertijd 2026",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -992,7 +938,7 @@
     {
         "id": 75,
         "naam": "Start Winter 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1028,7 +974,7 @@
     {
         "id": 77,
         "naam": "Start Wintertijd 2027",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1064,7 +1010,7 @@
     {
         "id": 79,
         "naam": "Start Zomer 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1100,7 +1046,7 @@
     {
         "id": 81,
         "naam": "Start Winter 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1118,7 +1064,7 @@
     {
         "id": 82,
         "naam": "Start Zomertijd 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1136,7 +1082,7 @@
     {
         "id": 83,
         "naam": "Start Wintertijd 2028",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1172,7 +1118,7 @@
     {
         "id": 85,
         "naam": "Start Zomer 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1208,7 +1154,7 @@
     {
         "id": 87,
         "naam": "Start Winter 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1226,7 +1172,7 @@
     {
         "id": 88,
         "naam": "Start Zomertijd 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1244,7 +1190,7 @@
     {
         "id": 89,
         "naam": "Start Wintertijd 2029",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1280,7 +1226,7 @@
     {
         "id": 91,
         "naam": "Start Zomer 2030",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1316,7 +1262,7 @@
     {
         "id": 93,
         "naam": "Start Winter 2030",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1334,7 +1280,7 @@
     {
         "id": 94,
         "naam": "Start Zomertijd 2030",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1352,7 +1298,7 @@
     {
         "id": 95,
         "naam": "Start Wintertijd 2030",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1388,7 +1334,7 @@
     {
         "id": 97,
         "naam": "Start Zomer 2031",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1424,7 +1370,7 @@
     {
         "id": 99,
         "naam": "Start Winter 2031",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1442,7 +1388,7 @@
     {
         "id": 100,
         "naam": "Start Zomertijd 2031",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1460,7 +1406,7 @@
     {
         "id": 101,
         "naam": "Start Wintertijd 2031",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1496,7 +1442,7 @@
     {
         "id": 103,
         "naam": "Start Zomer 2032",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1532,7 +1478,7 @@
     {
         "id": 105,
         "naam": "Start Winter 2032",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1550,7 +1496,7 @@
     {
         "id": 106,
         "naam": "Start Zomertijd 2032",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1568,7 +1514,7 @@
     {
         "id": 107,
         "naam": "Start Wintertijd 2032",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1604,7 +1550,7 @@
     {
         "id": 109,
         "naam": "Start Zomer 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1640,7 +1586,7 @@
     {
         "id": 111,
         "naam": "Start Winter 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1658,7 +1604,7 @@
     {
         "id": 112,
         "naam": "Start Zomertijd 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1676,7 +1622,7 @@
     {
         "id": 113,
         "naam": "Start Wintertijd 2033",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1712,7 +1658,7 @@
     {
         "id": 115,
         "naam": "Start Zomer 2034",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1748,7 +1694,7 @@
     {
         "id": 117,
         "naam": "Start Winter 2034",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1766,7 +1712,7 @@
     {
         "id": 118,
         "naam": "Start Zomertijd 2034",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1784,7 +1730,7 @@
     {
         "id": 119,
         "naam": "Start Wintertijd 2034",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1820,7 +1766,7 @@
     {
         "id": 121,
         "naam": "Start Zomer 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-sun",
         "vlag": "nl",
@@ -1856,7 +1802,7 @@
     {
         "id": 123,
         "naam": "Start Winter 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1483664852095-d6cc6870702d?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-snowflake",
         "vlag": "nl",
@@ -1874,7 +1820,7 @@
     {
         "id": 124,
         "naam": "Start Zomertijd 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -1892,7 +1838,7 @@
     {
         "id": 125,
         "naam": "Start Wintertijd 2035",
-        "afbeelding": null,
+        "afbeelding": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80",
         "categorie": "seizoen",
         "icon": "fa-clock",
         "vlag": "nl",
@@ -5780,7 +5726,7 @@
     {
         "id": 341,
         "naam": "Moederdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1560707854-fb9a10eeaace?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "cultuur",
         "icon": "fa-heart",
         "vlag": "nl",
@@ -5834,7 +5780,7 @@
     {
         "id": 344,
         "naam": "Moederdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1560707854-fb9a10eeaace?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "cultuur",
         "icon": "fa-heart",
         "vlag": "nl",
@@ -5888,7 +5834,7 @@
     {
         "id": 347,
         "naam": "Moederdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1560707854-fb9a10eeaace?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "cultuur",
         "icon": "fa-heart",
         "vlag": "nl",
@@ -7382,7 +7328,7 @@
     {
         "id": 437,
         "naam": "Tweede Kerstdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://psychologiepraktijkvanbuuren.nl/wp-content/uploads/2017/12/kerstfamilie.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -7418,7 +7364,7 @@
     {
         "id": 439,
         "naam": "Tweede Kerstdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://psychologiepraktijkvanbuuren.nl/wp-content/uploads/2017/12/kerstfamilie.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -7454,7 +7400,7 @@
     {
         "id": 441,
         "naam": "Tweede Kerstdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://psychologiepraktijkvanbuuren.nl/wp-content/uploads/2017/12/kerstfamilie.jpg",
         "categorie": "feestdag",
         "icon": "fa-sleigh",
         "vlag": "globe",
@@ -8030,7 +7976,7 @@
     {
         "id": 476,
         "naam": "Up Helly Aa 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/d/df/Guisers_at_Uyeasound_Up_Helly_Aa_-_geograph.org.uk_-_1706010.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-fire",
         "vlag": "globe",
@@ -8624,7 +8570,7 @@
     {
         "id": 512,
         "naam": "Up Helly Aa 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/d/df/Guisers_at_Uyeasound_Up_Helly_Aa_-_geograph.org.uk_-_1706010.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-fire",
         "vlag": "globe",
@@ -9236,7 +9182,7 @@
     {
         "id": 549,
         "naam": "Up Helly Aa 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/d/df/Guisers_at_Uyeasound_Up_Helly_Aa_-_geograph.org.uk_-_1706010.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "cultuur",
         "icon": "fa-fire",
         "vlag": "globe",
@@ -9398,7 +9344,7 @@
     {
         "id": 558,
         "naam": "Nieuwjaarsdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1494925004943-5d5ba07360be?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-champagne-glasses",
         "vlag": "nl",
@@ -9506,7 +9452,7 @@
     {
         "id": 564,
         "naam": "Nederlandse Veteranendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.veteranendag.nl/content/uploads/2026/05/landscape-2-1280x720.jpg",
         "categorie": "cultuur",
         "icon": "fa-medal",
         "vlag": "nl",
@@ -9524,7 +9470,7 @@
     {
         "id": 565,
         "naam": "Keti Koti 2026",
-        "afbeelding": "",
+        "afbeelding": "https://image.volkskrant.nl/204615946/width/2480/belangstellenden-in-het-amsterdamse-oosterpark-tijdens-de-landelijke",
         "categorie": "cultuur",
         "icon": "fa-link-slash",
         "vlag": "nl",
@@ -9812,7 +9758,7 @@
     {
         "id": 581,
         "naam": "Wereld Nutella Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1602667686824-8dfefb65faa0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -9848,7 +9794,7 @@
     {
         "id": 583,
         "naam": "IJs als Ontbijt Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1629385701021-fcd568a743e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -9902,7 +9848,7 @@
     {
         "id": 586,
         "naam": "Tortilla Chips Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://www.gourmet-versand.com/img_article_v3/49366-tortilla-chips-natural-gezouten-nacho-chips-el-mariachi.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -9938,7 +9884,7 @@
     {
         "id": 588,
         "naam": "Nationale Pannenkoekendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1597524305544-cd821476715f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -9956,7 +9902,7 @@
     {
         "id": 589,
         "naam": "Wereld Tonijn Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1562053923-52d3ebb09d31?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -10010,7 +9956,7 @@
     {
         "id": 592,
         "naam": "Internationale Hamburger Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -10082,7 +10028,7 @@
     {
         "id": 596,
         "naam": "Internationale Sushi Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -10136,7 +10082,7 @@
     {
         "id": 599,
         "naam": "Junkfood Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1700513971603-eda40374ba0a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -10172,7 +10118,7 @@
     {
         "id": 601,
         "naam": "Watermeloen Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -10190,7 +10136,7 @@
     {
         "id": 602,
         "naam": "Oesterdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1578882422378-9ed72be08b5e?q=80&w=972&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -10226,7 +10172,7 @@
     {
         "id": 604,
         "naam": "Stroopwafel Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Stroopwafels_01.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -10244,7 +10190,7 @@
     {
         "id": 605,
         "naam": "Wereld Koffiedag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -10262,7 +10208,7 @@
     {
         "id": 606,
         "naam": "Taco dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NCI_Visuals_Food_Taco.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -10280,7 +10226,7 @@
     {
         "id": 607,
         "naam": "Nationale Krokettendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/1/17/Broodje_kroket.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -10298,7 +10244,7 @@
     {
         "id": 608,
         "naam": "Wereld Ei Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551014029-03820d0b88f5?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-egg",
         "vlag": "nl",
@@ -10316,7 +10262,7 @@
     {
         "id": 609,
         "naam": "Internationale Dag van de Nacho 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -10334,7 +10280,7 @@
     {
         "id": 610,
         "naam": "Internationale Dag van de Thee 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -10406,7 +10352,7 @@
     {
         "id": 614,
         "naam": "Warme Truiendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-shirt",
         "vlag": "nl",
@@ -10424,7 +10370,7 @@
     {
         "id": 615,
         "naam": "Wintersportdag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-person-skiing",
         "vlag": "nl",
@@ -10460,7 +10406,7 @@
     {
         "id": 617,
         "naam": "Nationale Complimentendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1604488912264-dfed70450d76?q=80&w=1222&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-thumbs-up",
         "vlag": "nl",
@@ -10478,7 +10424,7 @@
     {
         "id": 618,
         "naam": "Internationale Vrouwendag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-venus",
         "vlag": "nl",
@@ -10514,7 +10460,7 @@
     {
         "id": 620,
         "naam": "Mario Dag 2026",
-        "afbeelding": "",
+        "afbeelding": "https://pu.nl/wp-content/uploads/2026/03/39478321-1709898897-mario.png",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -10604,7 +10550,7 @@
     {
         "id": 625,
         "naam": "Internationale dag van de Eenhoorn 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltaf3a581e74beaaec/6665edc42b002474627d4094/4772324-unicorn.jpg?q=70&width=3840&auto=webp",
         "categorie": "inhaak",
         "icon": "fa-horse",
         "vlag": "nl",
@@ -10640,7 +10586,7 @@
     {
         "id": 627,
         "naam": "Movember 2026",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1675622084936-a2ce21f6f62e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-user-tie",
         "vlag": "nl",
@@ -10676,7 +10622,7 @@
     {
         "id": 629,
         "naam": "Men Make Dinner Day 2026",
-        "afbeelding": "",
+        "afbeelding": "https://c.tadst.com/gfx/750w/men-make-dinner-day.jpg",
         "categorie": "inhaak",
         "icon": "fa-fire-burner",
         "vlag": "nl",
@@ -10766,7 +10712,7 @@
     {
         "id": 634,
         "naam": "North Sea Jazz 2026",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6PQS8ip6o2iLPHf_-e-vb8dAm0iaEq_vBg77SxJMEFRFP14keHgMoCLT1&s=10",
         "categorie": "festival",
         "icon": "fa-saxophone",
         "vlag": "nl",
@@ -10856,7 +10802,7 @@
     {
         "id": 639,
         "naam": "Suikerfeest 2026",
-        "afbeelding": "",
+        "afbeelding": "https://media.myfamily.be/sites/myfamily/files/styles/io_1600/public/sitecore/myfamily/blog/gezinnen/alles-wat-je-moet-weten-over-de-ramadan/ramadan-500x300.png.webp?itok=PH1vKUa1",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
@@ -10874,7 +10820,7 @@
     {
         "id": 640,
         "naam": "Offerfeest 2026",
-        "afbeelding": "",
+        "afbeelding": "https://hips.hearstapps.com/hmg-prod/images/muslims-pray-to-id-al-adha-on-street-in-bombay-royalty-free-image-1681821896.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
@@ -10892,7 +10838,7 @@
     {
         "id": 641,
         "naam": "Nieuwjaarsdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1494925004943-5d5ba07360be?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-champagne-glasses",
         "vlag": "nl",
@@ -11000,7 +10946,7 @@
     {
         "id": 647,
         "naam": "Nederlandse Veteranendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.veteranendag.nl/content/uploads/2026/05/landscape-2-1280x720.jpg",
         "categorie": "cultuur",
         "icon": "fa-medal",
         "vlag": "nl",
@@ -11018,7 +10964,7 @@
     {
         "id": 648,
         "naam": "Keti Koti 2027",
-        "afbeelding": "",
+        "afbeelding": "https://image.volkskrant.nl/204615946/width/2480/belangstellenden-in-het-amsterdamse-oosterpark-tijdens-de-landelijke",
         "categorie": "cultuur",
         "icon": "fa-link-slash",
         "vlag": "nl",
@@ -11306,7 +11252,7 @@
     {
         "id": 664,
         "naam": "Wereld Nutella Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1602667686824-8dfefb65faa0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -11342,7 +11288,7 @@
     {
         "id": 666,
         "naam": "IJs als Ontbijt Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1629385701021-fcd568a743e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -11396,7 +11342,7 @@
     {
         "id": 669,
         "naam": "Tortilla Chips Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://www.gourmet-versand.com/img_article_v3/49366-tortilla-chips-natural-gezouten-nacho-chips-el-mariachi.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -11432,7 +11378,7 @@
     {
         "id": 671,
         "naam": "Nationale Pannenkoekendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1597524305544-cd821476715f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -11450,7 +11396,7 @@
     {
         "id": 672,
         "naam": "Wereld Tonijn Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1562053923-52d3ebb09d31?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -11504,7 +11450,7 @@
     {
         "id": 675,
         "naam": "Internationale Hamburger Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -11576,7 +11522,7 @@
     {
         "id": 679,
         "naam": "Internationale Sushi Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -11630,7 +11576,7 @@
     {
         "id": 682,
         "naam": "Junkfood Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1700513971603-eda40374ba0a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -11666,7 +11612,7 @@
     {
         "id": 684,
         "naam": "Watermeloen Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -11684,7 +11630,7 @@
     {
         "id": 685,
         "naam": "Oesterdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1578882422378-9ed72be08b5e?q=80&w=972&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -11702,7 +11648,7 @@
     {
         "id": 686,
         "naam": "Nationale Koffie Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1630338606772-392095666116?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -11720,7 +11666,7 @@
     {
         "id": 687,
         "naam": "Stroopwafel Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Stroopwafels_01.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -11738,7 +11684,7 @@
     {
         "id": 688,
         "naam": "Wereld Koffiedag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -11756,7 +11702,7 @@
     {
         "id": 689,
         "naam": "Taco dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NCI_Visuals_Food_Taco.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -11774,7 +11720,7 @@
     {
         "id": 690,
         "naam": "Nationale Krokettendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/1/17/Broodje_kroket.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -11792,7 +11738,7 @@
     {
         "id": 691,
         "naam": "Wereld Ei Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551014029-03820d0b88f5?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-egg",
         "vlag": "nl",
@@ -11810,7 +11756,7 @@
     {
         "id": 692,
         "naam": "Internationale Dag van de Nacho 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -11828,7 +11774,7 @@
     {
         "id": 693,
         "naam": "Internationale Dag van de Thee 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -11900,7 +11846,7 @@
     {
         "id": 697,
         "naam": "Warme Truiendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-shirt",
         "vlag": "nl",
@@ -11918,7 +11864,7 @@
     {
         "id": 698,
         "naam": "Wintersportdag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-person-skiing",
         "vlag": "nl",
@@ -11954,7 +11900,7 @@
     {
         "id": 700,
         "naam": "Nationale Complimentendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1604488912264-dfed70450d76?q=80&w=1222&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-thumbs-up",
         "vlag": "nl",
@@ -11972,7 +11918,7 @@
     {
         "id": 701,
         "naam": "Internationale Vrouwendag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-venus",
         "vlag": "nl",
@@ -12008,7 +11954,7 @@
     {
         "id": 703,
         "naam": "Mario Dag 2027",
-        "afbeelding": "",
+        "afbeelding": "https://pu.nl/wp-content/uploads/2026/03/39478321-1709898897-mario.png",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -12098,7 +12044,7 @@
     {
         "id": 708,
         "naam": "Internationale dag van de Eenhoorn 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltaf3a581e74beaaec/6665edc42b002474627d4094/4772324-unicorn.jpg?q=70&width=3840&auto=webp",
         "categorie": "inhaak",
         "icon": "fa-horse",
         "vlag": "nl",
@@ -12134,7 +12080,7 @@
     {
         "id": 710,
         "naam": "Movember 2027",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1675622084936-a2ce21f6f62e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-user-tie",
         "vlag": "nl",
@@ -12170,7 +12116,7 @@
     {
         "id": 712,
         "naam": "Men Make Dinner Day 2027",
-        "afbeelding": "",
+        "afbeelding": "https://c.tadst.com/gfx/750w/men-make-dinner-day.jpg",
         "categorie": "inhaak",
         "icon": "fa-fire-burner",
         "vlag": "nl",
@@ -12260,7 +12206,7 @@
     {
         "id": 717,
         "naam": "North Sea Jazz 2027",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6PQS8ip6o2iLPHf_-e-vb8dAm0iaEq_vBg77SxJMEFRFP14keHgMoCLT1&s=10",
         "categorie": "festival",
         "icon": "fa-saxophone",
         "vlag": "nl",
@@ -12350,7 +12296,7 @@
     {
         "id": 722,
         "naam": "Suikerfeest 2027",
-        "afbeelding": "",
+        "afbeelding": "https://media.myfamily.be/sites/myfamily/files/styles/io_1600/public/sitecore/myfamily/blog/gezinnen/alles-wat-je-moet-weten-over-de-ramadan/ramadan-500x300.png.webp?itok=PH1vKUa1",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
@@ -12368,7 +12314,7 @@
     {
         "id": 723,
         "naam": "Offerfeest 2027",
-        "afbeelding": "",
+        "afbeelding": "https://hips.hearstapps.com/hmg-prod/images/muslims-pray-to-id-al-adha-on-street-in-bombay-royalty-free-image-1681821896.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
@@ -12386,7 +12332,7 @@
     {
         "id": 724,
         "naam": "Nieuwjaarsdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1494925004943-5d5ba07360be?q=80&w=1333&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "feestdag",
         "icon": "fa-champagne-glasses",
         "vlag": "nl",
@@ -12494,7 +12440,7 @@
     {
         "id": 730,
         "naam": "Nederlandse Veteranendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.veteranendag.nl/content/uploads/2026/05/landscape-2-1280x720.jpg",
         "categorie": "cultuur",
         "icon": "fa-medal",
         "vlag": "nl",
@@ -12512,7 +12458,7 @@
     {
         "id": 731,
         "naam": "Keti Koti 2028",
-        "afbeelding": "",
+        "afbeelding": "https://image.volkskrant.nl/204615946/width/2480/belangstellenden-in-het-amsterdamse-oosterpark-tijdens-de-landelijke",
         "categorie": "cultuur",
         "icon": "fa-link-slash",
         "vlag": "nl",
@@ -12800,7 +12746,7 @@
     {
         "id": 747,
         "naam": "Wereld Nutella Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1602667686824-8dfefb65faa0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-jar",
         "vlag": "nl",
@@ -12836,7 +12782,7 @@
     {
         "id": 749,
         "naam": "IJs als Ontbijt Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1629385701021-fcd568a743e8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-ice-cream",
         "vlag": "nl",
@@ -12890,7 +12836,7 @@
     {
         "id": 752,
         "naam": "Tortilla Chips Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://www.gourmet-versand.com/img_article_v3/49366-tortilla-chips-natural-gezouten-nacho-chips-el-mariachi.jpg",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -12926,7 +12872,7 @@
     {
         "id": 754,
         "naam": "Nationale Pannenkoekendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1597524305544-cd821476715f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -12944,7 +12890,7 @@
     {
         "id": 755,
         "naam": "Wereld Tonijn Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1562053923-52d3ebb09d31?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -12998,7 +12944,7 @@
     {
         "id": 758,
         "naam": "Internationale Hamburger Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -13070,7 +13016,7 @@
     {
         "id": 762,
         "naam": "Internationale Sushi Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-fish",
         "vlag": "nl",
@@ -13124,7 +13070,7 @@
     {
         "id": 765,
         "naam": "Junkfood Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1700513971603-eda40374ba0a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-burger",
         "vlag": "nl",
@@ -13160,7 +13106,7 @@
     {
         "id": 767,
         "naam": "Watermeloen Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1563114773-84221bd62daa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-seedling",
         "vlag": "nl",
@@ -13178,7 +13124,7 @@
     {
         "id": 768,
         "naam": "Oesterdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1578882422378-9ed72be08b5e?q=80&w=972&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-water",
         "vlag": "nl",
@@ -13196,7 +13142,7 @@
     {
         "id": 769,
         "naam": "Nationale Koffie Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1630338606772-392095666116?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -13214,7 +13160,7 @@
     {
         "id": 770,
         "naam": "Stroopwafel Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Stroopwafels_01.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-cookie",
         "vlag": "nl",
@@ -13232,7 +13178,7 @@
     {
         "id": 771,
         "naam": "Wereld Koffiedag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -13250,7 +13196,7 @@
     {
         "id": 772,
         "naam": "Taco dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/3/3a/NCI_Visuals_Food_Taco.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-utensils",
         "vlag": "nl",
@@ -13268,7 +13214,7 @@
     {
         "id": 773,
         "naam": "Nationale Krokettendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://upload.wikimedia.org/wikipedia/commons/1/17/Broodje_kroket.jpg?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original",
         "categorie": "inhaak",
         "icon": "fa-hotdog",
         "vlag": "nl",
@@ -13286,7 +13232,7 @@
     {
         "id": 774,
         "naam": "Wereld Ei Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551014029-03820d0b88f5?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-egg",
         "vlag": "nl",
@@ -13304,7 +13250,7 @@
     {
         "id": 775,
         "naam": "Internationale Dag van de Nacho 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-bowl-food",
         "vlag": "nl",
@@ -13322,7 +13268,7 @@
     {
         "id": 776,
         "naam": "Internationale Dag van de Thee 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-mug-hot",
         "vlag": "nl",
@@ -13394,7 +13340,7 @@
     {
         "id": 780,
         "naam": "Warme Truiendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-shirt",
         "vlag": "nl",
@@ -13412,7 +13358,7 @@
     {
         "id": 781,
         "naam": "Wintersportdag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-person-skiing",
         "vlag": "nl",
@@ -13448,7 +13394,7 @@
     {
         "id": 783,
         "naam": "Nationale Complimentendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1604488912264-dfed70450d76?q=80&w=1222&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-thumbs-up",
         "vlag": "nl",
@@ -13466,7 +13412,7 @@
     {
         "id": 784,
         "naam": "Internationale Vrouwendag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1524601500432-1e1a4c71d692?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-venus",
         "vlag": "nl",
@@ -13502,7 +13448,7 @@
     {
         "id": 786,
         "naam": "Mario Dag 2028",
-        "afbeelding": "",
+        "afbeelding": "https://pu.nl/wp-content/uploads/2026/03/39478321-1709898897-mario.png",
         "categorie": "inhaak",
         "icon": "fa-gamepad",
         "vlag": "nl",
@@ -13592,7 +13538,7 @@
     {
         "id": 791,
         "naam": "Internationale dag van de Eenhoorn 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltaf3a581e74beaaec/6665edc42b002474627d4094/4772324-unicorn.jpg?q=70&width=3840&auto=webp",
         "categorie": "inhaak",
         "icon": "fa-horse",
         "vlag": "nl",
@@ -13628,7 +13574,7 @@
     {
         "id": 793,
         "naam": "Movember 2028",
-        "afbeelding": "",
+        "afbeelding": "https://images.unsplash.com/photo-1675622084936-a2ce21f6f62e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "categorie": "inhaak",
         "icon": "fa-user-tie",
         "vlag": "nl",
@@ -13664,7 +13610,7 @@
     {
         "id": 795,
         "naam": "Men Make Dinner Day 2028",
-        "afbeelding": "",
+        "afbeelding": "https://c.tadst.com/gfx/750w/men-make-dinner-day.jpg",
         "categorie": "inhaak",
         "icon": "fa-fire-burner",
         "vlag": "nl",
@@ -13754,7 +13700,7 @@
     {
         "id": 800,
         "naam": "North Sea Jazz 2028",
-        "afbeelding": "",
+        "afbeelding": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6PQS8ip6o2iLPHf_-e-vb8dAm0iaEq_vBg77SxJMEFRFP14keHgMoCLT1&s=10",
         "categorie": "festival",
         "icon": "fa-saxophone",
         "vlag": "nl",
@@ -13844,7 +13790,7 @@
     {
         "id": 805,
         "naam": "Suikerfeest 2028",
-        "afbeelding": "",
+        "afbeelding": "https://media.myfamily.be/sites/myfamily/files/styles/io_1600/public/sitecore/myfamily/blog/gezinnen/alles-wat-je-moet-weten-over-de-ramadan/ramadan-500x300.png.webp?itok=PH1vKUa1",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
@@ -13862,7 +13808,7 @@
     {
         "id": 806,
         "naam": "Offerfeest 2028",
-        "afbeelding": "",
+        "afbeelding": "https://hips.hearstapps.com/hmg-prod/images/muslims-pray-to-id-al-adha-on-street-in-bombay-royalty-free-image-1681821896.jpg?crop=1xw:0.84415xh;center,top&resize=1200:*",
         "categorie": "cultuur",
         "icon": "fa-star-and-crescent",
         "vlag": "nl",
