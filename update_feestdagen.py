@@ -2,7 +2,9 @@ import sqlite3
 import datetime
 import calendar
 
-# --- REKENFUNCTIES VOOR WISSELENDE DATUMS ---
+# ==========================================
+# REKENFUNCTIES VOOR WISSELENDE DATUMS
+# ==========================================
 
 def bereken_pasen(jaar):
     a = jaar % 19
@@ -22,7 +24,7 @@ def bereken_pasen(jaar):
     return datetime.date(jaar, maand, dag)
 
 def laatste_weekdag_van_maand(jaar, maand, weekdag):
-    # weekdag: 0=maandag, 6=zondag
+    # weekdag: 0 is maandag, 6 is zondag
     dagen_in_maand = calendar.monthrange(jaar, maand)[1]
     laatste_dag = datetime.date(jaar, maand, dagen_in_maand)
     offset = (laatste_dag.weekday() - weekdag) % 7
@@ -34,7 +36,9 @@ def n_de_weekdag_van_maand(jaar, maand, weekdag, n):
     eerste_gezochte_dag = eerste_dag + datetime.timedelta(days=offset)
     return eerste_gezochte_dag + datetime.timedelta(weeks=n-1)
 
-# --- DATABASE UPDATE FUNCTIE ---
+# ==========================================
+# DATABASE UPDATE FUNCTIE
+# ==========================================
 
 def update_database():
     conn = sqlite3.connect('evenementen.db')
@@ -64,7 +68,7 @@ def update_database():
     if zomertijd < vandaag: zomertijd = laatste_weekdag_van_maand(jaar + 1, 3, 6)
     if wintertijd < vandaag: wintertijd = laatste_weekdag_van_maand(jaar + 1, 10, 6)
 
-    # Seizoenen (Meteorologische start - vaak 20/21, we pakken een veilige vaste datum voor de kalender)
+    # Seizoenen (Meteorologische start, we pakken een veilige vaste datum voor de kalender)
     lente = datetime.date(jaar, 3, 20)
     zomer = datetime.date(jaar, 6, 21)
     herfst = datetime.date(jaar, 9, 22)
@@ -95,7 +99,7 @@ def update_database():
         {"naam": f"Eerste Paasdag {jaar_pasen}", "cat": "feestdag", "datum": paas_datum, "icon": "fa-egg", "img": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=400&q=80", "url": ah_affiliate_url, "knop": "Bestel AH Thuisbezorgd"},
         {"naam": f"Tweede Paasdag {jaar_pasen}", "cat": "feestdag", "datum": tweede_paas_datum, "icon": "fa-egg", "img": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=400&q=80", "url": ah_affiliate_url, "knop": "Bestel AH Thuisbezorgd"},
         
-        # Tijdverzettingen (categorie 'seizoen' zorgt in je frontend dat er geen categorie-label staat)
+        # Tijdverzettingen
         {"naam": f"Start Zomertijd {zomertijd.year}", "cat": "seizoen", "datum": zomertijd, "icon": "fa-clock", "img": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80", "url": "", "knop": ""},
         {"naam": f"Start Wintertijd {wintertijd.year}", "cat": "seizoen", "datum": wintertijd, "icon": "fa-clock", "img": "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=400&q=80", "url": "", "knop": ""},
         
@@ -114,7 +118,7 @@ def update_database():
     for ev in events:
         datum_str = ev["datum"].strftime('%Y-%m-%dT00:00:00')
         
-        # Checken of deze specifieke dag (met dit jaartal) al in de database staat
+        # Checken of deze specifieke dag al in de database staat
         cursor.execute('SELECT id FROM events WHERE naam = ? AND categorie = ?', (ev["naam"], ev["cat"]))
         bestaand = cursor.fetchone()
         
