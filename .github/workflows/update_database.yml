@@ -50,6 +50,9 @@ jobs:
     - name: Exporteer naar JSON
       run: python export_json.py
 
+    - name: Genereer dynamische Sitemap
+      run: python generate_sitemap.py
+
     - name: Commit and push changes
       run: |
         git config --global user.name 'Automated Bot'
