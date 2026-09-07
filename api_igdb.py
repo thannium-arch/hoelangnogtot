@@ -3,10 +3,14 @@ import requests
 import datetime
 import time
 import urllib.parse
+import os
 
-# Vul hier jouw Twitch Developer gegevens in
-CLIENT_ID = '939r9khzld2vw6c7pxygkyl8v4vzj0'
-CLIENT_SECRET = 'wkj9fvpcuzcssy1ilur9cu2yfsy3gx'
+# Haal de Twitch Developer gegevens veilig uit de GitHub omgeving (Secrets)
+CLIENT_ID = os.environ.get("IGDB_CLIENT_ID")
+CLIENT_SECRET = os.environ.get("IGDB_CLIENT_SECRET")
+
+if not CLIENT_ID or not CLIENT_SECRET:
+    raise ValueError("IGDB inloggegevens ontbreken in de omgeving. Controleer je GitHub Secrets.")
 
 def haal_twitch_token_op():
     url = f"https://id.twitch.tv/oauth2/token"
