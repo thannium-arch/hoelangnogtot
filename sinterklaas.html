@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoe lang nog tot Sinterklaas? Aftelkalender & Spelletjes</title>
+    <meta name="description" content="Tel live af naar de intocht en pakjesavond. Speel Sinterklaas spelletjes en print jullie eigen A4 aftelkalender.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts.js"></script>
+    <style>
+        :root {
+            --sint-rood: #b71c1c;
+            --sint-goud: #fbc02d;
+            --tekst-donker: #2c3e50;
+            --bg-zacht: #fdfaf6;
+            --kaart-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-zacht);
+            color: var(--tekst-donker);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--sint-rood);
+            color: #ffffff;
+            padding: 2.5rem 1rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--sint-goud);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem;
+            font-size: 2.2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .countdown-kaart {
+            background: var(--kaart-bg);
+            border-radius: 12px;
+            padding: 1.8rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            border-top: 4px solid var(--sint-rood);
+        }
+
+        .countdown-kaart h2 {
+            margin-top: 0;
+            color: var(--sint-rood);
+        }
+
+        .timer-display {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .tijd-eenheid {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 0.6rem 0.5rem;
+            min-width: 55px;
+        }
+
+        .tijd-getal {
+            font-size: 1.6rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .tijd-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #6c757d;
+        }
+
+        .content-blok {
+            background: var(--kaart-bg);
+            border-radius: 12px;
+            padding: 2.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        }
+
+        .content-blok h2 {
+            color: var(--sint-rood);
+            margin-top: 0;
+        }
+
+        /* Kalender Generator */
+        .kalender-opties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 1.5rem 0;
+        }
+        
+        .dag-checkbox {
+            display: flex;
+            align-items: center;
+            background: #f1f2f6;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            border: 1px solid #dfe4ea;
+        }
+
+        .dag-checkbox input {
+            margin-right: 8px;
+        }
+
+        .actie-knop {
+            background-color: var(--sint-rood);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .actie-knop:hover {
+            background-color: #9c1414;
+        }
+
+        /* Spelletjes sectie */
+        .game-area {
+            position: relative;
+            background: #eccc68;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1rem;
+            border: 3px dashed #ffa502;
+        }
+
+        #kruidnoot {
+            position: absolute;
+            font-size: 2.5rem;
+            cursor: pointer;
+            user-select: none;
+            transition: top 0.2s, left 0.2s;
+        }
+
+        .pakjes-boot {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1.5rem;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        .pakjes-boot div {
+            transition: transform 0.2s;
+        }
+
+        .pakjes-boot div:active {
+            transform: scale(0.9);
+        }
+
+        /* Memory Spel */
+        .memory-board {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 1.5rem;
+            max-width: 400px;
+        }
+
+        .memory-card {
+            background-color: var(--sint-rood);
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            user-select: none;
+            color: transparent;
+            transition: background-color 0.3s, border 0.3s;
+            border: 2px solid var(--sint-rood);
+        }
+
+        .memory-card.flipped {
+            background-color: #fff;
+            color: #000;
+            border: 2px solid var(--sint-goud);
+            cursor: default;
+        }
+
+        .memory-card.matched {
+            background-color: #d4edda;
+            color: #000;
+            border: 2px solid #28a745;
+            cursor: default;
+        }
+
+        .terug-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--sint-rood);
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aftellen tot Sinterklaas</h1>
+        <p>Maak jullie eigen aftelkalender, speel spelletjes en zie precies hoeveel nachtjes we nog moeten slapen!</p>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="terug-link"><i class="fa-solid fa-arrow-left"></i> Terug naar het overzicht</a>
+
+        <div class="countdown-grid">
+            <div class="countdown-kaart">
+                <h2><i class="fa-solid fa-ship"></i> Intocht (14 nov)</h2>
+                <div class="timer-display" id="timer-intocht">
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="d-intocht">0</span><span class="tijd-label">Dagen</span></div>
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="u-intocht">0</span><span class="tijd-label">Uur</span></div>
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="m-intocht">0</span><span class="tijd-label">Min</span></div>
+                </div>
+            </div>
+
+            <div class="countdown-kaart">
+                <h2><i class="fa-solid fa-gifts"></i> Pakjesavond (5 dec)</h2>
+                <div class="timer-display" id="timer-pakjes">
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="d-pakjes">0</span><span class="tijd-label">Dagen</span></div>
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="u-pakjes">0</span><span class="tijd-label">Uur</span></div>
+                    <div class="tijd-eenheid"><span class="tijd-getal" id="m-pakjes">0</span><span class="tijd-label">Min</span></div>
+                </div>
+            </div>
+        </div>
+
+        <article class="content-blok">
+            <h2><i class="fa-solid fa-calendar-days"></i> Maak jullie eigen A4 Aftelkalender</h2>
+            <p>Niets brengt meer rust in de Sinterklaasperiode dan duidelijkheid. Vink hieronder aan op welke dagen de schoen gezet mag worden en print direct een prachtige afstreepkalender voor op de koelkast. De kalender begint al vijf dagen voor de intocht, zodat jullie samen kunnen aftellen naar de aankomst van de stoomboot!</p>
+            
+            <div class="kalender-opties" id="schoen-dagen">
+                <!-- Javascript vult hier de dagen in -->
+            </div>
+            
+            <button class="actie-knop" onclick="genereerKalender()"><i class="fa-solid fa-print"></i> Kalender Printen</button>
+        </article>
+
+        <article class="content-blok">
+            <h2><i class="fa-solid fa-gamepad"></i> Tijd voor een Spelletje!</h2>
+            
+            <h3>Spel 1: Sinterklaas Memory</h3>
+            <p>Zoek de gelijke plaatjes bij elkaar. Probeer het zo snel mogelijk op te lossen!</p>
+            <div class="memory-board" id="memory-bord">
+                <!-- Javascript vult hier de kaarten in -->
+            </div>
+
+            <h3 style="margin-top: 3rem;">Spel 2: Vang de Kruidnoot!</h3>
+            <p>Piet heeft gestrooid, maar deze kruidnoot stuitert alle kanten op. Kun jij hem vangen? Score: <span id="score" style="font-weight:bold; color:var(--sint-rood);">0</span></p>
+            <div class="game-area">
+                <div id="kruidnoot" onclick="vangKruidnoot()" style="top: 50px; left: 50px;">🍪</div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">Spel 3: Wat zit er in het pakje?</h3>
+            <p>Klik op de cadeautjes om te zien of het paard van Sinterklaas zich heeft verstopt!</p>
+            <div class="pakjes-boot" id="pakjes-rij">
+                <div onclick="openPakje(this)">🎁</div>
+                <div onclick="openPakje(this)">🎁</div>
+                <div onclick="openPakje(this)">🎁</div>
+                <div onclick="openPakje(this)">🎁</div>
+                <div onclick="openPakje(this)">🎁</div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        // --- TIMERS ---
+        function updateSintTimers() {
+            const nu = new Date().getTime();
+            const datumIntocht = new Date("2026-11-14T12:00:00").getTime();
+            const datumPakjes = new Date("2026-12-05T17:00:00").getTime();
+
+            berekenTijd(datumIntocht, "intocht", nu);
+            berekenTijd(datumPakjes, "pakjes", nu);
+        }
+
+        function berekenTijd(doel, prefix, nu) {
+            const verschil = doel - nu;
+            if (verschil <= 0) {
+                document.getElementById("d-" + prefix).innerText = 0;
+                document.getElementById("u-" + prefix).innerText = 0;
+                document.getElementById("m-" + prefix).innerText = 0;
+                return;
+            }
+
+            const dagen = Math.floor(verschil / (1000 * 60 * 60 * 24));
+            const uren = Math.floor((verschil % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minuten = Math.floor((verschil % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("d-" + prefix).innerText = dagen;
+            document.getElementById("u-" + prefix).innerText = uren;
+            document.getElementById("m-" + prefix).innerText = minuten;
+        }
+        setInterval(updateSintTimers, 60000);
+        updateSintTimers();
+
+        // --- SPEL 1: MEMORY ---
+        const memoryIcoontjes = ['🎁', '🎁', '🐴', '🐴', '🚢', '🚢', '👞', '👞', '🥕', '🥕', '📖', '📖'];
+        let kaarten = [];
+        let eersteKaart = null;
+        let tweedeKaart = null;
+        let bordBeweegt = false;
+        let gematchteKaarten = 0;
+
+        function startMemory() {
+            const bord = document.getElementById('memory-bord');
+            bord.innerHTML = '';
+            eersteKaart = null;
+            tweedeKaart = null;
+            bordBeweegt = false;
+            gematchteKaarten = 0;
+
+            // Schudden
+            kaarten = memoryIcoontjes.sort(() => 0.5 - Math.random());
+
+            kaarten.forEach((icoon, index) => {
+                const kaartElement = document.createElement('div');
+                kaartElement.classList.add('memory-card');
+                kaartElement.dataset.icoon = icoon;
+                kaartElement.dataset.index = index;
+                kaartElement.innerText = icoon;
+                kaartElement.onclick = draaiKaartOmdraaien;
+                bord.appendChild(kaartElement);
+            });
+        }
+
+        function draaiKaartOmdraaien() {
+            if (bordBeweegt) return;
+            if (this === eersteKaart) return;
+            if (this.classList.contains('matched')) return;
+
+            this.classList.add('flipped');
+
+            if (!eersteKaart) {
+                eersteKaart = this;
+                return;
+            }
+
+            tweedeKaart = this;
+            controleerMatch();
+        }
+
+        function controleerMatch() {
+            bordBeweegt = true;
+            let isMatch = eersteKaart.dataset.icoon === tweedeKaart.dataset.icoon;
+
+            if (isMatch) {
+                eersteKaart.classList.add('matched');
+                tweedeKaart.classList.add('matched');
+                gematchteKaarten += 2;
+                resetBord();
+                if (gematchteKaarten === kaarten.length) {
+                    setTimeout(() => alert("Goed gedaan! Je hebt alle kaartjes gevonden!"), 300);
+                }
+            } else {
+                setTimeout(() => {
+                    eersteKaart.classList.remove('flipped');
+                    tweedeKaart.classList.remove('flipped');
+                    resetBord();
+                }, 1000);
+            }
+        }
+
+        function resetBord() {
+            bordBeweegt = false;
+            eersteKaart = null;
+            tweedeKaart = null;
+        }
+
+        startMemory();
+
+        // --- SPEL 2: KRUIDNOOT ---
+        let score = 0;
+        function vangKruidnoot() {
+            score++;
+            document.getElementById('score').innerText = score;
+            const noot = document.getElementById('kruidnoot');
+            const maxTop = 150;
+            const maxLeft = document.querySelector('.game-area').offsetWidth - 50;
+            
+            noot.style.top = Math.floor(Math.random() * maxTop) + 'px';
+            noot.style.left = Math.floor(Math.random() * maxLeft) + 'px';
+        }
+
+        // --- SPEL 3: PAKJES ---
+        const inhoud = ["🐴", "🍫", "🧦", "🥕", "📖"];
+        let geschud = inhoud.sort(() => Math.random() - 0.5);
+        function openPakje(element) {
+            if (element.innerText === "🎁") {
+                const item = geschud.pop() || "🎁";
+                element.innerText = item;
+                if (item === "🐴") {
+                    setTimeout(() => alert("Je hebt Ozosnel gevonden!"), 100);
+                }
+            }
+        }
+
+        // --- KALENDER GENERATOR ---
+        // Begin 5 dagen voor de intocht om echt te kunnen aftellen
+        const startDatum = new Date("2026-11-09");
+        const eindDatum = new Date("2026-12-05");
+        const datumIntocht = new Date("2026-11-14");
+        const dagenDiv = document.getElementById('schoen-dagen');
+        const kalenderDagen = [];
+
+        let huidigeDatum = new Date(startDatum);
+        while (huidigeDatum <= eindDatum) {
+            kalenderDagen.push(new Date(huidigeDatum));
+            huidigeDatum.setDate(huidigeDatum.getDate() + 1);
+        }
+
+        const dagenNamen = ["Zon", "Maa", "Din", "Woe", "Don", "Vri", "Zat"];
+        kalenderDagen.forEach((dag) => {
+            // Check of het na de intocht is en voor pakjesavond (alleen dan schoen zetten)
+            if (dag > datumIntocht && dag < eindDatum) {
+                const uniekeId = "dag_" + dag.getDate();
+                const label = document.createElement("label");
+                label.className = "dag-checkbox";
+                label.innerHTML = `<input type="checkbox" id="${uniekeId}" value="${dag.getDate()}"> ${dagenNamen[dag.getDay()]} ${dag.getDate()} nov`;
+                dagenDiv.appendChild(label);
+            }
+        });
+
+        function genereerKalender() {
+            const printWindow = window.open('', '', 'width=800,height=900');
+            let geselecteerdeDagen = [];
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => geselecteerdeDagen.push(parseInt(cb.value)));
+
+            let html = `
+            <html><head><title>Sinterklaas Aftelkalender</title>
+            <style>
+                @page { size: A4 portrait; margin: 1.5cm; }
+                body { font-family: Arial, sans-serif; text-align: center; }
+                h1 { color: #b71c1c; }
+                .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 20px; }
+                .dag-vak { border: 2px solid #333; height: 100px; padding: 10px; position: relative; border-radius: 8px; }
+                .dag-nummer { font-size: 1.5rem; font-weight: bold; }
+                .dag-naam { font-size: 0.9rem; color: #555; }
+                .icon { font-size: 2.5rem; margin-top: 10px; }
+                .watermerk { font-size: 0.8rem; color: #999; margin-top: 30px; }
+            </style>
+            </head><body>
+            <h1>Onze Sinterklaas Aftelkalender</h1>
+            <p>Kruis elke avond een vakje af voor het slapen gaan!</p>
+            <div class="grid">`;
+
+            kalenderDagen.forEach((dag) => {
+                let icoon = "";
+                let achtergrond = "#fff";
+                let tekst = "";
+
+                if (dag.getTime() === datumIntocht.getTime()) {
+                    icoon = "🚢";
+                    tekst = "Intocht!";
+                    achtergrond = "#ffeb3b";
+                } else if (dag.getTime() === eindDatum.getTime()) {
+                    icoon = "🎁";
+                    tekst = "Pakjesavond!";
+                    achtergrond = "#ffcdd2";
+                } else if (dag < datumIntocht) {
+                    icoon = "⏳";
+                    tekst = "Nog even wachten";
+                    achtergrond = "#f1f2f6";
+                } else if (geselecteerdeDagen.includes(dag.getDate())) {
+                    icoon = "👞";
+                    tekst = "Schoen zetten";
+                }
+
+                html += `
+                <div class="dag-vak" style="background-color: ${achtergrond}">
+                    <div class="dag-naam">${dagenNamen[dag.getDay()]}</div>
+                    <div class="dag-nummer">${dag.getDate()}</div>
+                    <div class="icon">${icoon}</div>
+                    <div style="font-size:0.8rem; font-weight:bold;">${tekst}</div>
+                </div>`;
+            });
+
+            html += `</div>
+            <div class="watermerk">Gemaakt via hoelangnogtot.nl</div>
+            </body></html>`;
+
+            printWindow.document.write(html);
+            printWindow.document.close();
+            
+            setTimeout(() => {
+                printWindow.print();
+            }, 500);
+        }
+    </script>
+</body>
+</html>
