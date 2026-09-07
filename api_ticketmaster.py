@@ -1,9 +1,13 @@
 import sqlite3
 import requests
 import time
+import os
 
-# Vul hier jouw Ticketmaster Consumer Key in
-API_KEY = 'GOifHJA3hTl1AJLl1Neck5dcEMnKlqfX' 
+# Haal de Ticketmaster Consumer Key veilig uit de GitHub omgeving (Secrets)
+API_KEY = os.environ.get("TICKETMASTER_API_KEY")
+
+if not API_KEY:
+    raise ValueError("Ticketmaster API sleutel ontbreekt in de omgeving. Controleer je GitHub Secrets.")
 
 def haal_events_op_per_zaal(venue_keyword):
     url = "https://app.ticketmaster.com/discovery/v2/events.json"
