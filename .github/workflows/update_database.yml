@@ -29,12 +29,19 @@ jobs:
       run: pip install requests
 
     - name: Run IGDB API script
+      env:
+        IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+        IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
       run: python api_igdb.py
 
     - name: Run TMDB API script
+      env:
+        TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       run: python api_tmdb.py
 
     - name: Run Ticketmaster API script
+      env:
+        TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
       run: python api_ticketmaster.py
 
     - name: Run Feestdagen script
