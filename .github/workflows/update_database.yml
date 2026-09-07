@@ -47,8 +47,11 @@ jobs:
     - name: Run Feestdagen script
       run: python update_feestdagen.py
 
-    - name: Exporteer naar JSON
+- name: Exporteer naar JSON
       run: python export_json.py
+
+    - name: Voeg ontbrekende SEO tags toe
+      run: python auto_seo.py
 
     - name: Genereer dynamische Sitemap
       run: python generate_sitemap.py
