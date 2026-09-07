@@ -1,9 +1,13 @@
 import sqlite3
 import requests
 import datetime
+import os
 
-# Vul hier jouw TMDB API Key in
-API_KEY = '28e96abff420de37f09fca90726e907a'
+# Haal de TMDB API Key veilig uit de GitHub omgeving (Secrets)
+API_KEY = os.environ.get("TMDB_API_KEY")
+
+if not API_KEY:
+    raise ValueError("TMDB API sleutel ontbreekt in de omgeving. Controleer je GitHub Secrets.")
 
 def haal_grote_films_op():
     vandaag = datetime.date.today().isoformat()
