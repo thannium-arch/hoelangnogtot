@@ -2,11 +2,9 @@ name: Dagelijkse Database Update
 
 on:
   schedule:
-    # Draait elke nacht om 03:00 uur
     - cron: '0 3 * * *'
   workflow_dispatch:
 
-# Dit lost direct de Exit Code 128 op:
 permissions:
   contents: write
 
