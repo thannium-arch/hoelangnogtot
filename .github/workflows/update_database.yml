@@ -14,11 +14,9 @@ jobs:
 
     steps:
     - name: Check out repository
-      # Verhoogd naar v4 om de Node.js waarschuwing op te lossen
       uses: actions/checkout@v4
 
     - name: Set up Python
-      # Verhoogd naar v5 om de Node.js waarschuwing op te lossen
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
@@ -45,7 +43,7 @@ jobs:
     - name: Run Feestdagen script
       run: python update_feestdagen.py
 
-- name: Exporteer naar JSON
+    - name: Exporteer naar JSON
       run: python export_json.py
 
     - name: Voeg ontbrekende SEO tags toe
