@@ -1,3 +1,27 @@
-film: Avatar Fire and Ash
-game: Grand Theft Auto VI
-concert: Dua Lipa
+sport: Tokyo Marathon: Zondag 7 maart 2027
+sport: Boston Marathon: Maandag 19 april 2027
+sport: London Marathon: Zaterdag 24 en zondag 25 april 2027
+sport: Cape Town Marathon (Kaapstad): Zondag 23 mei 2027 (nieuw als Major)
+sport: Sydney Marathon: Zondag 29 augustus 2027
+sport: Berlin Marathon (Berlijn): Zondag 26 september 2027
+sport: Chicago Marathon: Zondag 10 oktober 2027
+sport: New York City Marathon: Zondag 7 november 2027
+sport: Shanghai Marathon: Zondag 5 december 2027 (onder voorbehoud)
+sport: Rotterdam Marathon 2027
+sport: Amsterdam Marathon 2027
+sport: December 5: Tottenham vs. Arsenal
+sport: May 1 2027: Arsenal vs. TottenhamSeptember 13: Manchester United vs. Manchester City
+sport: March 20 2027: Manchester City vs. Manchester United
+sport: November 28 2026: Everton vs. Liverpool
+sport: January 30 2027: Liverpool vs. Everton
+sport: December 5 2026: Newcastle vs. Sunderland
+sport: May 1 2027: Sunderland vs. Sunderland
+sport: November 21 2026: Liverpool vs. Manchester United
+sport: January 23 2027: Manchester United vs. Liverpool
+sport: December 19 2026: Arsenal vs. Manchester United
+sport: February 27 2027: Manchester United vs. Arsenal
+sport: De Klassieker seizoen 26/27 Ajax - Feyenoord
+sport: De Klassieker seizoen 26/27 Feyenoord - Ajax
+sport: De Topper seizoen 26/27 PSV - Ajax
+sport: El Clásico op Oktober 24-25 2026, Barcelona - Real Madrid
+sport: El Clásico op April 3-4 2027, Real Madrid - Barcelona
