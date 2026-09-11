@@ -24,6 +24,15 @@ jobs:
     - name: Install dependencies
       run: pip install requests
 
+    - name: Verwerk handmatige wensenlijst
+      run: python verwerk_wensenlijst.py
+
+    - name: Run IGDB API script
+      env:
+        IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+        IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+      run: python api_igdb.py
+
     - name: Run IGDB API script
       env:
         IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
