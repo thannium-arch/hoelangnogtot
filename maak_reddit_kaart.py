@@ -19,32 +19,48 @@ if not ev:
     print(f"Evenement '{evenement_naam}' niet gevonden in evenementen.json")
     sys.exit(1)
 
-# Bepaal categorie, afbeelding en naam
-cat = ev.get("categorie", "feestdag")
+# Bepaal categorie, afbeelding, naam en URL
+cat = ev.get("categorie", "gaming")
 afbeelding = ev.get("afbeelding", "https://images.unsplash.com/photo-1499591934245-40b55745b905?w=400&q=80")
 naam = ev.get("naam", "Evenement")
 datum_str = ev.get("datum", "2027-01-01")
 
-# Bereken de dagen en maak de datum leesbaar
+# Bepaal de link (gebruik de specifieke url als die bestaat, anders de hoofdpagina)
+event_url = ev.get("url", "https://hoelangnogtot.nl/")
+
+# Vang de storende 'T00:00:00' af die sommige API's meesturen
+schone_datum = datum_str.split('T')[0]
+
 try:
-    ev_datum = datetime.strptime(datum_str, "%Y-%m-%d")
+    ev_datum = datetime.strptime(schone_datum, "%Y-%m-%d")
     nu = datetime.now()
     verschil_dagen = (ev_datum - nu).days
     
+    maanden = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december"]
+    vandaag_leesbaar = f"{nu.day} {maanden[nu.month - 1]} {nu.year}"
+    event_leesbaar = f"{ev_datum.day} {maanden[ev_datum.month - 1]} {ev_datum.year}"
+    
     if verschil_dagen > 0:
-        countdown_tekst = f"Nog {verschil_dagen} dagen"
+        countdown_tekst = f"{vandaag_leesbaar}: Nog {verschil_dagen} dagen"
+        reddit_titel = f"⏳ De teller tikt door! Nog precies {verschil_dagen} dagen wachten op {naam}. Kijken jullie er ook al naar uit?"
     elif verschil_dagen == 0:
-        countdown_tekst = "Vandaag is het zover!"
+        countdown_tekst = f"{vandaag_leesbaar}: Het is zover!"
+        reddit_titel = f"🎉 Het wachten is voorbij! Vandaag is eindelijk de dag van {naam}!"
     else:
-        countdown_tekst = "Evenement is afgelopen"
+        countdown_tekst = f"{vandaag_leesbaar}: Evenement is afgelopen"
+        reddit_titel = f"Terugblik: {naam} is inmiddels alweer achter de rug."
 
-    maanden = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]
-    leesbare_datum = f"{ev_datum.day} {maanden[ev_datum.month - 1]} {ev_datum.year}"
-except:
-    countdown_tekst = "Datum onbekend"
-    leesbare_datum = datum_str
+except ValueError:
+    countdown_tekst = "Fout bij inladen datum"
+    event_leesbaar = datum_str
+    reddit_titel = f"Praat mee over {naam}!"
 
-# Maak de HTML pagina met jouw exacte website styling, inclusief de klok
+# Sla de pakkende titel en link op in een tekstbestand
+with open("reddit_post.txt", "w", encoding="utf-8") as f:
+    f.write(f"Titel: {reddit_titel}\n\n")
+    f.write(f"Link: {event_url}\n")
+
+# Maak de HTML pagina met jouw exacte website styling
 html_content = f"""
 <!DOCTYPE html>
 <html>
@@ -79,7 +95,7 @@ html_content = f"""
         
         .event-date {{ font-size: 0.95em; color: #64748b; margin-bottom: 15px; display: flex; align-items: center; gap: 6px; font-weight: 500; }}
         
-        .countdown {{ font-size: 1.3em; font-weight: bold; padding: 15px; border-radius: 8px; margin-bottom: 15px; text-align: center; }}
+        .countdown {{ font-size: 1.2em; font-weight: bold; padding: 15px; border-radius: 8px; margin-bottom: 15px; text-align: center; }}
         .cd-feestdag {{ color: #e74c3c; background: #fef2f2; }}
         .cd-cultuur {{ color: #9b59b6; background: #f9f2fd; }}
         .cd-festival {{ color: #fd79a8; background: #fff0f5; }}
@@ -88,7 +104,7 @@ html_content = f"""
         .cd-gaming {{ color: #27ae60; background: #eafaf1; }}
         .cd-concert {{ color: #d35400; background: #fdf2e9; }}
 
-        .watermerk {{ margin-top: 15px; font-size: 0.8em; color: #94a3b8; font-weight: bold; text-align: center; }}
+        .watermerk {{ margin-top: 15px; font-size: 0.8em; color: #94a3b8; font-weight: bold; text-align: center; text-transform: uppercase; }}
     </style>
 </head>
 <body>
@@ -99,7 +115,7 @@ html_content = f"""
         <div class="card-content">
             <span class="category-tag tag-{cat}">{cat}</span>
             <h3>{naam}</h3>
-            <div class="event-date"><i class="fa-regular fa-calendar"></i> {leesbare_datum}</div>
+            <div class="event-date"><i class="fa-regular fa-calendar"></i> Doeldatum: {event_leesbaar}</div>
             <div class="countdown cd-{cat}">{countdown_tekst}</div>
             <div class="watermerk">HOELANGNOGTOT.NL</div>
         </div>
@@ -118,4 +134,4 @@ with sync_playwright() as p:
     card_element.screenshot(path="reddit_kaart.png", omit_background=True)
     
     browser.close()
-    print("Afbeelding succesvol gegenereerd: reddit_kaart.png")
+    print("Afbeelding en tekst succesvol gegenereerd.")
