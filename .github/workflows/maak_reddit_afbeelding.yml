@@ -31,8 +31,10 @@ jobs:
         EVENEMENT_NAAM: ${{ github.event.inputs.evenement_naam }}
       run: python maak_reddit_kaart.py
 
-    - name: Zet afbeelding klaar als download
+    - name: Zet bestanden klaar als download
       uses: actions/upload-artifact@v4
       with:
-        name: Reddit-Afbeelding
-        path: reddit_kaart.png
+        name: Reddit-Pakket
+        path: |
+          reddit_kaart.png
+          reddit_post.txt
