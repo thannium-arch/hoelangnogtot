@@ -19,7 +19,6 @@ def voeg_sport_toe(naam, datum, locatie):
         print(f"Succesvol toegevoegd aan database: {naam}")
         succes = True
     except sqlite3.Error as e:
-        # Hier printen we de exacte foutmelding zodat je deze straks in GitHub kunt lezen
         print(f"CRITIEKE FOUT bij database: {e}")
         succes = False
     finally:
@@ -56,13 +55,12 @@ def verwerk_lijst():
             datum = sport_delen[1] if len(sport_delen) > 1 else '2027-01-01'
             locatie = sport_delen[2] if len(sport_delen) > 2 else 'Internationaal'
             
-            # Pas als de database succes geeft, mag de regel uit de lijst
-            if niet voeg_sport_toe(naam, datum, locatie):
+            # De syntax is nu correct in het Engels
+            if not voeg_sport_toe(naam, datum, locatie):
                 resterende_regels.append(schone_regel)
         else:
             resterende_regels.append(schone_regel)
 
-    # Schrijf de resterende (of mislukte) regels terug naar het bestand
     with open(BESTAND, 'w', encoding='utf-8') as f:
         for r in resterende_regels:
             if r:  
