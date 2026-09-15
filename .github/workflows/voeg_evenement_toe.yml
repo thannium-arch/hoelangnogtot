@@ -1,0 +1,59 @@
+name: Nieuw Evenement Toevoegen
+
+on:
+  workflow_dispatch:
+    inputs:
+      naam:
+        description: 'Naam van het evenement (bijv. Zeslandentoernooi)'
+        required: true
+        type: string
+      datum:
+        description: 'Datum (YYYY-MM-DD)'
+        required: true
+        type: string
+      categorie:
+        description: 'Categorie'
+        required: true
+        type: choice
+        options:
+          - sport
+          - gaming
+          - film
+          - concert
+          - festival
+      locatie:
+        description: 'Locatie (bijv. Europa of Ziggo Dome)'
+        required: false
+        default: 'Internationaal'
+        type: string
+
+jobs:
+  voeg-toe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Haal code op
+      uses: actions/checkout@v4
+
+    - name: Installeer Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Voeg evenement toe aan database
+      env:
+        INPUT_NAAM: ${{ github.event.inputs.naam }}
+        INPUT_DATUM: ${{ github.event.inputs.datum }}
+        INPUT_CATEGORIE: ${{ github.event.inputs.categorie }}
+        INPUT_LOCATIE: ${{ github.event.inputs.locatie }}
+      run: python voeg_evenement_toe.py
+
+    - name: Sla database op in repository
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add evenementen.db
+        git commit -m "Evenement toegevoegd via formulier" || echo "Geen wijzigingen"
+        git push
