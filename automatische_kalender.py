@@ -36,27 +36,38 @@ def bereken_datums():
     conn = sqlite3.connect(DB_BESTAND)
     cursor = conn.cursor()
 
+    maanden_nl = {
+        1: "Januari", 2: "Februari", 3: "Maart", 4: "April",
+        5: "Mei", 6: "Juni", 7: "Juli", 8: "Augustus",
+        9: "September", 10: "Oktober", 11: "November", 12: "December"
+    }
+
     try:
-        # 1. Maancyclus
-        volgende_volle_maan = ephem.next_full_moon(vandaag).datetime().date()
-        volgende_nieuwe_maan = ephem.next_new_moon(vandaag).datetime().date()
+        # 1. Maancyclus (6 Volle en 6 Nieuwe manen vooruit)
+        # Verwijder eerst de oude, generieke maan-registraties
+        cursor.execute("DELETE FROM events WHERE naam = 'Volle Maan'")
+        cursor.execute("DELETE FROM events WHERE naam = 'Nieuwe Maan'")
         
-        update_of_voeg_toe(cursor, "Volle Maan", volgende_volle_maan, "seizoen", "Ruimte", "https://hoelangnogtot.nl/images/volle-maan.jpg", forceer_update=True)
-        update_of_voeg_toe(cursor, "Nieuwe Maan", volgende_nieuwe_maan, "seizoen", "Ruimte", "https://hoelangnogtot.nl/images/nieuwe-maan.jpg", forceer_update=True)
+        reken_datum_vol = vandaag
+        for i in range(6):
+            volgende_volle = ephem.next_full_moon(reken_datum_vol).datetime().date()
+            naam_vol = f"Volle Maan ({maanden_nl[volgende_volle.month]} {volgende_volle.year})"
+            update_of_voeg_toe(cursor, naam_vol, volgende_volle, "seizoen", "Ruimte", "https://hoelangnogtot.nl/images/volle-maan.jpg", forceer_update=True)
+            # Zet de reken_datum vooruit naar de dag ná de gevonden maan om de volgende te vinden
+            reken_datum_vol = volgende_volle + datetime.timedelta(days=1)
+
+        reken_datum_nieuw = vandaag
+        for i in range(6):
+            volgende_nieuwe = ephem.next_new_moon(reken_datum_nieuw).datetime().date()
+            naam_nieuw = f"Nieuwe Maan ({maanden_nl[volgende_nieuwe.month]} {volgende_nieuwe.year})"
+            update_of_voeg_toe(cursor, naam_nieuw, volgende_nieuwe, "seizoen", "Ruimte", "https://hoelangnogtot.nl/images/nieuwe-maan.jpg", forceer_update=True)
+            reken_datum_nieuw = volgende_nieuwe + datetime.timedelta(days=1)
 
         # 2. De 12 maanden (Rollende horizon voor een heel jaar)
-        # Verwijder eerst de oude enkele registratie om rommel te voorkomen
         cursor.execute("DELETE FROM events WHERE naam = 'Start Nieuwe Maand'")
         
-        maanden_nl = {
-            1: "Januari", 2: "Februari", 3: "Maart", 4: "April",
-            5: "Mei", 6: "Juni", 7: "Juli", 8: "Augustus",
-            9: "September", 10: "Oktober", 11: "November", 12: "December"
-        }
-
         for mnd_num, mnd_naam in maanden_nl.items():
             jaar = vandaag.year
-            # Als de 1e van de maand al is geweest dit jaar, schuiven we hem door naar volgend jaar
             if vandaag.month > mnd_num or (vandaag.month == mnd_num and vandaag.day > 1):
                 jaar += 1
             
