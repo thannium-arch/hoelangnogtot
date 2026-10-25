@@ -5888,7 +5888,7 @@
     {
         "id": 350,
         "naam": "Avengers: Doomsday",
-        "afbeelding": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
         "categorie": "film",
         "icon": "fa-film",
         "vlag": "globe",
@@ -5942,7 +5942,7 @@
     {
         "id": 355,
         "naam": "Jumanji: Open World",
-        "afbeelding": "https://image.tmdb.org/t/p/w500/Vql0GLUnLtf0oQo2VQsTFqjXEo.jpg",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/qGFuvcXqQdXS5ZNblDlVTOmK6mq.jpg",
         "categorie": "film",
         "icon": "fa-film",
         "vlag": "globe",
@@ -6374,7 +6374,7 @@
     {
         "id": 383,
         "naam": "The Simpsons (Seizoen 38)",
-        "afbeelding": "https://image.tmdb.org/t/p/w500/tf0CUEynk6GfmrlHIQKQ5mfFP5P.jpg",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/k5UALlcA0EnviaCUn2wMjOWYiOO.jpg",
         "categorie": "film",
         "icon": "fa-tv",
         "vlag": "globe",
@@ -15734,7 +15734,7 @@
     {
         "id": 913,
         "naam": "The Hunger Games: Sunrise on the Reaping",
-        "afbeelding": "https://image.tmdb.org/t/p/w500/kONfwpf0AZzvL1zqjZV9C89g1PY.jpg",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
         "categorie": "film",
         "icon": "fa-film",
         "vlag": "globe",
@@ -19874,7 +19874,7 @@
     {
         "id": 1146,
         "naam": "Ebenezer",
-        "afbeelding": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
+        "afbeelding": "https://image.tmdb.org/t/p/w500/71a6cUBZQ7MrENJOe8XlHpG2uJw.jpg",
         "categorie": "film",
         "icon": "fa-film",
         "vlag": "globe",
@@ -20797,7 +20797,7 @@
         "icon": "fa-tv",
         "vlag": "globe",
         "locatie": "Streamingdiensten",
-        "datum": "2026-10-24T00:00:00",
+        "datum": "2026-10-26T00:00:00",
         "url": "https://www.youtube.com/results?search_query=De+Bondgenoten+(Seizoen+4)+trailer+nl",
         "affiliateUrl": "https://www.youtube.com/results?search_query=De+Bondgenoten+(Seizoen+4)+trailer+nl",
         "affiliateTekst": "Bekijk Trailer",
@@ -21253,6 +21253,24 @@
         "affiliateTekst": "Bestel Tickets",
         "regio": "",
         "presaleDatum": "2026-03-18T09:00:00Z",
+        "urgencyStartDatum": "",
+        "urgencyLabel": "",
+        "urgencyIcon": ""
+    },
+    {
+        "id": 1223,
+        "naam": "Muse | Venue Premium Packages",
+        "afbeelding": "https://s1.ticketm.net/dam/a/6b8/d1478989-643e-4630-8676-b86064a146b8_TABLET_LANDSCAPE_16_9.jpg",
+        "categorie": "concert",
+        "icon": "fa-music",
+        "vlag": "nl",
+        "locatie": "Ziggo Dome Club, Amsterdam",
+        "datum": "2026-11-30T19:01:00Z",
+        "url": "https://www.ticketmaster.nl/event/muse-%7C-venue-premium-packages-tickets/1258686967?language=en-us",
+        "affiliateUrl": "https://www.ticketmaster.nl/event/muse-%7C-venue-premium-packages-tickets/1258686967?language=en-us",
+        "affiliateTekst": "Bestel Tickets",
+        "regio": "",
+        "presaleDatum": "2026-06-19T08:00:00Z",
         "urgencyStartDatum": "",
         "urgencyLabel": "",
         "urgencyIcon": ""
